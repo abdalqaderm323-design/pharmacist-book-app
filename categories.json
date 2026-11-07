@@ -1,0 +1,533 @@
+{
+ "groups": [
+  {
+   "id": "infections-pain",
+   "ar": "مضادات العدوى والمسكنات",
+   "en": "Anti-infectives and Pain Relief"
+  },
+  {
+   "id": "nervous-psychiatric",
+   "ar": "الجهاز العصبي والنفسي",
+   "en": "Nervous System and Psychiatry"
+  },
+  {
+   "id": "respiratory-allergy",
+   "ar": "الجهاز التنفسي والحساسية",
+   "en": "Respiratory System and Allergy"
+  },
+  {
+   "id": "digestive",
+   "ar": "الجهاز الهضمي",
+   "en": "Digestive System"
+  },
+  {
+   "id": "cardiovascular",
+   "ar": "القلب والأوعية الدموية",
+   "en": "Heart and Blood Vessels"
+  },
+  {
+   "id": "blood-oncology-immunity",
+   "ar": "الدم والأورام والمناعة",
+   "en": "Blood, Cancer and Immunity"
+  },
+  {
+   "id": "endocrine-hormones",
+   "ar": "الغدد الصماء والهرمونات",
+   "en": "Endocrine System and Hormones"
+  },
+  {
+   "id": "renal-urogenital",
+   "ar": "الكلى والمسالك البولية والتناسلية",
+   "en": "Kidney, Urinary and Reproductive"
+  },
+  {
+   "id": "skin-eye-ear",
+   "ar": "الجلد والعيون والأذن",
+   "en": "Skin, Eyes and Ear"
+  },
+  {
+   "id": "specialized",
+   "ar": "التصنيفات المتخصصة والعامة",
+   "en": "Specialized and General"
+  }
+ ],
+ "categories": [
+  {
+   "id": "antibiotics",
+   "group": "infections-pain",
+   "ar": "المضادات الحيوية",
+   "en": "Antibiotics"
+  },
+  {
+   "id": "antivirals",
+   "group": "infections-pain",
+   "ar": "مضادات الفيروسات",
+   "en": "Antivirals"
+  },
+  {
+   "id": "antifungals",
+   "group": "infections-pain",
+   "ar": "مضادات الفطريات",
+   "en": "Antifungals"
+  },
+  {
+   "id": "antiparasitics",
+   "group": "infections-pain",
+   "ar": "مضادات الطفيليات",
+   "en": "Antiparasitics"
+  },
+  {
+   "id": "anthelmintics",
+   "group": "infections-pain",
+   "ar": "مضادات الديدان",
+   "en": "Anthelmintics"
+  },
+  {
+   "id": "antituberculosis",
+   "group": "infections-pain",
+   "ar": "مضادات السل",
+   "en": "Antituberculosis Drugs"
+  },
+  {
+   "id": "antimalarials",
+   "group": "infections-pain",
+   "ar": "مضادات الملاريا",
+   "en": "Antimalarial Drugs"
+  },
+  {
+   "id": "antiseptics-disinfectants",
+   "group": "infections-pain",
+   "ar": "المطهرات والمعقمات",
+   "en": "Antiseptics and Disinfectants"
+  },
+  {
+   "id": "analgesics",
+   "group": "infections-pain",
+   "ar": "المسكنات",
+   "en": "Analgesics"
+  },
+  {
+   "id": "antipyretics",
+   "group": "infections-pain",
+   "ar": "خافضات الحرارة",
+   "en": "Antipyretics"
+  },
+  {
+   "id": "nsaids",
+   "group": "infections-pain",
+   "ar": "مضادات الالتهاب غير الستيرويدية",
+   "en": "NSAIDs"
+  },
+  {
+   "id": "corticosteroids",
+   "group": [
+    "infections-pain",
+    "endocrine-hormones"
+   ],
+   "ar": "الكورتيكوستيرويدات (مضادات الالتهاب الستيرويدية)",
+   "en": "Corticosteroids"
+  },
+  {
+   "id": "opioid-analgesics",
+   "group": "infections-pain",
+   "ar": "المسكنات الأفيونية",
+   "en": "Opioid Analgesics"
+  },
+  {
+   "id": "general-anesthetics",
+   "group": "infections-pain",
+   "ar": "أدوية التخدير العام",
+   "en": "General Anesthetics"
+  },
+  {
+   "id": "local-anesthetics",
+   "group": "infections-pain",
+   "ar": "أدوية التخدير الموضعي",
+   "en": "Local Anesthetics"
+  },
+  {
+   "id": "sedatives",
+   "group": "nervous-psychiatric",
+   "ar": "المهدئات",
+   "en": "Sedatives"
+  },
+  {
+   "id": "hypnotics",
+   "group": "nervous-psychiatric",
+   "ar": "المنومات",
+   "en": "Hypnotics"
+  },
+  {
+   "id": "anxiolytics",
+   "group": "nervous-psychiatric",
+   "ar": "مضادات القلق",
+   "en": "Anxiolytics"
+  },
+  {
+   "id": "antidepressants",
+   "group": "nervous-psychiatric",
+   "ar": "مضادات الاكتئاب",
+   "en": "Antidepressants"
+  },
+  {
+   "id": "antipsychotics",
+   "group": "nervous-psychiatric",
+   "ar": "مضادات الذهان",
+   "en": "Antipsychotics"
+  },
+  {
+   "id": "anticonvulsants",
+   "group": "nervous-psychiatric",
+   "ar": "مضادات الاختلاج والصرع",
+   "en": "Anticonvulsants"
+  },
+  {
+   "id": "muscle-relaxants",
+   "group": "nervous-psychiatric",
+   "ar": "مرخيات العضلات",
+   "en": "Muscle Relaxants"
+  },
+  {
+   "id": "antiparkinsonian",
+   "group": "nervous-psychiatric",
+   "ar": "أدوية مرض باركنسون",
+   "en": "Antiparkinsonian Drugs"
+  },
+  {
+   "id": "anti-alzheimer",
+   "group": "nervous-psychiatric",
+   "ar": "أدوية الزهايمر والخرف",
+   "en": "Anti-Alzheimer's Drugs"
+  },
+  {
+   "id": "antimigraine",
+   "group": "nervous-psychiatric",
+   "ar": "أدوية الصداع النصفي",
+   "en": "Antimigraine Drugs"
+  },
+  {
+   "id": "sleep-disorders",
+   "group": "nervous-psychiatric",
+   "ar": "أدوية اضطرابات النوم",
+   "en": "Sleep Disorder Medications"
+  },
+  {
+   "id": "addiction-treatment",
+   "group": "nervous-psychiatric",
+   "ar": "أدوية علاج الإدمان",
+   "en": "Addiction Treatment Medications"
+  },
+  {
+   "id": "antihistamines",
+   "group": "respiratory-allergy",
+   "ar": "مضادات الهيستامين",
+   "en": "Antihistamines"
+  },
+  {
+   "id": "bronchodilators",
+   "group": "respiratory-allergy",
+   "ar": "موسعات القصبات",
+   "en": "Bronchodilators"
+  },
+  {
+   "id": "antitussives",
+   "group": "respiratory-allergy",
+   "ar": "مضادات السعال",
+   "en": "Antitussives"
+  },
+  {
+   "id": "expectorants-mucolytics",
+   "group": "respiratory-allergy",
+   "ar": "طاردات البلغم ومذيباته",
+   "en": "Expectorants and Mucolytics"
+  },
+  {
+   "id": "antiasthmatics",
+   "group": "respiratory-allergy",
+   "ar": "أدوية الربو",
+   "en": "Antiasthmatic Drugs"
+  },
+  {
+   "id": "antiallergics",
+   "group": "respiratory-allergy",
+   "ar": "أدوية الحساسية",
+   "en": "Antiallergic Drugs"
+  },
+  {
+   "id": "nasal-decongestants",
+   "group": "respiratory-allergy",
+   "ar": "أدوية احتقان الأنف",
+   "en": "Nasal Decongestants"
+  },
+  {
+   "id": "antacids",
+   "group": "digestive",
+   "ar": "مضادات الحموضة",
+   "en": "Antacids"
+  },
+  {
+   "id": "proton-pump-inhibitors",
+   "group": "digestive",
+   "ar": "مثبطات مضخة البروتون",
+   "en": "Proton Pump Inhibitors"
+  },
+  {
+   "id": "h2-blockers",
+   "group": "digestive",
+   "ar": "مضادات مستقبلات H2",
+   "en": "H2 Receptor Antagonists"
+  },
+  {
+   "id": "antiemetics",
+   "group": "digestive",
+   "ar": "مضادات القيء والغثيان",
+   "en": "Antiemetics"
+  },
+  {
+   "id": "laxatives",
+   "group": "digestive",
+   "ar": "الملينات",
+   "en": "Laxatives"
+  },
+  {
+   "id": "antidiarrheals",
+   "group": "digestive",
+   "ar": "مضادات الإسهال",
+   "en": "Antidiarrheals"
+  },
+  {
+   "id": "antispasmodics",
+   "group": "digestive",
+   "ar": "مضادات التشنج المعوي",
+   "en": "Antispasmodics"
+  },
+  {
+   "id": "antiulcer",
+   "group": "digestive",
+   "ar": "أدوية القرحة الهضمية",
+   "en": "Antiulcer Drugs"
+  },
+  {
+   "id": "ibd-drugs",
+   "group": "digestive",
+   "ar": "أدوية أمراض الأمعاء الالتهابية",
+   "en": "Inflammatory Bowel Disease Drugs"
+  },
+  {
+   "id": "hepatobiliary",
+   "group": "digestive",
+   "ar": "أدوية الكبد والمرارة",
+   "en": "Hepatobiliary Drugs"
+  },
+  {
+   "id": "antihypertensives",
+   "group": "cardiovascular",
+   "ar": "أدوية ارتفاع ضغط الدم",
+   "en": "Antihypertensives"
+  },
+  {
+   "id": "heart-failure",
+   "group": "cardiovascular",
+   "ar": "أدوية قصور القلب",
+   "en": "Heart Failure Drugs"
+  },
+  {
+   "id": "antiarrhythmics",
+   "group": "cardiovascular",
+   "ar": "مضادات اضطراب نظم القلب",
+   "en": "Antiarrhythmics"
+  },
+  {
+   "id": "antianginal",
+   "group": "cardiovascular",
+   "ar": "مضادات الذبحة الصدرية",
+   "en": "Antianginal Drugs"
+  },
+  {
+   "id": "diuretics",
+   "group": "cardiovascular",
+   "ar": "مدرات البول",
+   "en": "Diuretics"
+  },
+  {
+   "id": "anticoagulants",
+   "group": "cardiovascular",
+   "ar": "مضادات التخثر",
+   "en": "Anticoagulants"
+  },
+  {
+   "id": "antiplatelets",
+   "group": "cardiovascular",
+   "ar": "مضادات الصفائح الدموية",
+   "en": "Antiplatelet Drugs"
+  },
+  {
+   "id": "lipid-lowering",
+   "group": "cardiovascular",
+   "ar": "أدوية خفض الدهون والكوليسترول",
+   "en": "Lipid-Lowering Drugs"
+  },
+  {
+   "id": "vasodilators",
+   "group": "cardiovascular",
+   "ar": "موسعات الأوعية الدموية",
+   "en": "Vasodilators"
+  },
+  {
+   "id": "shock-treatment",
+   "group": "cardiovascular",
+   "ar": "أدوية علاج الصدمة",
+   "en": "Shock Treatment Drugs"
+  },
+  {
+   "id": "antianemics",
+   "group": "blood-oncology-immunity",
+   "ar": "أدوية فقر الدم",
+   "en": "Antianemic Drugs"
+  },
+  {
+   "id": "hemostatics-thrombolytics",
+   "group": "blood-oncology-immunity",
+   "ar": "أدوية تخثر الدم ومذيبات الجلطات",
+   "en": "Hemostatic and Thrombolytic Drugs"
+  },
+  {
+   "id": "antineoplastics",
+   "group": "blood-oncology-immunity",
+   "ar": "مضادات السرطان",
+   "en": "Antineoplastic Drugs"
+  },
+  {
+   "id": "immunosuppressants",
+   "group": "blood-oncology-immunity",
+   "ar": "مثبطات المناعة",
+   "en": "Immunosuppressants"
+  },
+  {
+   "id": "immunostimulants",
+   "group": "blood-oncology-immunity",
+   "ar": "المنشطات المناعية",
+   "en": "Immunostimulants"
+  },
+  {
+   "id": "biologics",
+   "group": "blood-oncology-immunity",
+   "ar": "الأدوية البيولوجية",
+   "en": "Biologic Drugs"
+  },
+  {
+   "id": "antidiabetics",
+   "group": "endocrine-hormones",
+   "ar": "أدوية السكري",
+   "en": "Antidiabetic Drugs"
+  },
+  {
+   "id": "insulins",
+   "group": "endocrine-hormones",
+   "ar": "الإنسولين",
+   "en": "Insulins"
+  },
+  {
+   "id": "thyroid",
+   "group": "endocrine-hormones",
+   "ar": "أدوية الغدة الدرقية",
+   "en": "Thyroid Drugs"
+  },
+  {
+   "id": "hormonal",
+   "group": "endocrine-hormones",
+   "ar": "الأدوية الهرمونية",
+   "en": "Hormonal Drugs"
+  },
+  {
+   "id": "contraceptives",
+   "group": "endocrine-hormones",
+   "ar": "موانع الحمل",
+   "en": "Contraceptives"
+  },
+  {
+   "id": "fertility",
+   "group": "endocrine-hormones",
+   "ar": "أدوية الخصوبة",
+   "en": "Fertility Drugs"
+  },
+  {
+   "id": "urinary-tract",
+   "group": "renal-urogenital",
+   "ar": "أدوية المسالك البولية",
+   "en": "Urinary Tract Drugs"
+  },
+  {
+   "id": "bph",
+   "group": "renal-urogenital",
+   "ar": "أدوية تضخم البروستاتا",
+   "en": "BPH Drugs"
+  },
+  {
+   "id": "erectile-dysfunction",
+   "group": "renal-urogenital",
+   "ar": "أدوية ضعف الانتصاب",
+   "en": "Erectile Dysfunction Drugs"
+  },
+  {
+   "id": "renal",
+   "group": "renal-urogenital",
+   "ar": "أدوية أمراض الكلى",
+   "en": "Renal Drugs"
+  },
+  {
+   "id": "obstetric",
+   "group": "renal-urogenital",
+   "ar": "أدوية الولادة",
+   "en": "Obstetric Drugs"
+  },
+  {
+   "id": "dermatological",
+   "group": "skin-eye-ear",
+   "ar": "أدوية الأمراض الجلدية",
+   "en": "Dermatological Drugs"
+  },
+  {
+   "id": "ophthalmic",
+   "group": "skin-eye-ear",
+   "ar": "أدوية العيون",
+   "en": "Ophthalmic Drugs"
+  },
+  {
+   "id": "ent",
+   "group": "skin-eye-ear",
+   "ar": "أدوية الأنف والأذن والحنجرة",
+   "en": "ENT Drugs"
+  },
+  {
+   "id": "vitamins",
+   "group": "specialized",
+   "ar": "الفيتامينات",
+   "en": "Vitamins"
+  },
+  {
+   "id": "minerals-supplements",
+   "group": "specialized",
+   "ar": "المعادن والمكملات الغذائية",
+   "en": "Minerals and Dietary Supplements"
+  },
+  {
+   "id": "antidotes",
+   "group": "specialized",
+   "ar": "أدوية الترياق والتسمم",
+   "en": "Antidotes and Poisoning Treatment Drugs"
+  },
+  {
+   "id": "emergency-resuscitation",
+   "group": "specialized",
+   "ar": "أدوية الطوارئ والإنعاش",
+   "en": "Emergency and Resuscitation Drugs"
+  },
+  {
+   "id": "diagnostics-vaccines",
+   "group": "specialized",
+   "ar": "أدوية التشخيص واللقاحات",
+   "en": "Diagnostic Agents and Vaccines"
+  }
+ ]
+}

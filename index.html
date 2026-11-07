@@ -82,7 +82,7 @@ textarea.input{height:auto;min-height:200px;padding:12px;resize:vertical;line-he
 'use strict';
 
 /* ======= Settings you may change ======= */
-var APP_VERSION = '1.2.0';
+var APP_VERSION = '1.3.0';
 var REPO = 'abdalqaderm323-design/pharmacist-book-app';
 var BRANCH = 'main';
 /* ======================================== */
@@ -106,7 +106,7 @@ var STR = {
     noDoseData: 'لا توجد بيانات جرعات بعد', disclaimer: 'للتعليم فقط ولا يغني عن استشارة الصيدلي أو الطبيب.',
     updChecking: 'جاري التحقق من التحديثات...', updOk: 'تم تحديث المعلومات', updLatest: 'أنت على آخر نسخة', updOffline: 'تحتاج اتصال بالإنترنت للتحديث',
     updNewApp: 'يوجد تحديث جديد للتطبيق', updDownload: 'تنزيل التحديث', updCfg: 'رابط التحديث غير مضبوط بعد', close: 'إغلاق',
-    to: 'إلى', upTo: 'حتى', all: 'الكل', formLabel: 'الشكل الصيدلاني', strengthLabel: 'التركيز (الجرعة المتوفرة)', pickFormFirst: 'اختار الشكل الصيدلاني أولاً', pickForm: 'اختار الشكل الصيدلاني', pickStrength: 'اختار التركيز',
+    otherGroup: 'أخرى', drugsWord: 'أدوية', noTopicsT: 'لا توجد مواضيع بعد', noTopicsS: 'ستظهر هنا بعد إضافتها بالتحديث.', to: 'إلى', upTo: 'حتى', all: 'الكل', formLabel: 'الشكل الصيدلاني', strengthLabel: 'التركيز (الجرعة المتوفرة)', pickFormFirst: 'اختار الشكل الصيدلاني أولاً', pickForm: 'اختار الشكل الصيدلاني', pickStrength: 'اختار التركيز',
     amountGive: 'الكمية المعطاة', totalDaily: 'المجموع اليومي', exceeds: 'تنبيه: المجموع اليومي يتجاوز الحد الأقصى.', maxSingle: 'أقصى جرعة للمرة الواحدة', maxDailyL: 'أقصى جرعة باليوم',
     mgU: 'ملغم', u_ml: 'مل', u_tablet: 'قرص', u_capsule: 'كبسولة', u_suppository: 'تحميلة', u_g: 'غم', u_unit: 'وحدة', updFail: 'تعذر التحقق من التحديث. حاول لاحقاً.', badFile: 'يوجد خطأ في الملف', filesWord: 'ملفات', searchList: 'ابحث بالاسم أو التصنيف',
     noData: 'تعذر تحميل بيانات التطبيق', backLbl: 'رجوع', menuLbl: 'القائمة', removeSaved: 'إزالة من المحفوظات', addSaved: 'حفظ الموضوع', version: 'النسخة', dataV: 'المعلومات'
@@ -129,7 +129,7 @@ var STR = {
     noDoseData: 'No dose data yet', disclaimer: 'For education only. It does not replace advice from a pharmacist or doctor.',
     updChecking: 'Checking for updates...', updOk: 'Information updated', updLatest: 'You are on the latest version', updOffline: 'You need an internet connection to update',
     updNewApp: 'A new app update is available', updDownload: 'Download update', updCfg: 'The update link is not set yet', close: 'Close',
-    to: 'to', upTo: 'up to', all: 'All', formLabel: 'Pharmaceutical form', strengthLabel: 'Strength (available concentration)', pickFormFirst: 'Pick the pharmaceutical form first', pickForm: 'Pick the pharmaceutical form', pickStrength: 'Pick the strength',
+    otherGroup: 'Other', drugsWord: 'drugs', noTopicsT: 'No topics yet', noTopicsS: 'They will appear here after they are added through an update.', to: 'to', upTo: 'up to', all: 'All', formLabel: 'Pharmaceutical form', strengthLabel: 'Strength (available concentration)', pickFormFirst: 'Pick the pharmaceutical form first', pickForm: 'Pick the pharmaceutical form', pickStrength: 'Pick the strength',
     amountGive: 'Amount to give', totalDaily: 'Total per day', exceeds: 'Warning: the daily total exceeds the maximum.', maxSingle: 'Maximum single dose', maxDailyL: 'Maximum per day',
     mgU: 'mg', u_ml: 'mL', u_tablet: 'tablet(s)', u_capsule: 'capsule(s)', u_suppository: 'suppository', u_g: 'g', u_unit: 'unit(s)', updFail: 'Could not check for updates. Try again later.', badFile: 'There is an error in the file', filesWord: 'Files', searchList: 'Search by name or category',
     noData: 'Could not load app data', backLbl: 'Back', menuLbl: 'Menu', removeSaved: 'Remove from saved', addSaved: 'Save topic', version: 'Version', dataV: 'Data'
@@ -182,6 +182,10 @@ function btnI(name, label, fn, cls) { return h('button', { class: 'btn-i', 'aria
 var lang = store('lang', 'ar');
 if (lang !== 'ar' && lang !== 'en') lang = 'ar';
 function t(k) { return STR[lang][k] || STR.en[k] || k; }
+function drugsCount(n) {
+  if (lang === 'ar') return n === 1 ? 'دواء واحد' : n === 2 ? 'دواءان' : n <= 10 ? n + ' أدوية' : n + ' دواء';
+  return n + (n === 1 ? ' drug' : ' drugs');
+}
 function L(o) { if (!o) return ''; if (typeof o === 'string') return o; return o[lang] || o.en || o.ar || ''; }
 function norm(s) { return String(s || '').toLowerCase(); }
 function go(hash) { if (location.hash === '#' + hash) render(); else location.hash = hash; }
@@ -221,20 +225,52 @@ var CAT = {
 function catId(c) { if (!c) return 'other'; if (typeof c === 'string') return c; return c.en || c.ar || 'other'; }
 function catLabel(c) {
   if (!c) c = 'other';
-  if (typeof c === 'string') return CAT[c] ? CAT[c][lang === 'ar' ? 0 : 1] : c;
-  return L(c);
+  if (typeof c !== 'string') return L(c);
+  var d = DATA && DATA.catMap && DATA.catMap[c];
+  if (d) return L(d);
+  return CAT[c] ? CAT[c][lang === 'ar' ? 0 : 1] : c;
 }
+function catIdsOf(tp) {
+  if (tp.categories && tp.categories.length) return tp.categories.map(catId);
+  if (tp.category) return [catId(tp.category)];
+  return ['other'];
+}
+function catLabelsOf(tp) { var arr = (tp.categories && tp.categories.length) ? tp.categories : [tp.category]; return arr.map(catLabel).join(' · '); }
 function categoriesOf(type) {
   var map = {}, order = Object.keys(CAT), n = 1000;
   topicsOf(type).forEach(function (tp) {
-    var id = catId(tp.category);
-    if (!map[id]) { var oi = order.indexOf(id); map[id] = { id: id, label: catLabel(tp.category), count: 0, ord: oi >= 0 ? oi : n++ }; }
-    map[id].count++;
+    var raws = (tp.categories && tp.categories.length) ? tp.categories : [tp.category];
+    raws.forEach(function (raw) {
+      var id = catId(raw);
+      if (!map[id]) { var oi = order.indexOf(id); map[id] = { id: id, label: catLabel(raw), count: 0, ord: oi >= 0 ? oi : n++ }; }
+      map[id].count++;
+    });
   });
   return Object.keys(map).map(function (k) { return map[k]; }).sort(function (a, b) { return a.ord - b.ord; });
 }
+/* drug groups -> categories -> drugs */
+function groupsOfCat(c) { var g = c.group; return !g ? [] : (typeof g === 'string' ? [g] : g); }
+function drugGroups() {
+  var drugs = topicsOf('drugs'), res = [];
+  (DATA.groups || []).forEach(function (g) {
+    var cats = (DATA.cats || []).filter(function (c) { return groupsOfCat(c).indexOf(g.id) >= 0; }).map(function (c) {
+      return { id: c.id, label: L(c), count: drugs.filter(function (d) { return catIdsOf(d).indexOf(c.id) >= 0; }).length };
+    }).filter(function (c) { return c.count > 0; });
+    if (cats.length) {
+      var ids = {}; cats.forEach(function (c) { ids[c.id] = 1; });
+      var total = drugs.filter(function (d) { return catIdsOf(d).some(function (i) { return ids[i]; }); }).length;
+      res.push({ id: g.id, label: L(g), cats: cats, count: total });
+    }
+  });
+  var covered = {}; (DATA.cats || []).forEach(function (c) { if (groupsOfCat(c).length) covered[c.id] = 1; });
+  var otherMap = {};
+  drugs.forEach(function (d) { catIdsOf(d).forEach(function (i, k) { if (!covered[i]) { if (!otherMap[i]) otherMap[i] = { id: i, label: catLabel((d.categories && d.categories[k]) || d.category || 'other'), count: 0 }; otherMap[i].count++; } }); });
+  var others = Object.keys(otherMap).map(function (k) { return otherMap[k]; });
+  if (others.length) { var tot = {}; drugs.forEach(function (d) { if (catIdsOf(d).some(function (i) { return !covered[i]; })) tot[d.id] = 1; }); res.push({ id: 'other', label: t('otherGroup'), cats: others, count: Object.keys(tot).length }); }
+  return res;
+}
 function mergeSources(srcs) {
-  var out = { drugs: [], diseases: [], interactions: [], doses: [], app: null, meta: { files: srcs.length } };
+  var out = { drugs: [], diseases: [], interactions: [], doses: [], groups: [], cats: [], catMap: {}, groupMap: {}, app: null, meta: { files: srcs.length } };
   var maps = { drugs: {}, diseases: {} }, dmap = {};
   function addTopics(type, arr) {
     (arr || []).forEach(function (x) {
@@ -252,6 +288,8 @@ function mergeSources(srcs) {
       if (dmap[d.drug]) dmap[d.drug].options = (dmap[d.drug].options || []).concat(d.options || []);
       else { var c = { drug: d.drug, options: (d.options || []).slice() }; dmap[d.drug] = c; out.doses.push(c); }
     });
+    (j.groups || []).forEach(function (g) { if (g && g.id) { if (!out.groupMap[g.id]) out.groups.push(g); else out.groups[out.groups.indexOf(out.groupMap[g.id])] = g; out.groupMap[g.id] = g; } });
+    (j.categories || []).forEach(function (c) { if (c && c.id) { if (!out.catMap[c.id]) out.cats.push(c); else out.cats[out.cats.indexOf(out.catMap[c.id])] = c; out.catMap[c.id] = c; } });
     if (j.app) out.app = j.app;
   });
   return out;
@@ -268,7 +306,7 @@ function findTopic(id) {
 function typeLabel(type) { return type === 'drugs' ? t('catDrugs') : t('catDiseases'); }
 function matches(topic, q) {
   q = norm(q.trim()); if (!q) return true;
-  return norm(topic.title && topic.title.en).indexOf(q) >= 0 || norm(topic.title && topic.title.ar).indexOf(q) >= 0 || norm(catLabel(topic.category)).indexOf(q) >= 0;
+  return norm(topic.title && topic.title.en).indexOf(q) >= 0 || norm(topic.title && topic.title.ar).indexOf(q) >= 0 || norm(catLabelsOf(topic)).indexOf(q) >= 0;
 }
 function fetchJson(u) { return fetch(u).then(function (r) { if (!r.ok) throw new Error(u); return r.json(); }); }
 function setData(srcs) { DATA = mergeSources(srcs); }
@@ -379,9 +417,13 @@ function pageHome() {
       list.appendChild(rowEl('calc', t('openCalc'), '', function () { go('calc'); }));
     } else if (homeCat === 'inter') {
       list.appendChild(rowEl('inter', t('openInter'), '', function () { go('inter'); }));
+    } else if (homeCat === 'drugs' && drugGroups().length) {
+      var gg = h('div', { class: 'grid' });
+      drugGroups().forEach(function (gr) { gg.appendChild(h('button', { class: 'card', onclick: function () { go('drugs-g-' + gr.id); } }, [h('span', { text: gr.label }), h('small', { text: drugsCount(gr.count) })])); });
+      list.appendChild(gg);
     } else {
       var arr = topicsOf(homeCat);
-      if (!arr.length) { list.appendChild(h('div', { class: 'empty muted', text: t('noResults') })); return; }
+      if (!arr.length) { list.appendChild(emptyState(t('noTopicsT'), t('noTopicsS'))); return; }
       var g2 = h('div', { class: 'grid' }); arr.forEach(function (tp) { g2.appendChild(topicCard(tp, homeCat)); }); list.appendChild(g2);
     }
   }
@@ -400,7 +442,7 @@ function pageTopic(id) {
   }, isSaved ? 'fill' : '');
   app.appendChild(topBar(L(tp.title), { right: bm }));
   var body = h('div', { class: 'wrap topic' });
-  body.appendChild(h('div', { class: 'muted', text: catLabel(tp.category) }));
+  body.appendChild(h('div', { class: 'muted', text: catLabelsOf(tp) }));
   (tp.sections || []).forEach(function (s) { body.appendChild(h('h3', { text: L(s.h) })); body.appendChild(h('p', { text: L(s.t) })); });
   body.appendChild(h('div', { class: 'disc', text: t('disclaimer') }));
   app.appendChild(body);
@@ -452,12 +494,53 @@ function pageList(type) {
     var cats = categoriesOf(type);
     chipsBox.appendChild(pill(t('all'), cat === 'all', function () { cat = 'all'; draw(); }));
     cats.forEach(function (c) { chipsBox.appendChild(pill(c.label + ' (' + c.count + ')', cat === c.id, function () { cat = c.id; draw(); })); });
-    var items = topicsOf(type).filter(function (tp) { return (cat === 'all' || catId(tp.category) === cat) && matches(tp, q); });
+    if (!topicsOf(type).length) { listBox.appendChild(emptyState(t('noTopicsT'), t('noTopicsS'))); chipsBox.innerHTML = ''; return; }
+    var items = topicsOf(type).filter(function (tp) { return (cat === 'all' || catIdsOf(tp).indexOf(cat) >= 0) && matches(tp, q); });
     if (!items.length) { listBox.appendChild(emptyState(t('noResults'), '')); return; }
-    items.forEach(function (tp) { listBox.appendChild(rowEl(null, L(tp.title), catLabel(tp.category), function () { go('topic-' + tp.id); })); });
+    items.forEach(function (tp) { listBox.appendChild(rowEl(null, L(tp.title), catLabelsOf(tp), function () { go('topic-' + tp.id); })); });
   }
   input.addEventListener('input', function () { q = input.value; draw(); });
   draw();
+}
+
+function pageDrugGroups() {
+  var app = document.getElementById('app'); app.innerHTML = ''; app.appendChild(topBar(t('catDrugs')));
+  var wrap = h('div', { class: 'wrap' });
+  var input = h('input', { class: 'input', type: 'text', placeholder: t('searchList'), autocomplete: 'off' });
+  wrap.appendChild(h('div', { class: 'search' }, [ic('search'), input]));
+  var box = h('div', { style: 'margin-top:14px' }); wrap.appendChild(box); app.appendChild(wrap);
+  function draw() {
+    box.innerHTML = ''; var q = input.value.trim();
+    if (!topicsOf('drugs').length) { box.appendChild(emptyState(t('noTopicsT'), t('noTopicsS'))); return; }
+    if (q) {
+      var items = topicsOf('drugs').filter(function (d) { return matches(d, q); });
+      if (!items.length) { box.appendChild(emptyState(t('noResults'), '')); return; }
+      items.forEach(function (d) { box.appendChild(rowEl(null, L(d.title), catLabelsOf(d), function () { go('topic-' + d.id); })); });
+      return;
+    }
+    var gs = drugGroups();
+    if (!gs.length) { var flat = topicsOf('drugs'); flat.forEach(function (d) { box.appendChild(rowEl(null, L(d.title), catLabelsOf(d), function () { go('topic-' + d.id); })); }); return; }
+    var g = h('div', { class: 'grid' });
+    gs.forEach(function (gr) { g.appendChild(h('button', { class: 'card', onclick: function () { go('drugs-g-' + gr.id); } }, [h('span', { text: gr.label }), h('small', { text: drugsCount(gr.count) })])); });
+    box.appendChild(g);
+  }
+  input.addEventListener('input', draw); draw();
+}
+function pageDrugGroup(gid) {
+  var gr = drugGroups().filter(function (x) { return x.id === gid; })[0];
+  var app = document.getElementById('app'); app.innerHTML = ''; app.appendChild(topBar(gr ? gr.label : t('catDrugs')));
+  var wrap = h('div', { class: 'wrap' });
+  if (!gr) wrap.appendChild(emptyState(t('noResults'), ''));
+  else gr.cats.forEach(function (c) { wrap.appendChild(rowEl(null, c.label, drugsCount(c.count), function () { go('drugs-c-' + c.id); })); });
+  app.appendChild(wrap);
+}
+function pageDrugCat(cid) {
+  var app = document.getElementById('app'); app.innerHTML = ''; app.appendChild(topBar(catLabel(cid)));
+  var wrap = h('div', { class: 'wrap' });
+  var items = topicsOf('drugs').filter(function (d) { return catIdsOf(d).indexOf(cid) >= 0; });
+  if (!items.length) wrap.appendChild(emptyState(t('noResults'), ''));
+  items.forEach(function (d) { wrap.appendChild(rowEl(null, L(d.title), catLabelsOf(d), function () { go('topic-' + d.id); })); });
+  app.appendChild(wrap);
 }
 
 /* drug search field with suggestions; returns {el, get, clear} */
@@ -695,7 +778,9 @@ function render() {
   else if (r === 'saved') pageSaved();
   else if (r === 'continue') pageContinue();
   else if (r === 'sections') pageSections();
-  else if (r === 'list-drugs') pageList('drugs');
+  else if (r === 'list-drugs') pageDrugGroups();
+  else if (r.indexOf('drugs-g-') === 0) pageDrugGroup(r.slice(8));
+  else if (r.indexOf('drugs-c-') === 0) pageDrugCat(r.slice(8));
   else if (r === 'list-diseases') pageList('diseases');
   else if (r === 'calc') pageCalc();
   else if (r === 'inter') pageInter();

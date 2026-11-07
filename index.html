@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0B1F3A">
+<title>كتاب الصيدلاني</title>
+<style>
+:root{--navy:#0B1F3A;--panel:#12294D;--gold:#D4AF37;--text:#F2E3A8;--muted:#B99A3E;--line:#3A4F73;--red:#F09595;--amber:#EF9F27;--green:#97C459}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;min-height:100%;background:var(--navy);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Arabic","Noto Naskh Arabic",sans-serif;font-size:16px;line-height:1.5}
+#app{min-height:100vh;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+.bar{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--gold);position:sticky;top:env(safe-area-inset-top,0);background:var(--navy);z-index:5}
+.bar h1{margin:0;font-size:19px;font-weight:600;color:var(--gold);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.icon{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;display:block}
+.icon.fill{fill:var(--gold)}
+[dir=ltr] .flip{transform:scaleX(-1)}
+.btn-i{background:none;border:0;padding:4px;cursor:pointer;display:flex;color:inherit}
+.wrap{padding:16px}
+.input{width:100%;height:46px;background:var(--panel);border:1px solid var(--gold);color:var(--text);border-radius:12px;padding:0 14px;font-size:16px;font-family:inherit;outline:none}
+.input::placeholder{color:var(--muted)}
+textarea.input{height:auto;min-height:200px;padding:12px;resize:vertical;line-height:1.6}
+.search{position:relative}
+.search .icon{position:absolute;inset-inline-start:12px;top:10px;width:22px;height:22px;pointer-events:none}
+.search .input{padding-inline-start:44px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.chip{border:1px solid var(--gold);background:transparent;color:var(--gold);border-radius:20px;padding:7px 14px;font-size:14px;font-family:inherit;cursor:pointer}
+.chip.on{background:var(--gold);color:var(--navy);font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.card{border:1px solid var(--gold);background:var(--panel);border-radius:12px;padding:14px;min-height:78px;cursor:pointer;display:flex;flex-direction:column;gap:6px;text-align:start;color:var(--text);font-family:inherit;font-size:15px;font-weight:600}
+.card small{color:var(--muted);font-size:12px;font-weight:400}
+.row{display:flex;align-items:center;gap:12px;border:1px solid var(--gold);background:var(--panel);border-radius:12px;padding:14px;margin-bottom:10px;cursor:pointer;color:var(--text);width:100%;font-family:inherit;font-size:16px;text-align:start}
+.row .t{flex:1;min-width:0}
+.row .t b{display:block;font-weight:600}
+.muted{color:var(--muted);font-size:13px}
+.primary{width:100%;background:var(--gold);color:var(--navy);border:0;border-radius:10px;padding:13px;font-size:16px;font-weight:600;cursor:pointer;font-family:inherit}
+.danger{width:100%;background:transparent;color:var(--red);border:1px solid var(--red);border-radius:10px;padding:12px;font-size:15px;cursor:pointer;font-family:inherit;margin-top:10px}
+.label{color:var(--gold);font-size:14px;margin:16px 0 6px}
+.badge{border:1px solid;border-radius:20px;padding:2px 12px;font-size:13px;white-space:nowrap}
+.empty{text-align:center;margin-top:60px;padding:0 20px}
+.empty b{display:block;font-size:17px;margin-bottom:8px}
+.err{color:var(--red);font-size:14px;margin-top:10px;text-align:center}
+.box{border:1px solid var(--gold);background:var(--panel);border-radius:12px;padding:16px;margin-top:16px}
+.kv{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:.5px solid var(--line)}
+.kv span:first-child{color:var(--muted);font-size:14px}
+.kv span:last-child{font-weight:600;text-align:end}
+.sug{padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);margin-top:4px;cursor:pointer}
+.topic h3{color:var(--gold);margin:20px 0 6px;font-size:17px}
+.topic p{margin:0;white-space:pre-wrap}
+.disc{color:var(--muted);font-size:12px;text-align:center;margin-top:28px}
+#drawer-wrap{position:fixed;inset:0;display:none;z-index:20}
+#drawer-wrap.open{display:flex}
+.drawer{width:82%;max-width:330px;background:var(--navy);border-inline-end:1px solid var(--gold);padding:calc(16px + env(safe-area-inset-top)) 14px calc(16px + env(safe-area-inset-bottom));overflow-y:auto;display:flex;flex-direction:column}
+.overlay{flex:1;background:rgba(0,0,0,.6)}
+.drawer .head{display:flex;align-items:center;gap:10px;color:var(--gold);font-size:18px;font-weight:600;padding-bottom:12px;border-bottom:1px solid var(--gold);margin-bottom:6px}
+.drawer .head img{width:34px;height:34px;border-radius:8px}
+.grp{border-bottom:.5px solid var(--line)}
+.ghd{display:flex;align-items:center;gap:10px;padding:12px 6px;color:var(--gold);font-weight:600;font-size:16px;cursor:pointer;background:none;border:0;width:100%;font-family:inherit;text-align:start}
+.ghd .t{flex:1}
+.gbody{padding-inline-start:24px;padding-bottom:6px}
+.item{display:flex;align-items:center;gap:10px;padding:10px 6px;color:var(--text);font-size:15px;cursor:pointer;background:none;border:0;width:100%;font-family:inherit;text-align:start}
+.item .icon{width:22px;height:22px}
+.pills{display:flex;gap:8px;padding:2px 6px 12px;flex-wrap:wrap}
+.drawer .ver{margin-top:auto;padding-top:16px;color:var(--muted);font-size:12px;text-align:center}
+#splash{position:fixed;inset:0;background:#000;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;transition:opacity .4s}
+#splash img{width:150px;height:150px}
+#splash div{color:var(--gold);font-size:22px;font-weight:600}
+#splash.hide{opacity:0;pointer-events:none}
+#toast{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom));inset-inline:16px;background:var(--panel);border:1px solid var(--gold);color:var(--text);border-radius:12px;padding:12px 16px;text-align:center;z-index:40;display:none}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:45;display:flex;align-items:center;justify-content:center;padding:24px}
+.modal .box{margin:0;width:100%;max-width:360px;background:var(--navy)}
+.modal .box p{margin:0 0 16px}
+</style>
+</head>
+<body>
+<div id="splash"><img src="logo.png" alt=""><div>كتاب الصيدلاني</div></div>
+<div id="app"></div>
+<div id="drawer-wrap"></div>
+<div id="toast"></div>
+<script>
+(function () {
+'use strict';
+
+/* ======= Settings you may change ======= */
+var APP_VERSION = '1.0.0';
+var DATA_URL = 'https://raw.githubusercontent.com/abdalqaderm323-design/pharmacist-book-app/main/data.json';
+/* ======================================== */
+
+var STR = {
+  ar: {
+    appName: 'كتاب الصيدلاني', searchPh: 'ابحث عن دواء أو مرض', catDose: 'حساب الجرعات', catInter: 'التداخلات الدوائية',
+    catDrugs: 'الأدوية', catDiseases: 'الأمراض', catNotes: 'إضافات', lib: 'مكتبتي', saved: 'المحفوظات', cont: 'متابعة القراءة',
+    sections: 'الأقسام', lang: 'اللغة', update: 'تحديث', noResults: 'لا توجد نتائج', openCalc: 'فتح حاسبة الجرعات', openInter: 'فتح فاحص التداخلات',
+    savedEmptyT: 'ابدأ بحفظ أول موضوع', savedEmptyS: 'اضغط على علامة الحفظ داخل أي موضوع وبيرجع هنا.',
+    contEmptyT: 'ما قريت أي موضوع بعد', contEmptyS: 'افتح أي موضوع وبيظهر هنا آخر موضوع قريته.',
+    lastRead: 'آخر موضوع قريته', continueBtn: 'تابع القراءة', topicsWord: 'مواضيع', notesSub: 'ملاحظاتك الخاصة',
+    notesEmptyT: 'اكتب ملاحظتك الأولى', notesEmptyS: 'تنحفظ على موبايلك فقط.', newNote: 'ملاحظة جديدة', noteTitle: 'العنوان', noteBody: 'اكتب ملاحظاتك هنا',
+    save: 'حفظ', del: 'حذف الملاحظة', drug1: 'الدواء الأول', drug2: 'الدواء الثاني', drugPh: 'ابحث عن دواء', check: 'افحص',
+    pickBoth: 'اختار الدواءين أولاً', levelLabel: 'مستوى التداخل', severe: 'شديد', moderate: 'متوسط', minor: 'بسيط',
+    noInter: 'ما لگينا تداخل مسجل بين الدواءين', noInterNote: 'هذا لا يعني أنه ما في تداخل. راجع مصدرك قبل أي قرار.', recLabel: 'التوصية',
+    drugName: 'اسم الدواء', pickDrugFirst: 'اختار الدواء أولاً', doseForm: 'اختيار الجرعة (الشكل والتركيز)', age: 'العمر (سنة)', sex: 'الجنس',
+    male: 'ذكر', female: 'أنثى', weight: 'الوزن (كغم)', calc: 'احسب', pickDrugForm: 'اختار الدواء والجرعة أولاً', badAge: 'اكتب عمراً صحيحاً',
+    pickSex: 'اختار الجنس', badWt: 'اكتب وزناً صحيحاً', recDose: 'الجرعة الموصى بها', perDose: 'ملغم للجرعة الواحدة', timesDay: 'عدد المرات باليوم',
+    times: 'مرات', maxDaily: 'الحد الأقصى اليومي', mgDay: 'ملغم', recs: 'التوصيات', ageWarn: 'هذا الشكل غير مسجل للفئة العمرية المدخلة. استشر الصيدلي أو الطبيب.',
+    noDoseData: 'لا توجد بيانات جرعات بعد', disclaimer: 'للتعليم فقط ولا يغني عن استشارة الصيدلي أو الطبيب.',
+    updChecking: 'جاري التحقق من التحديثات...', updOk: 'تم تحديث المعلومات', updLatest: 'أنت على آخر نسخة', updOffline: 'تحتاج اتصال بالإنترنت للتحديث',
+    updNewApp: 'يوجد تحديث جديد للتطبيق', updDownload: 'تنزيل التحديث', updCfg: 'رابط التحديث غير مضبوط بعد', close: 'إغلاق',
+    noData: 'تعذر تحميل بيانات التطبيق', backLbl: 'رجوع', menuLbl: 'القائمة', removeSaved: 'إزالة من المحفوظات', addSaved: 'حفظ الموضوع', version: 'النسخة', dataV: 'المعلومات'
+  },
+  en: {
+    appName: "The Pharmacist's Book", searchPh: 'Search for a drug or disease', catDose: 'Dose Calculator', catInter: 'Drug Interactions',
+    catDrugs: 'Drugs', catDiseases: 'Diseases', catNotes: 'My Additions', lib: 'My Library', saved: 'Saved', cont: 'Continue Reading',
+    sections: 'Sections', lang: 'Language', update: 'Update', noResults: 'No results', openCalc: 'Open dose calculator', openInter: 'Open interaction checker',
+    savedEmptyT: 'Save your first topic', savedEmptyS: 'Tap the bookmark inside any topic and it will show up here.',
+    contEmptyT: "You haven't read anything yet", contEmptyS: 'Open any topic and your last read topic will appear here.',
+    lastRead: 'Last topic you read', continueBtn: 'Continue reading', topicsWord: 'topics', notesSub: 'Your own notes',
+    notesEmptyT: 'Write your first note', notesEmptyS: 'Notes stay on your phone only.', newNote: 'New note', noteTitle: 'Title', noteBody: 'Write your notes here',
+    save: 'Save', del: 'Delete note', drug1: 'First drug', drug2: 'Second drug', drugPh: 'Search for a drug', check: 'Check',
+    pickBoth: 'Pick both drugs first', levelLabel: 'Interaction level', severe: 'Severe', moderate: 'Moderate', minor: 'Minor',
+    noInter: 'No recorded interaction between these drugs', noInterNote: 'This does not mean there is none. Check your reference before any decision.', recLabel: 'Recommendation',
+    drugName: 'Drug name', pickDrugFirst: 'Pick a drug first', doseForm: 'Dose option (form and strength)', age: 'Age (years)', sex: 'Sex',
+    male: 'Male', female: 'Female', weight: 'Weight (kg)', calc: 'Calculate', pickDrugForm: 'Pick the drug and its form first', badAge: 'Enter a valid age',
+    pickSex: 'Pick the sex', badWt: 'Enter a valid weight', recDose: 'Recommended dose', perDose: 'mg per dose', timesDay: 'Times per day',
+    times: 'times', maxDaily: 'Maximum per day', mgDay: 'mg', recs: 'Recommendations', ageWarn: 'This form is not listed for the entered age group. Ask a pharmacist or doctor.',
+    noDoseData: 'No dose data yet', disclaimer: 'For education only. It does not replace advice from a pharmacist or doctor.',
+    updChecking: 'Checking for updates...', updOk: 'Information updated', updLatest: 'You are on the latest version', updOffline: 'You need an internet connection to update',
+    updNewApp: 'A new app update is available', updDownload: 'Download update', updCfg: 'The update link is not set yet', close: 'Close',
+    noData: 'Could not load app data', backLbl: 'Back', menuLbl: 'Menu', removeSaved: 'Remove from saved', addSaved: 'Save topic', version: 'Version', dataV: 'Data'
+  }
+};
+
+var ICONS = {
+  menu: '<path d="M4 6h16M4 12h16M4 18h16"/>',
+  search: '<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>',
+  back: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+  chev: '<path d="M15 6l-6 6 6 6"/>',
+  down: '<path d="M6 9l6 6 6-6"/>',
+  bookmark: '<path d="M7 4h10a1 1 0 011 1v15l-6-4-6 4V5a1 1 0 011-1z"/>',
+  lib: '<path d="M4 5h4v14H4zM10 5h4v14h-4zM16 6l4 1-3 12-4-1z"/>',
+  cat: '<rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/>',
+  lang: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',
+  refresh: '<path d="M20 11a8 8 0 10-2.3 5.7M20 4v7h-7"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  calc: '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/>',
+  inter: '<path d="M7 8h13M16 4l4 4-4 4M17 16H4M8 12l-4 4 4 4"/>',
+  pill: '<path d="M10.5 20.5l-7-7a4.9 4.9 0 017-7l7 7a4.9 4.9 0 01-7 7zM8.5 8.5l7 7"/>',
+  heart: '<path d="M12 20s-7-4.6-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.4-7 10-7 10z"/>',
+  note: '<path d="M4 20h4L19 9l-4-4L4 16v4zM13.5 6.5l4 4"/>',
+  plus: '<path d="M12 5v14M5 12h14"/>'
+};
+
+/* ---------- helpers ---------- */
+function store(k, d) { try { var v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } }
+function put(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+function h(tag, attrs, kids) {
+  var e = document.createElement(tag);
+  if (attrs) Object.keys(attrs).forEach(function (k) {
+    var v = attrs[k];
+    if (k === 'class') e.className = v;
+    else if (k === 'text') e.textContent = v;
+    else if (k.indexOf('on') === 0) e.addEventListener(k.slice(2), v);
+    else e.setAttribute(k, v);
+  });
+  (kids || []).forEach(function (c) { if (c) e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
+  return e;
+}
+function ic(name, cls) {
+  var s = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  s.setAttribute('viewBox', '0 0 24 24'); s.setAttribute('class', 'icon ' + (cls || '')); s.setAttribute('aria-hidden', 'true');
+  s.innerHTML = ICONS[name];
+  return s;
+}
+function btnI(name, label, fn, cls) { return h('button', { class: 'btn-i', 'aria-label': label, onclick: fn }, [ic(name, cls)]); }
+
+var lang = store('lang', 'ar');
+if (lang !== 'ar' && lang !== 'en') lang = 'ar';
+function t(k) { return STR[lang][k] || STR.en[k] || k; }
+function L(o) { if (!o) return ''; if (typeof o === 'string') return o; return o[lang] || o.en || o.ar || ''; }
+function norm(s) { return String(s || '').toLowerCase(); }
+function go(hash) { if (location.hash === '#' + hash) render(); else location.hash = hash; }
+
+var DATA = null;
+var saved = store('saved', []);
+var last = store('last', null);
+var notes = store('notes', []);
+var homeCat = 'diseases';
+var homeQ = '';
+var openGroups = { lib: true, sec: true };
+
+function toast(msg) {
+  var el = document.getElementById('toast'); el.textContent = msg; el.style.display = 'block';
+  clearTimeout(toast._t); toast._t = setTimeout(function () { el.style.display = 'none'; }, 2800);
+}
+
+/* ---------- data ---------- */
+function topicsOf(type) { return ((DATA.topics || {})[type] || []).slice().sort(function (a, b) { return (a.rank || 999) - (b.rank || 999); }); }
+function findTopic(id) {
+  var types = ['drugs', 'diseases'];
+  for (var i = 0; i < types.length; i++) {
+    var arr = (DATA.topics || {})[types[i]] || [];
+    for (var j = 0; j < arr.length; j++) if (arr[j].id === id) return { topic: arr[j], type: types[i] };
+  }
+  return null;
+}
+function typeLabel(type) { return type === 'drugs' ? t('catDrugs') : t('catDiseases'); }
+function matches(topic, q) {
+  q = norm(q.trim()); if (!q) return true;
+  return norm(topic.title && topic.title.en).indexOf(q) >= 0 || norm(topic.title && topic.title.ar).indexOf(q) >= 0;
+}
+function loadData(done) {
+  function pick(bundled) {
+    var ov = store('dataOverride', null);
+    DATA = (ov && ov.dataVersion > (bundled.dataVersion || 0)) ? ov : bundled;
+    done();
+  }
+  if (window.__DATA__) { pick(window.__DATA__); return; }
+  fetch('data.json').then(function (r) { return r.json(); }).then(pick).catch(function () {
+    var ov = store('dataOverride', null);
+    if (ov) { DATA = ov; done(); } else { document.getElementById('app').textContent = t('noData'); hideSplash(); }
+  });
+}
+
+/* ---------- layout pieces ---------- */
+function topBar(title, opts) {
+  opts = opts || {};
+  var kids = [];
+  if (opts.home) kids.push(btnI('menu', t('menuLbl'), openDrawer));
+  else kids.push(btnI('back', t('backLbl'), function () { if (history.length > 1) history.back(); else go('home'); }, 'flip'));
+  kids.push(h('h1', { text: title }));
+  if (opts.right) kids.push(opts.right);
+  return h('div', { class: 'bar' }, kids);
+}
+function emptyState(a, b) { return h('div', { class: 'empty' }, [h('b', { text: a }), h('div', { class: 'muted', text: b })]); }
+function rowEl(iconName, title, sub, fn) {
+  var kids = [];
+  if (iconName) kids.push(ic(iconName));
+  kids.push(h('div', { class: 't' }, [h('b', { text: title }), sub ? h('div', { class: 'muted', text: sub }) : null]));
+  kids.push(ic('chev', 'flip'));
+  return h('button', { class: 'row', onclick: fn }, kids);
+}
+function topicCard(topic, type) {
+  return h('button', { class: 'card', onclick: function () { go('topic-' + topic.id); } }, [h('span', { text: L(topic.title) }), h('small', { text: typeLabel(type) })]);
+}
+function pill(text, on, fn) { return h('button', { class: 'chip' + (on ? ' on' : ''), text: text, onclick: fn }); }
+function field(label) { return h('div', null, [h('div', { class: 'label', text: label })]); }
+
+/* ---------- drawer ---------- */
+function openDrawer() { buildDrawer(); document.getElementById('drawer-wrap').classList.add('open'); }
+function closeDrawer() { document.getElementById('drawer-wrap').classList.remove('open'); }
+function nav(hash) { closeDrawer(); go(hash); }
+function buildDrawer() {
+  var w = document.getElementById('drawer-wrap'); w.innerHTML = '';
+  var d = h('div', { class: 'drawer' });
+  d.appendChild(h('div', { class: 'head' }, [h('img', { src: 'logo.png', alt: '' }), h('span', { text: t('appName') })]));
+  function group(key, icon, title, items) {
+    var body = h('div', { class: 'gbody' }); body.style.display = openGroups[key] ? 'block' : 'none';
+    items.forEach(function (it) { body.appendChild(h('button', { class: 'item', onclick: function () { nav(it[2]); } }, [ic(it[0]), h('span', { text: it[1] })])); });
+    var chev = ic('down');
+    var hd = h('button', { class: 'ghd', onclick: function () {
+      openGroups[key] = !openGroups[key]; body.style.display = openGroups[key] ? 'block' : 'none'; chev.style.transform = openGroups[key] ? '' : 'rotate(90deg)';
+    } }, [ic(icon), h('span', { class: 't', text: title }), chev]);
+    if (!openGroups[key]) chev.style.transform = 'rotate(90deg)';
+    d.appendChild(h('div', { class: 'grp' }, [hd, body]));
+  }
+  group('lib', 'lib', t('lib'), [['bookmark', t('saved'), 'saved'], ['clock', t('cont'), 'continue']]);
+  group('sec', 'cat', t('sections'), [['calc', t('catDose'), 'calc'], ['inter', t('catInter'), 'inter'], ['pill', t('catDrugs'), 'list-drugs'], ['heart', t('catDiseases'), 'list-diseases'], ['note', t('catNotes'), 'notes']]);
+  d.appendChild(h('div', { class: 'ghd' }, [ic('lang'), h('span', { class: 't', text: t('lang') })]));
+  d.appendChild(h('div', { class: 'pills' }, [
+    pill('عربي', lang === 'ar', function () { setLang('ar'); }),
+    pill('English', lang === 'en', function () { setLang('en'); })
+  ]));
+  d.appendChild(h('button', { class: 'ghd', onclick: function () { closeDrawer(); doUpdate(); } }, [ic('refresh'), h('span', { class: 't', text: t('update') })]));
+  d.appendChild(h('div', { class: 'ver', text: t('version') + ' ' + APP_VERSION + ' · ' + t('dataV') + ' ' + (DATA ? DATA.dataVersion : '-') }));
+  w.appendChild(d);
+  w.appendChild(h('div', { class: 'overlay', onclick: closeDrawer }));
+}
+function setLang(l) {
+  lang = l; put('lang', l); applyLang(); buildDrawer(); render();
+}
+function applyLang() {
+  document.documentElement.lang = lang; document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  document.title = t('appName'); document.querySelector('#splash div').textContent = t('appName');
+}
+
+/* ---------- pages ---------- */
+function pageHome() {
+  var app = document.getElementById('app'); app.innerHTML = '';
+  app.appendChild(topBar(t('appName'), { home: true }));
+  var wrap = h('div', { class: 'wrap' });
+  var input = h('input', { class: 'input', type: 'text', placeholder: t('searchPh'), autocomplete: 'off', value: homeQ });
+  input.value = homeQ;
+  wrap.appendChild(h('div', { class: 'search' }, [ic('search'), input]));
+  var chipsBox = h('div', { class: 'chips' }); var list = h('div');
+  wrap.appendChild(chipsBox); wrap.appendChild(list); app.appendChild(wrap);
+  function draw() {
+    chipsBox.innerHTML = ''; list.innerHTML = '';
+    [['dose', t('catDose')], ['inter', t('catInter')], ['drugs', t('catDrugs')], ['diseases', t('catDiseases')]].forEach(function (c) {
+      chipsBox.appendChild(pill(c[1], !homeQ.trim() && homeCat === c[0], function () { homeCat = c[0]; homeQ = ''; input.value = ''; draw(); }));
+    });
+    var q = homeQ.trim();
+    if (q) {
+      var found = [];
+      ['drugs', 'diseases'].forEach(function (ty) { topicsOf(ty).forEach(function (tp) { if (matches(tp, q)) found.push([tp, ty]); }); });
+      if (!found.length) { list.appendChild(h('div', { class: 'empty muted', text: t('noResults') })); return; }
+      var g = h('div', { class: 'grid' }); found.forEach(function (f) { g.appendChild(topicCard(f[0], f[1])); }); list.appendChild(g);
+    } else if (homeCat === 'dose') {
+      list.appendChild(rowEl('calc', t('openCalc'), '', function () { go('calc'); }));
+    } else if (homeCat === 'inter') {
+      list.appendChild(rowEl('inter', t('openInter'), '', function () { go('inter'); }));
+    } else {
+      var arr = topicsOf(homeCat);
+      if (!arr.length) { list.appendChild(h('div', { class: 'empty muted', text: t('noResults') })); return; }
+      var g2 = h('div', { class: 'grid' }); arr.forEach(function (tp) { g2.appendChild(topicCard(tp, homeCat)); }); list.appendChild(g2);
+    }
+  }
+  input.addEventListener('input', function () { homeQ = input.value; draw(); });
+  draw();
+}
+
+function pageTopic(id) {
+  var found = findTopic(id); var app = document.getElementById('app'); app.innerHTML = '';
+  if (!found) { app.appendChild(topBar('')); app.appendChild(h('div', { class: 'wrap' }, [emptyState(t('noResults'), '')])); return; }
+  last = id; put('last', id);
+  var tp = found.topic;
+  var isSaved = saved.indexOf(id) >= 0;
+  var bm = btnI('bookmark', isSaved ? t('removeSaved') : t('addSaved'), function () {
+    var i = saved.indexOf(id); if (i >= 0) saved.splice(i, 1); else saved.push(id); put('saved', saved); pageTopic(id);
+  }, isSaved ? 'fill' : '');
+  app.appendChild(topBar(L(tp.title), { right: bm }));
+  var body = h('div', { class: 'wrap topic' });
+  (tp.sections || []).forEach(function (s) { body.appendChild(h('h3', { text: L(s.h) })); body.appendChild(h('p', { text: L(s.t) })); });
+  body.appendChild(h('div', { class: 'disc', text: t('disclaimer') }));
+  app.appendChild(body);
+}
+
+function pageSaved() {
+  var app = document.getElementById('app'); app.innerHTML = ''; app.appendChild(topBar(t('saved')));
+  var wrap = h('div', { class: 'wrap' });
+  var items = saved.map(findTopic).filter(Boolean);
+  if (!items.length) wrap.appendChild(emptyState(t('savedEmptyT'), t('savedEmptyS')));
+  items.forEach(function (f) {
+    var rm = btnI('bookmark', t('removeSaved'), function (ev) { ev.stopPropagation(); saved.splice(saved.indexOf(f.topic.id), 1); put('saved', saved); pageSaved(); }, 'fill');
+    wrap.appendChild(h('div', { class: 'row', onclick: function () { go('topic-' + f.topic.id); } }, [
+      h('div', { class: 't' }, [h('b', { text: L(f.topic.title) }), h('div', { class: 'muted', text: typeLabel(f.type) })]), rm]));
+  });
+  app.appendChild(wrap);
+}
+
+function pageContinue() {
+  var app = document.getElementById('app'); app.innerHTML = ''; app.appendChild(topBar(t('cont')));
+  var wrap = h('div', { class: 'wrap' }); var f = last ? findTopic(last) : null;
+  if (!f) wrap.appendChild(emptyState(t('contEmptyT'), t('contEmptyS')));
+  else wrap.appendChild(h('div', { class: 'box' }, [
+    h('div', { class: 'muted', text: t('lastRead') }), h('div', { style: 'font-size:19px;font-weight:600;margin:8px 0 2px', text: L(f.topic.title) }),
+    h('div', { class: 'muted', style: 'margin-bottom:16px', text: typeLabel(f.type) }),
+    h('button', { class: 'primary', text: t('continueBtn'), onclick: function () { go('topic-' + f.topic.id); } })]));
+  app.appendChild(wrap);
+}
+
+function pageSections() {
+  var app = document.getElementById('app'); app.innerHTML = ''; app.appendChild(topBar(t('sections')));
+  var wrap = h('div', { class: 'wrap' });
+  wrap.appendChild(rowEl('calc', t('catDose'), '', function () { go('calc'); }));
+  wrap.appendChild(rowEl('inter', t('catInter'), '', function () { go('inter'); }));
+  wrap.appendChild(rowEl('pill', t('catDrugs'), topicsOf('drugs').length + ' ' + t('topicsWord'), function () { go('list-drugs'); }));
+  wrap.appendChild(rowEl('heart', t('catDiseases'), topicsOf('diseases').length + ' ' + t('topicsWord'), function () { go('list-diseases'); }));
+  wrap.appendChild(rowEl('note', t('catNotes'), t('notesSub'), function () { go('notes'); }));
+  app.appendChild(wrap);
+}
+
+function pageList(type) {
+  var app = document.getElementById('app'); app.innerHTML = ''; app.appendChild(topBar(typeLabel(type)));
+  var wrap = h('div', { class: 'wrap' }); var arr = topicsOf(type);
+  if (!arr.length) wrap.appendChild(emptyState(t('noResults'), ''));
+  arr.forEach(function (tp) { wrap.appendChild(rowEl(null, L(tp.title), '', function () { go('topic-' + tp.id); })); });
+  app.appendChild(wrap);
+}
+
+/* drug search field with suggestions; returns {el, get, clear} */
+function drugField(label, pool, onChange) {
+  var cur = null; var input = h('input', { class: 'input', type: 'text', placeholder: t('drugPh'), autocomplete: 'off' });
+  var sug = h('div'); var wrap = field(label);
+  wrap.appendChild(h('div', { class: 'search' }, [ic('search'), input])); wrap.appendChild(sug);
+  function show(all) {
+    sug.innerHTML = ''; var q = input.value.trim(); if (!q && !all) return;
+    pool().forEach(function (d) { if (q && !matches(d, q)) return;
+      sug.appendChild(h('div', { class: 'sug', text: L(d.title), onclick: function () { cur = d; input.value = L(d.title); sug.innerHTML = ''; onChange(); } })); });
+  }
+  input.addEventListener('input', function () { cur = null; onChange(); show(false); });
+  input.addEventListener('focus', function () { show(true); });
+  return { el: wrap, get: function () { return cur; }, hideSug: function () { sug.innerHTML = ''; } };
+}
+
+function pageInter() {
+  var app = document.getElementById('app'); app.innerHTML = ''; app.appendChild(topBar(t('catInter')));
+  var wrap = h('div', { class: 'wrap' }); var out = h('div'); var err = h('div', { class: 'err' });
+  function clear() { out.innerHTML = ''; err.textContent = ''; }
+  var all = function () { return topicsOf('drugs'); };
+  var f1 = drugField(t('drug1'), all, clear), f2 = drugField(t('drug2'), all, clear);
+  wrap.appendChild(f1.el); wrap.appendChild(f2.el);
+  wrap.appendChild(h('div', { style: 'height:16px' }));
+  wrap.appendChild(h('button', { class: 'primary', text: t('check'), onclick: function () {
+    clear(); var a = f1.get(), b = f2.get();
+    if (!a || !b) { err.textContent = t('pickBoth'); return; }
+    f1.hideSug(); f2.hideSug();
+    var hit = null; (DATA.interactions || []).forEach(function (it) { if ((it.a === a.id && it.b === b.id) || (it.a === b.id && it.b === a.id)) hit = it; });
+    if (!hit) { out.appendChild(h('div', { class: 'box' }, [h('b', { text: t('noInter') }), h('div', { class: 'muted', style: 'margin-top:6px', text: t('noInterNote') })])); return; }
+    var col = hit.level === 'severe' ? 'var(--red)' : hit.level === 'moderate' ? 'var(--amber)' : 'var(--green)';
+    var badge = h('span', { class: 'badge', text: t(hit.level) }); badge.style.color = col; badge.style.borderColor = col;
+    var box = h('div', { class: 'box' }, [
+      h('div', { style: 'display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px' }, [h('span', { class: 'muted', text: t('levelLabel') }), badge]),
+      h('p', { style: 'margin:0 0 10px', text: L(hit.desc) })]);
+    if (hit.rec) { box.appendChild(h('div', { class: 'muted', text: t('recLabel') })); box.appendChild(h('p', { style: 'margin:4px 0 0', text: L(hit.rec) })); }
+    box.style.borderColor = col; out.appendChild(box);
+  } }));
+  wrap.appendChild(err); wrap.appendChild(out); wrap.appendChild(h('div', { class: 'disc', text: t('disclaimer') })); app.appendChild(wrap);
+}
+
+function pageCalc() {
+  var app = document.getElementById('app'); app.innerHTML = ''; app.appendChild(topBar(t('catDose')));
+  var wrap = h('div', { class: 'wrap' }); var out = h('div'); var err = h('div', { class: 'err' });
+  var doses = DATA.doses || []; var form = null, sex = null;
+  function clear() { out.innerHTML = ''; err.textContent = ''; }
+  function pool() { return doses.map(function (d) { var f = findTopic(d.drug); return f ? f.topic : null; }).filter(Boolean); }
+  var formsBox = h('div', { class: 'chips', style: 'margin:0' }); var sexBox = h('div', { class: 'chips', style: 'margin:0' });
+  var drugF = drugField(t('drugName'), pool, function () { form = null; clear(); drawForms(); });
+  function curDose() { var d = drugF.get(); if (!d) return null; for (var i = 0; i < doses.length; i++) if (doses[i].drug === d.id) return doses[i]; return null; }
+  function drawForms() {
+    formsBox.innerHTML = ''; var cd = curDose();
+    if (!cd) { formsBox.appendChild(h('span', { class: 'muted', text: t('pickDrugFirst') })); return; }
+    cd.forms.forEach(function (f) { formsBox.appendChild(pill(L(f.label), form === f, function () { form = f; clear(); drawForms(); })); });
+  }
+  function drawSex() { sexBox.innerHTML = ''; [['m', t('male')], ['f', t('female')]].forEach(function (s) { sexBox.appendChild(pill(s[1], sex === s[0], function () { sex = s[0]; clear(); drawSex(); })); }); }
+  var ageIn = h('input', { class: 'input', type: 'number', inputmode: 'decimal', placeholder: '30', min: '0' });
+  var wtIn = h('input', { class: 'input', type: 'number', inputmode: 'decimal', placeholder: '70', min: '0' });
+  ageIn.addEventListener('input', clear); wtIn.addEventListener('input', clear);
+  wrap.appendChild(drugF.el);
+  var w2 = field(t('doseForm')); w2.appendChild(formsBox); wrap.appendChild(w2);
+  var w3 = field(t('age')); w3.appendChild(ageIn); wrap.appendChild(w3);
+  var w4 = field(t('sex')); w4.appendChild(sexBox); wrap.appendChild(w4);
+  var w5 = field(t('weight')); w5.appendChild(wtIn); wrap.appendChild(w5);
+  wrap.appendChild(h('div', { style: 'height:16px' }));
+  wrap.appendChild(h('button', { class: 'primary', text: t('calc'), onclick: function () {
+    clear(); var cd = curDose(); var age = parseFloat(ageIn.value), wt = parseFloat(wtIn.value);
+    if (!cd || !form) { err.textContent = t('pickDrugForm'); return; }
+    if (!(age >= 0 && age <= 120)) { err.textContent = t('badAge'); return; }
+    if (!sex) { err.textContent = t('pickSex'); return; }
+    if (!(wt >= 1 && wt <= 300)) { err.textContent = t('badWt'); return; }
+    drugF.hideSug();
+    var box = h('div', { class: 'box' });
+    var okAge = age >= (form.minAge || 0) && age <= (form.maxAge === undefined ? 120 : form.maxAge);
+    if (!okAge) { box.appendChild(h('p', { style: 'margin:0;color:var(--amber)', text: t('ageWarn') })); out.appendChild(box); return; }
+    var dose = form.method === 'perKg' ? wt * form.perKg : form.fixed;
+    if (form.maxSingle && dose > form.maxSingle) dose = form.maxSingle;
+    dose = Math.round(dose * 10) / 10;
+    box.appendChild(h('div', { class: 'kv' }, [h('span', { text: t('recDose') }), h('span', { text: dose + ' ' + t('perDose') })]));
+    box.appendChild(h('div', { class: 'kv' }, [h('span', { text: t('timesDay') }), h('span', { text: form.timesPerDay + ' ' + t('times') })]));
+    if (form.maxDaily) box.appendChild(h('div', { class: 'kv' }, [h('span', { text: t('maxDaily') }), h('span', { text: form.maxDaily + ' ' + t('mgDay') })]));
+    var rl = cd.recs && (cd.recs[lang] || cd.recs.en || cd.recs.ar);
+    if (rl && rl.length) { box.appendChild(h('div', { class: 'label', text: t('recs') })); rl.forEach(function (r) { box.appendChild(h('p', { style: 'margin:0 0 6px', text: '• ' + r })); }); }
+    out.appendChild(box);
+  } }));
+  wrap.appendChild(err); wrap.appendChild(out); wrap.appendChild(h('div', { class: 'disc', text: t('disclaimer') }));
+  if (!doses.length) wrap.insertBefore(h('div', { class: 'empty muted', text: t('noDoseData') }), wrap.firstChild);
+  drawForms(); drawSex(); app.appendChild(wrap);
+}
+
+function pageNotes() {
+  var app = document.getElementById('app'); app.innerHTML = '';
+  app.appendChild(topBar(t('catNotes'), { right: btnI('plus', t('newNote'), function () { go('note-new'); }) }));
+  var wrap = h('div', { class: 'wrap' });
+  if (!notes.length) wrap.appendChild(emptyState(t('notesEmptyT'), t('notesEmptyS')));
+  notes.slice().sort(function (a, b) { return b.ts - a.ts; }).forEach(function (n) {
+    var date = new Date(n.ts).toLocaleDateString(lang === 'ar' ? 'ar-IQ' : 'en-GB');
+    wrap.appendChild(rowEl(null, n.title || t('newNote'), (n.body || '').slice(0, 60) + ' · ' + date, function () { go('note-' + n.id); }));
+  });
+  app.appendChild(wrap);
+}
+
+function pageNote(id) {
+  var n = null; if (id !== 'new') notes.forEach(function (x) { if (x.id === id) n = x; });
+  var app = document.getElementById('app'); app.innerHTML = ''; app.appendChild(topBar(t('catNotes')));
+  var wrap = h('div', { class: 'wrap' });
+  var ti = h('input', { class: 'input', type: 'text', placeholder: t('noteTitle') }); ti.value = n ? n.title : '';
+  var bo = h('textarea', { class: 'input', placeholder: t('noteBody') }); bo.value = n ? n.body : '';
+  wrap.appendChild(ti); wrap.appendChild(h('div', { style: 'height:12px' })); wrap.appendChild(bo); wrap.appendChild(h('div', { style: 'height:14px' }));
+  wrap.appendChild(h('button', { class: 'primary', text: t('save'), onclick: function () {
+    var title = ti.value.trim(), body = bo.value.trim();
+    if (!title && !body) { go('notes'); return; }
+    if (n) { n.title = title; n.body = body; n.ts = Date.now(); }
+    else notes.push({ id: 'n' + Date.now(), title: title, body: body, ts: Date.now() });
+    put('notes', notes); go('notes');
+  } }));
+  if (n) wrap.appendChild(h('button', { class: 'danger', text: t('del'), onclick: function () {
+    notes = notes.filter(function (x) { return x.id !== n.id; }); put('notes', notes); go('notes');
+  } }));
+  app.appendChild(wrap);
+}
+
+/* ---------- update ---------- */
+function verNum(v) { return String(v || '0').split('.').map(function (x) { return parseInt(x, 10) || 0; }); }
+function newer(a, b) { var x = verNum(a), y = verNum(b); for (var i = 0; i < 3; i++) { if ((x[i] || 0) > (y[i] || 0)) return true; if ((x[i] || 0) < (y[i] || 0)) return false; } return false; }
+function modal(msg, btnText, fn) {
+  var m = h('div', { class: 'modal' }, [h('div', { class: 'box' }, [h('p', { text: msg }),
+    btnText ? h('button', { class: 'primary', text: btnText, onclick: function () { fn(); } }) : null,
+    h('button', { class: 'danger', style: 'border-color:var(--gold);color:var(--gold)', text: t('close'), onclick: function () { m.remove(); } })])]);
+  document.body.appendChild(m);
+}
+function doUpdate() {
+  if (DATA_URL.indexOf('YOUR-USERNAME') >= 0) { toast(t('updCfg')); return; }
+  toast(t('updChecking'));
+  var ctl = new AbortController(); var to = setTimeout(function () { ctl.abort(); }, 12000);
+  fetch(DATA_URL + '?t=' + Date.now(), { signal: ctl.signal, cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('http'); return r.json(); })
+    .then(function (remote) {
+      clearTimeout(to);
+      if (!remote || typeof remote.dataVersion !== 'number' || !remote.topics) throw new Error('bad');
+      if (remote.dataVersion > DATA.dataVersion) { put('dataOverride', remote); DATA = remote; toast(t('updOk')); render(); return; }
+      if (remote.app && remote.app.apkUrl && newer(remote.app.latestVersion, APP_VERSION)) {
+        modal(t('updNewApp'), t('updDownload'), function () { window.open(remote.app.apkUrl, '_blank'); }); return;
+      }
+      toast(t('updLatest'));
+    })
+    .catch(function () { clearTimeout(to); toast(t('updOffline')); });
+}
+
+/* ---------- router ---------- */
+function render() {
+  if (!DATA) return;
+  closeDrawer();
+  var r = location.hash.replace('#', '') || 'home';
+  if (r === 'home') pageHome();
+  else if (r === 'saved') pageSaved();
+  else if (r === 'continue') pageContinue();
+  else if (r === 'sections') pageSections();
+  else if (r === 'list-drugs') pageList('drugs');
+  else if (r === 'list-diseases') pageList('diseases');
+  else if (r === 'calc') pageCalc();
+  else if (r === 'inter') pageInter();
+  else if (r === 'notes') pageNotes();
+  else if (r.indexOf('note-') === 0) pageNote(r.slice(5));
+  else if (r.indexOf('topic-') === 0) pageTopic(r.slice(6));
+  else pageHome();
+  window.scrollTo(0, 0);
+}
+function hideSplash() { var s = document.getElementById('splash'); s.classList.add('hide'); setTimeout(function () { s.style.display = 'none'; }, 500); }
+
+window.addEventListener('hashchange', render);
+applyLang();
+loadData(function () { render(); setTimeout(hideSplash, 900); });
+})();
+</script>
+</body>
+</html>

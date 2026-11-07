@@ -31,8 +31,18 @@ jobs:
       - name: Prepare Capacitor project
         run: |
           mkdir -p www assets
-          cp index.html data.json logo.png www/
+          cp index.html logo.png www/
           cp icon.png assets/icon.png
+          cat > make-manifest.js <<'EOF'
+          const fs = require('fs'), c = require('crypto');
+          const files = fs.readdirSync('.').filter(f => f.endsWith('.json') && !/^(package|package-lock|manifest)/.test(f));
+          const sha = f => { const b = fs.readFileSync(f); return c.createHash('sha1').update('blob ' + b.length + '\0').update(b).digest('hex'); };
+          const sig = files.map(f => f + ':' + sha(f)).sort().join('|');
+          files.forEach(f => fs.copyFileSync(f, 'www/' + f));
+          fs.writeFileSync('www/manifest.json', JSON.stringify({ build: ${{ github.run_number }}, files: files, sig: sig }));
+          console.log(files);
+          EOF
+          node make-manifest.js
           npm init -y
           npm i @capacitor/core@6 @capacitor/cli@6 @capacitor/android@6 @capacitor/assets@3
           npx cap init "Pharmacist Book" com.pharmacistbook.app --web-dir www

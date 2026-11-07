@@ -1,0 +1,130 @@
+{
+  "diseases": [
+    {
+      "id": "x1",
+      "rank": 1,
+      "category": "digestive",
+      "title": {
+        "en": "Sample Disease 1",
+        "ar": "مرض تجريبي 1"
+      },
+      "sections": [
+        {
+          "h": {
+            "en": "Overview",
+            "ar": "نبذة"
+          },
+          "t": {
+            "en": "Sample text. Replace it with your real, verified information.",
+            "ar": "نص تجريبي. استبدله بمعلوماتك الحقيقية بعد مراجعتها."
+          }
+        }
+      ]
+    },
+    {
+      "id": "x2",
+      "rank": 2,
+      "category": "respiratory",
+      "title": {
+        "en": "Sample Disease 2",
+        "ar": "مرض تجريبي 2"
+      },
+      "sections": [
+        {
+          "h": {
+            "en": "Overview",
+            "ar": "نبذة"
+          },
+          "t": {
+            "en": "Sample text. Replace it with your real, verified information.",
+            "ar": "نص تجريبي. استبدله بمعلوماتك الحقيقية بعد مراجعتها."
+          }
+        }
+      ]
+    },
+    {
+      "id": "x3",
+      "rank": 3,
+      "category": "cardiovascular",
+      "title": {
+        "en": "Sample Disease 3",
+        "ar": "مرض تجريبي 3"
+      },
+      "sections": [
+        {
+          "h": {
+            "en": "Overview",
+            "ar": "نبذة"
+          },
+          "t": {
+            "en": "Sample text. Replace it with your real, verified information.",
+            "ar": "نص تجريبي. استبدله بمعلوماتك الحقيقية بعد مراجعتها."
+          }
+        }
+      ]
+    },
+    {
+      "id": "x4",
+      "rank": 4,
+      "category": "joints",
+      "title": {
+        "en": "Sample Disease 4",
+        "ar": "مرض تجريبي 4"
+      },
+      "sections": [
+        {
+          "h": {
+            "en": "Overview",
+            "ar": "نبذة"
+          },
+          "t": {
+            "en": "Sample text. Replace it with your real, verified information.",
+            "ar": "نص تجريبي. استبدله بمعلوماتك الحقيقية بعد مراجعتها."
+          }
+        }
+      ]
+    },
+    {
+      "id": "x5",
+      "rank": 5,
+      "category": "urinary",
+      "title": {
+        "en": "Sample Disease 5",
+        "ar": "مرض تجريبي 5"
+      },
+      "sections": [
+        {
+          "h": {
+            "en": "Overview",
+            "ar": "نبذة"
+          },
+          "t": {
+            "en": "Sample text. Replace it with your real, verified information.",
+            "ar": "نص تجريبي. استبدله بمعلوماتك الحقيقية بعد مراجعتها."
+          }
+        }
+      ]
+    },
+    {
+      "id": "x6",
+      "rank": 6,
+      "category": "digestive",
+      "title": {
+        "en": "Sample Disease 6",
+        "ar": "مرض تجريبي 6"
+      },
+      "sections": [
+        {
+          "h": {
+            "en": "Overview",
+            "ar": "نبذة"
+          },
+          "t": {
+            "en": "Sample text. Replace it with your real, verified information.",
+            "ar": "نص تجريبي. استبدله بمعلوماتك الحقيقية بعد مراجعتها."
+          }
+        }
+      ]
+    }
+  ]
+}

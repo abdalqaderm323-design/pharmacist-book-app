@@ -82,8 +82,9 @@ textarea.input{height:auto;min-height:200px;padding:12px;resize:vertical;line-he
 'use strict';
 
 /* ======= Settings you may change ======= */
-var APP_VERSION = '1.0.0';
-var DATA_URL = 'https://raw.githubusercontent.com/abdalqaderm323-design/pharmacist-book-app/main/data.json';
+var APP_VERSION = '1.1.0';
+var REPO = 'abdalqaderm323-design/pharmacist-book-app';
+var BRANCH = 'main';
 /* ======================================== */
 
 var STR = {
@@ -100,11 +101,14 @@ var STR = {
     noInter: 'ما لگينا تداخل مسجل بين الدواءين', noInterNote: 'هذا لا يعني أنه ما في تداخل. راجع مصدرك قبل أي قرار.', recLabel: 'التوصية',
     drugName: 'اسم الدواء', pickDrugFirst: 'اختار الدواء أولاً', doseForm: 'اختيار الجرعة (الشكل والتركيز)', age: 'العمر (سنة)', sex: 'الجنس',
     male: 'ذكر', female: 'أنثى', weight: 'الوزن (كغم)', calc: 'احسب', pickDrugForm: 'اختار الدواء والجرعة أولاً', badAge: 'اكتب عمراً صحيحاً',
-    pickSex: 'اختار الجنس', badWt: 'اكتب وزناً صحيحاً', recDose: 'الجرعة الموصى بها', perDose: 'ملغم للجرعة الواحدة', timesDay: 'عدد المرات باليوم',
+    pickSex: 'اختار الجنس', badWt: 'اكتب وزناً صحيحاً', recDose: 'الجرعة الموصى بها (للمرة الواحدة)', perDose: '', timesDay: 'عدد المرات باليوم',
     times: 'مرات', maxDaily: 'الحد الأقصى اليومي', mgDay: 'ملغم', recs: 'التوصيات', ageWarn: 'هذا الشكل غير مسجل للفئة العمرية المدخلة. استشر الصيدلي أو الطبيب.',
     noDoseData: 'لا توجد بيانات جرعات بعد', disclaimer: 'للتعليم فقط ولا يغني عن استشارة الصيدلي أو الطبيب.',
     updChecking: 'جاري التحقق من التحديثات...', updOk: 'تم تحديث المعلومات', updLatest: 'أنت على آخر نسخة', updOffline: 'تحتاج اتصال بالإنترنت للتحديث',
     updNewApp: 'يوجد تحديث جديد للتطبيق', updDownload: 'تنزيل التحديث', updCfg: 'رابط التحديث غير مضبوط بعد', close: 'إغلاق',
+    all: 'الكل', formLabel: 'الشكل الصيدلاني', strengthLabel: 'التركيز (الجرعة المتوفرة)', pickFormFirst: 'اختار الشكل الصيدلاني أولاً', pickForm: 'اختار الشكل الصيدلاني', pickStrength: 'اختار التركيز',
+    amountGive: 'الكمية المعطاة', totalDaily: 'المجموع اليومي', exceeds: 'تنبيه: المجموع اليومي يتجاوز الحد الأقصى.', maxSingle: 'أقصى جرعة للمرة الواحدة', maxDailyL: 'أقصى جرعة باليوم',
+    mgU: 'ملغم', u_ml: 'مل', u_tablet: 'قرص', u_capsule: 'كبسولة', u_suppository: 'تحميلة', u_g: 'غم', u_unit: 'وحدة', updFail: 'تعذر التحقق من التحديث. حاول لاحقاً.', badFile: 'يوجد خطأ في الملف', filesWord: 'ملفات', searchList: 'ابحث بالاسم أو التصنيف',
     noData: 'تعذر تحميل بيانات التطبيق', backLbl: 'رجوع', menuLbl: 'القائمة', removeSaved: 'إزالة من المحفوظات', addSaved: 'حفظ الموضوع', version: 'النسخة', dataV: 'المعلومات'
   },
   en: {
@@ -120,11 +124,14 @@ var STR = {
     noInter: 'No recorded interaction between these drugs', noInterNote: 'This does not mean there is none. Check your reference before any decision.', recLabel: 'Recommendation',
     drugName: 'Drug name', pickDrugFirst: 'Pick a drug first', doseForm: 'Dose option (form and strength)', age: 'Age (years)', sex: 'Sex',
     male: 'Male', female: 'Female', weight: 'Weight (kg)', calc: 'Calculate', pickDrugForm: 'Pick the drug and its form first', badAge: 'Enter a valid age',
-    pickSex: 'Pick the sex', badWt: 'Enter a valid weight', recDose: 'Recommended dose', perDose: 'mg per dose', timesDay: 'Times per day',
+    pickSex: 'Pick the sex', badWt: 'Enter a valid weight', recDose: 'Recommended dose (per intake)', perDose: '', timesDay: 'Times per day',
     times: 'times', maxDaily: 'Maximum per day', mgDay: 'mg', recs: 'Recommendations', ageWarn: 'This form is not listed for the entered age group. Ask a pharmacist or doctor.',
     noDoseData: 'No dose data yet', disclaimer: 'For education only. It does not replace advice from a pharmacist or doctor.',
     updChecking: 'Checking for updates...', updOk: 'Information updated', updLatest: 'You are on the latest version', updOffline: 'You need an internet connection to update',
     updNewApp: 'A new app update is available', updDownload: 'Download update', updCfg: 'The update link is not set yet', close: 'Close',
+    all: 'All', formLabel: 'Pharmaceutical form', strengthLabel: 'Strength (available concentration)', pickFormFirst: 'Pick the pharmaceutical form first', pickForm: 'Pick the pharmaceutical form', pickStrength: 'Pick the strength',
+    amountGive: 'Amount to give', totalDaily: 'Total per day', exceeds: 'Warning: the daily total exceeds the maximum.', maxSingle: 'Maximum single dose', maxDailyL: 'Maximum per day',
+    mgU: 'mg', u_ml: 'mL', u_tablet: 'tablet(s)', u_capsule: 'capsule(s)', u_suppository: 'suppository', u_g: 'g', u_unit: 'unit(s)', updFail: 'Could not check for updates. Try again later.', badFile: 'There is an error in the file', filesWord: 'Files', searchList: 'Search by name or category',
     noData: 'Could not load app data', backLbl: 'Back', menuLbl: 'Menu', removeSaved: 'Remove from saved', addSaved: 'Save topic', version: 'Version', dataV: 'Data'
   }
 };
@@ -193,11 +200,67 @@ function toast(msg) {
 }
 
 /* ---------- data ---------- */
-function topicsOf(type) { return ((DATA.topics || {})[type] || []).slice().sort(function (a, b) { return (a.rank || 999) - (b.rank || 999); }); }
+var BUNDLE = { build: 0, sig: '' };
+var CURSIG = '';
+var FORMS = {
+  tablet: ['أقراص', 'Tablet', 'tablet'], capsule: ['كبسولات', 'Capsule', 'capsule'], syrup: ['شراب', 'Syrup', 'ml'], suspension: ['معلق', 'Suspension', 'ml'],
+  solution: ['محلول', 'Solution', 'ml'], drops: ['قطرة', 'Drops', 'ml'], im: ['حقنة عضلية', 'IM injection', 'ml'], iv: ['حقنة وريدية', 'IV injection', 'ml'],
+  sc: ['حقنة تحت الجلد', 'SC injection', 'ml'], suppository: ['تحميلة', 'Suppository', 'suppository'], ointment: ['مرهم', 'Ointment', 'g'], cream: ['كريم', 'Cream', 'g'],
+  inhaler: ['بخاخ', 'Inhaler', 'unit'], powder: ['أكياس / بودرة', 'Powder / sachet', 'unit']
+};
+function formName(k) { return FORMS[k] ? FORMS[k][lang === 'ar' ? 0 : 1] : k; }
+function formUnit(k) { return FORMS[k] ? FORMS[k][2] : 'unit'; }
+var CAT = {
+  digestive: ['الجهاز الهضمي', 'Digestive system'], joints: ['المفاصل', 'Joints'], cardiovascular: ['القلب والأوعية', 'Heart & vessels'], urinary: ['الجهاز البولي', 'Urinary system'],
+  reproductive: ['الجهاز التناسلي', 'Reproductive system'], muscles: ['العضلات', 'Muscles'], respiratory: ['الجهاز التنفسي', 'Respiratory system'], nervous: ['الجهاز العصبي', 'Nervous system'],
+  endocrine: ['الغدد والسكري', 'Endocrine & diabetes'], skin: ['الجلد', 'Skin'], eyes: ['العيون', 'Eyes'], ent: ['الأذن والأنف والحنجرة', 'ENT'], infections: ['الالتهابات والعدوى', 'Infections'],
+  blood: ['الدم', 'Blood'], immune: ['المناعة والحساسية', 'Immune & allergy'], mental: ['الصحة النفسية', 'Mental health'],
+  antibiotic: ['مضادات حيوية', 'Antibiotics'], analgesic: ['مسكنات', 'Analgesics'], antihypertensive: ['خافضات الضغط', 'Antihypertensives'], antidiabetic: ['أدوية السكري', 'Antidiabetics'],
+  antihistamine: ['مضادات الهيستامين', 'Antihistamines'], gi: ['أدوية الجهاز الهضمي', 'GI drugs'], vitamins: ['فيتامينات ومعادن', 'Vitamins & minerals'], other: ['أخرى', 'Other']
+};
+function catId(c) { if (!c) return 'other'; if (typeof c === 'string') return c; return c.en || c.ar || 'other'; }
+function catLabel(c) {
+  if (!c) c = 'other';
+  if (typeof c === 'string') return CAT[c] ? CAT[c][lang === 'ar' ? 0 : 1] : c;
+  return L(c);
+}
+function categoriesOf(type) {
+  var map = {}, order = Object.keys(CAT), n = 1000;
+  topicsOf(type).forEach(function (tp) {
+    var id = catId(tp.category);
+    if (!map[id]) { var oi = order.indexOf(id); map[id] = { id: id, label: catLabel(tp.category), count: 0, ord: oi >= 0 ? oi : n++ }; }
+    map[id].count++;
+  });
+  return Object.keys(map).map(function (k) { return map[k]; }).sort(function (a, b) { return a.ord - b.ord; });
+}
+function mergeSources(srcs) {
+  var out = { drugs: [], diseases: [], interactions: [], doses: [], app: null, meta: { files: srcs.length } };
+  var maps = { drugs: {}, diseases: {} }, dmap = {};
+  function addTopics(type, arr) {
+    (arr || []).forEach(function (x) {
+      if (!x || !x.id) return;
+      if (maps[type][x.id]) out[type][out[type].indexOf(maps[type][x.id])] = x; else out[type].push(x);
+      maps[type][x.id] = x;
+    });
+  }
+  srcs.forEach(function (s) {
+    var j = s.json || {}, tp = j.topics || {};
+    addTopics('drugs', j.drugs || tp.drugs); addTopics('diseases', j.diseases || tp.diseases);
+    (j.interactions || []).forEach(function (x) { out.interactions.push(x); });
+    (j.doses || []).forEach(function (d) {
+      if (!d || !d.drug) return;
+      if (dmap[d.drug]) dmap[d.drug].options = (dmap[d.drug].options || []).concat(d.options || []);
+      else { var c = { drug: d.drug, options: (d.options || []).slice() }; dmap[d.drug] = c; out.doses.push(c); }
+    });
+    if (j.app) out.app = j.app;
+  });
+  return out;
+}
+function topicsOf(type) { return ((DATA && DATA[type]) || []).slice().sort(function (a, b) { return (a.rank || 999) - (b.rank || 999); }); }
 function findTopic(id) {
   var types = ['drugs', 'diseases'];
   for (var i = 0; i < types.length; i++) {
-    var arr = (DATA.topics || {})[types[i]] || [];
+    var arr = DATA[types[i]] || [];
     for (var j = 0; j < arr.length; j++) if (arr[j].id === id) return { topic: arr[j], type: types[i] };
   }
   return null;
@@ -205,19 +268,28 @@ function findTopic(id) {
 function typeLabel(type) { return type === 'drugs' ? t('catDrugs') : t('catDiseases'); }
 function matches(topic, q) {
   q = norm(q.trim()); if (!q) return true;
-  return norm(topic.title && topic.title.en).indexOf(q) >= 0 || norm(topic.title && topic.title.ar).indexOf(q) >= 0;
+  return norm(topic.title && topic.title.en).indexOf(q) >= 0 || norm(topic.title && topic.title.ar).indexOf(q) >= 0 || norm(catLabel(topic.category)).indexOf(q) >= 0;
 }
+function fetchJson(u) { return fetch(u).then(function (r) { if (!r.ok) throw new Error(u); return r.json(); }); }
+function setData(srcs) { DATA = mergeSources(srcs); }
 function loadData(done) {
-  function pick(bundled) {
+  function finish(b) {
     var ov = store('dataOverride', null);
-    DATA = (ov && ov.dataVersion > (bundled.dataVersion || 0)) ? ov : bundled;
-    done();
+    var useOv = ov && ov.srcs && ov.base >= b.build;
+    BUNDLE = { build: b.build, sig: b.sig || '' };
+    CURSIG = useOv ? ov.sig : (b.sig || '');
+    setData(useOv ? ov.srcs : b.srcs); done();
   }
-  if (window.__DATA__) { pick(window.__DATA__); return; }
-  fetch('data.json').then(function (r) { return r.json(); }).then(pick).catch(function () {
+  function fallback() {
     var ov = store('dataOverride', null);
-    if (ov) { DATA = ov; done(); } else { document.getElementById('app').textContent = t('noData'); hideSplash(); }
-  });
+    if (ov && ov.srcs) { BUNDLE = { build: ov.base, sig: '' }; CURSIG = ov.sig; setData(ov.srcs); done(); }
+    else { document.getElementById('app').textContent = t('noData'); hideSplash(); }
+  }
+  if (window.__SOURCES__) { finish({ build: 0, sig: '', srcs: window.__SOURCES__ }); return; }
+  fetchJson('manifest.json').then(function (m) {
+    return Promise.all((m.files || []).map(function (f) { return fetchJson(f).then(function (j) { return { name: f, json: j }; }); }))
+      .then(function (srcs) { return { build: m.build || 0, sig: m.sig || '', srcs: srcs }; });
+  }).then(finish, fallback);
 }
 
 /* ---------- layout pieces ---------- */
@@ -270,7 +342,7 @@ function buildDrawer() {
     pill('English', lang === 'en', function () { setLang('en'); })
   ]));
   d.appendChild(h('button', { class: 'ghd', onclick: function () { closeDrawer(); doUpdate(); } }, [ic('refresh'), h('span', { class: 't', text: t('update') })]));
-  d.appendChild(h('div', { class: 'ver', text: t('version') + ' ' + APP_VERSION + ' · ' + t('dataV') + ' ' + (DATA ? DATA.dataVersion : '-') }));
+  d.appendChild(h('div', { class: 'ver', text: t('version') + ' ' + APP_VERSION + ' · ' + t('filesWord') + ' ' + (DATA ? DATA.meta.files : '-') }));
   w.appendChild(d);
   w.appendChild(h('div', { class: 'overlay', onclick: closeDrawer }));
 }
@@ -328,6 +400,7 @@ function pageTopic(id) {
   }, isSaved ? 'fill' : '');
   app.appendChild(topBar(L(tp.title), { right: bm }));
   var body = h('div', { class: 'wrap topic' });
+  body.appendChild(h('div', { class: 'muted', text: catLabel(tp.category) }));
   (tp.sections || []).forEach(function (s) { body.appendChild(h('h3', { text: L(s.h) })); body.appendChild(h('p', { text: L(s.t) })); });
   body.appendChild(h('div', { class: 'disc', text: t('disclaimer') }));
   app.appendChild(body);
@@ -370,10 +443,21 @@ function pageSections() {
 
 function pageList(type) {
   var app = document.getElementById('app'); app.innerHTML = ''; app.appendChild(topBar(typeLabel(type)));
-  var wrap = h('div', { class: 'wrap' }); var arr = topicsOf(type);
-  if (!arr.length) wrap.appendChild(emptyState(t('noResults'), ''));
-  arr.forEach(function (tp) { wrap.appendChild(rowEl(null, L(tp.title), '', function () { go('topic-' + tp.id); })); });
-  app.appendChild(wrap);
+  var wrap = h('div', { class: 'wrap' }); var q = '', cat = 'all';
+  var input = h('input', { class: 'input', type: 'text', placeholder: t('searchList'), autocomplete: 'off' });
+  var chipsBox = h('div', { class: 'chips' }), listBox = h('div');
+  wrap.appendChild(h('div', { class: 'search' }, [ic('search'), input])); wrap.appendChild(chipsBox); wrap.appendChild(listBox); app.appendChild(wrap);
+  function draw() {
+    chipsBox.innerHTML = ''; listBox.innerHTML = '';
+    var cats = categoriesOf(type);
+    chipsBox.appendChild(pill(t('all'), cat === 'all', function () { cat = 'all'; draw(); }));
+    cats.forEach(function (c) { chipsBox.appendChild(pill(c.label + ' (' + c.count + ')', cat === c.id, function () { cat = c.id; draw(); })); });
+    var items = topicsOf(type).filter(function (tp) { return (cat === 'all' || catId(tp.category) === cat) && matches(tp, q); });
+    if (!items.length) { listBox.appendChild(emptyState(t('noResults'), '')); return; }
+    items.forEach(function (tp) { listBox.appendChild(rowEl(null, L(tp.title), catLabel(tp.category), function () { go('topic-' + tp.id); })); });
+  }
+  input.addEventListener('input', function () { q = input.value; draw(); });
+  draw();
 }
 
 /* drug search field with suggestions; returns {el, get, clear} */
@@ -416,53 +500,99 @@ function pageInter() {
   wrap.appendChild(err); wrap.appendChild(out); wrap.appendChild(h('div', { class: 'disc', text: t('disclaimer') })); app.appendChild(wrap);
 }
 
+function unitLabel(form) { return t('u_' + formUnit(form)); }
+function strengthText(form, s) {
+  if (s.label) return L(s.label);
+  var u = formUnit(form), per = s.per || 1;
+  if (per === 1 && (u === 'tablet' || u === 'capsule' || u === 'suppository' || u === 'unit')) return s.mg + ' ' + t('mgU');
+  return s.mg + ' ' + t('mgU') + ' / ' + (per !== 1 ? per + ' ' : '') + unitLabel(form);
+}
+function fmt(n) { return String(Math.round(n * 100) / 100); }
+function pickRegimen(opt, age, wt, sex) {
+  var rs = opt.regimens || [];
+  for (var i = 0; i < rs.length; i++) {
+    var r = rs[i];
+    if (age < (r.minAge || 0) || age >= (r.maxAge === undefined ? 121 : r.maxAge)) continue;
+    if (r.minWeight !== undefined && wt < r.minWeight) continue;
+    if (r.maxWeight !== undefined && wt > r.maxWeight) continue;
+    if (r.sex && r.sex !== sex) continue;
+    return r;
+  }
+  return null;
+}
 function pageCalc() {
   var app = document.getElementById('app'); app.innerHTML = ''; app.appendChild(topBar(t('catDose')));
   var wrap = h('div', { class: 'wrap' }); var out = h('div'); var err = h('div', { class: 'err' });
-  var doses = DATA.doses || []; var form = null, sex = null;
+  var doses = DATA.doses || []; var opt = null, st = null, sex = null;
   function clear() { out.innerHTML = ''; err.textContent = ''; }
   function pool() { return doses.map(function (d) { var f = findTopic(d.drug); return f ? f.topic : null; }).filter(Boolean); }
-  var formsBox = h('div', { class: 'chips', style: 'margin:0' }); var sexBox = h('div', { class: 'chips', style: 'margin:0' });
-  var drugF = drugField(t('drugName'), pool, function () { form = null; clear(); drawForms(); });
+  var optBox = h('div', { class: 'chips', style: 'margin:0' }), strBox = h('div', { class: 'chips', style: 'margin:0' }), sexBox = h('div', { class: 'chips', style: 'margin:0' });
+  var drugF = drugField(t('drugName'), pool, function () { opt = null; st = null; clear(); drawOpts(); drawStr(); });
   function curDose() { var d = drugF.get(); if (!d) return null; for (var i = 0; i < doses.length; i++) if (doses[i].drug === d.id) return doses[i]; return null; }
-  function drawForms() {
-    formsBox.innerHTML = ''; var cd = curDose();
-    if (!cd) { formsBox.appendChild(h('span', { class: 'muted', text: t('pickDrugFirst') })); return; }
-    cd.forms.forEach(function (f) { formsBox.appendChild(pill(L(f.label), form === f, function () { form = f; clear(); drawForms(); })); });
+  function drawOpts() {
+    optBox.innerHTML = ''; var cd = curDose();
+    if (!cd) { optBox.appendChild(h('span', { class: 'muted', text: t('pickDrugFirst') })); return; }
+    (cd.options || []).forEach(function (o) { optBox.appendChild(pill(formName(o.form), opt === o, function () { opt = o; st = null; clear(); drawOpts(); drawStr(); })); });
+  }
+  function drawStr() {
+    strBox.innerHTML = '';
+    if (!opt) { strBox.appendChild(h('span', { class: 'muted', text: t('pickFormFirst') })); return; }
+    var ss = opt.strengths || [];
+    if (!ss.length) { strBox.appendChild(h('span', { class: 'muted', text: '—' })); return; }
+    ss.forEach(function (s) { strBox.appendChild(pill(strengthText(opt.form, s), st === s, function () { st = s; clear(); drawStr(); })); });
   }
   function drawSex() { sexBox.innerHTML = ''; [['m', t('male')], ['f', t('female')]].forEach(function (s) { sexBox.appendChild(pill(s[1], sex === s[0], function () { sex = s[0]; clear(); drawSex(); })); }); }
   var ageIn = h('input', { class: 'input', type: 'number', inputmode: 'decimal', placeholder: '30', min: '0' });
   var wtIn = h('input', { class: 'input', type: 'number', inputmode: 'decimal', placeholder: '70', min: '0' });
   ageIn.addEventListener('input', clear); wtIn.addEventListener('input', clear);
   wrap.appendChild(drugF.el);
-  var w2 = field(t('doseForm')); w2.appendChild(formsBox); wrap.appendChild(w2);
+  var w2 = field(t('formLabel')); w2.appendChild(optBox); wrap.appendChild(w2);
+  var w2b = field(t('strengthLabel')); w2b.appendChild(strBox); wrap.appendChild(w2b);
   var w3 = field(t('age')); w3.appendChild(ageIn); wrap.appendChild(w3);
   var w4 = field(t('sex')); w4.appendChild(sexBox); wrap.appendChild(w4);
   var w5 = field(t('weight')); w5.appendChild(wtIn); wrap.appendChild(w5);
   wrap.appendChild(h('div', { style: 'height:16px' }));
   wrap.appendChild(h('button', { class: 'primary', text: t('calc'), onclick: function () {
     clear(); var cd = curDose(); var age = parseFloat(ageIn.value), wt = parseFloat(wtIn.value);
-    if (!cd || !form) { err.textContent = t('pickDrugForm'); return; }
+    if (!cd) { err.textContent = t('pickDrugFirst'); return; }
+    if (!opt) { err.textContent = t('pickForm'); return; }
+    if ((opt.strengths || []).length && !st) { err.textContent = t('pickStrength'); return; }
     if (!(age >= 0 && age <= 120)) { err.textContent = t('badAge'); return; }
     if (!sex) { err.textContent = t('pickSex'); return; }
     if (!(wt >= 1 && wt <= 300)) { err.textContent = t('badWt'); return; }
     drugF.hideSug();
     var box = h('div', { class: 'box' });
-    var okAge = age >= (form.minAge || 0) && age <= (form.maxAge === undefined ? 120 : form.maxAge);
-    if (!okAge) { box.appendChild(h('p', { style: 'margin:0;color:var(--amber)', text: t('ageWarn') })); out.appendChild(box); return; }
-    var dose = form.method === 'perKg' ? wt * form.perKg : form.fixed;
-    if (form.maxSingle && dose > form.maxSingle) dose = form.maxSingle;
-    dose = Math.round(dose * 10) / 10;
-    box.appendChild(h('div', { class: 'kv' }, [h('span', { text: t('recDose') }), h('span', { text: dose + ' ' + t('perDose') })]));
-    box.appendChild(h('div', { class: 'kv' }, [h('span', { text: t('timesDay') }), h('span', { text: form.timesPerDay + ' ' + t('times') })]));
-    if (form.maxDaily) box.appendChild(h('div', { class: 'kv' }, [h('span', { text: t('maxDaily') }), h('span', { text: form.maxDaily + ' ' + t('mgDay') })]));
-    var rl = cd.recs && (cd.recs[lang] || cd.recs.en || cd.recs.ar);
-    if (rl && rl.length) { box.appendChild(h('div', { class: 'label', text: t('recs') })); rl.forEach(function (r) { box.appendChild(h('p', { style: 'margin:0 0 6px', text: '• ' + r })); }); }
+    var r = pickRegimen(opt, age, wt, sex);
+    if (!r) { box.appendChild(h('p', { style: 'margin:0;color:var(--amber)', text: t('ageWarn') })); out.appendChild(box); return; }
+    function kv(a, b) { box.appendChild(h('div', { class: 'kv' }, [h('span', { text: a }), h('span', { text: b })])); }
+    if (r.method === 'note') {
+      if (r.note) box.appendChild(h('p', { style: 'margin:0', text: L(r.note) }));
+    } else {
+      var dose = r.method === 'perKg' ? wt * r.perKg : r.fixed;
+      if (r.maxSingle && dose > r.maxSingle) dose = r.maxSingle;
+      dose = Math.round(dose * 10) / 10;
+      kv(t('recDose'), fmt(dose) + ' ' + t('mgU'));
+      if (st && st.mg) {
+        var amt = dose / st.mg * (st.per || 1), u = formUnit(opt.form);
+        amt = (u === 'ml' || u === 'g') ? Math.round(amt * 10) / 10 : Math.round(amt * 4) / 4;
+        kv(t('amountGive'), fmt(amt) + ' ' + unitLabel(opt.form) + '  (' + strengthText(opt.form, st) + ')');
+      }
+      if (r.timesPerDay) kv(t('timesDay'), r.timesPerDay + ' ' + t('times'));
+      var total = r.timesPerDay ? dose * r.timesPerDay : null;
+      if (total) kv(t('totalDaily'), fmt(total) + ' ' + t('mgU'));
+      if (r.maxSingle) kv(t('maxSingle'), fmt(r.maxSingle) + ' ' + t('mgU'));
+      var md = r.maxDaily; if (r.maxDailyPerKg) { md = r.maxDailyPerKg * wt; if (r.maxDaily) md = Math.min(md, r.maxDaily); }
+      if (md) kv(t('maxDailyL'), fmt(md) + ' ' + t('mgU'));
+      if (total && md && total > md) box.appendChild(h('p', { style: 'margin:10px 0 0;color:var(--red)', text: t('exceeds') }));
+      if (r.note) box.appendChild(h('p', { style: 'margin:10px 0 0', text: L(r.note) }));
+    }
+    var rl = opt.recs && (opt.recs[lang] || opt.recs.en || opt.recs.ar);
+    if (rl && rl.length) { box.appendChild(h('div', { class: 'label', text: t('recs') })); rl.forEach(function (x) { box.appendChild(h('p', { style: 'margin:0 0 6px', text: '• ' + x })); }); }
     out.appendChild(box);
   } }));
   wrap.appendChild(err); wrap.appendChild(out); wrap.appendChild(h('div', { class: 'disc', text: t('disclaimer') }));
   if (!doses.length) wrap.insertBefore(h('div', { class: 'empty muted', text: t('noDoseData') }), wrap.firstChild);
-  drawForms(); drawSex(); app.appendChild(wrap);
+  drawOpts(); drawStr(); drawSex(); app.appendChild(wrap);
 }
 
 function pageNotes() {
@@ -506,22 +636,42 @@ function modal(msg, btnText, fn) {
     h('button', { class: 'danger', style: 'border-color:var(--gold);color:var(--gold)', text: t('close'), onclick: function () { m.remove(); } })])]);
   document.body.appendChild(m);
 }
+function checkAppVersion() {
+  if (DATA.app && DATA.app.apkUrl && newer(DATA.app.latestVersion, APP_VERSION)) {
+    modal(t('updNewApp'), t('updDownload'), function () { window.open(DATA.app.apkUrl, '_blank'); }); return true;
+  }
+  return false;
+}
 function doUpdate() {
-  if (DATA_URL.indexOf('YOUR-USERNAME') >= 0) { toast(t('updCfg')); return; }
+  if (REPO.indexOf('YOUR-') >= 0) { toast(t('updCfg')); return; }
   toast(t('updChecking'));
-  var ctl = new AbortController(); var to = setTimeout(function () { ctl.abort(); }, 12000);
-  fetch(DATA_URL + '?t=' + Date.now(), { signal: ctl.signal, cache: 'no-store' })
-    .then(function (r) { if (!r.ok) throw new Error('http'); return r.json(); })
-    .then(function (remote) {
-      clearTimeout(to);
-      if (!remote || typeof remote.dataVersion !== 'number' || !remote.topics) throw new Error('bad');
-      if (remote.dataVersion > DATA.dataVersion) { put('dataOverride', remote); DATA = remote; toast(t('updOk')); render(); return; }
-      if (remote.app && remote.app.apkUrl && newer(remote.app.latestVersion, APP_VERSION)) {
-        modal(t('updNewApp'), t('updDownload'), function () { window.open(remote.app.apkUrl, '_blank'); }); return;
-      }
-      toast(t('updLatest'));
+  var ctl = new AbortController(); var to = setTimeout(function () { ctl.abort(); }, 15000);
+  fetch('https://api.github.com/repos/' + REPO + '/contents/?ref=' + BRANCH, { signal: ctl.signal, cache: 'no-store', headers: { Accept: 'application/vnd.github+json' } })
+    .then(function (r) { if (!r.ok) throw new Error('list'); return r.json(); })
+    .then(function (list) {
+      var files = list.filter(function (f) { return f.type === 'file' && /\.json$/i.test(f.name) && !/^(package|package-lock|manifest)/i.test(f.name); });
+      var sig = files.map(function (f) { return f.name + ':' + f.sha; }).sort().join('|');
+      if (sig === CURSIG) { clearTimeout(to); if (!checkAppVersion()) toast(t('updLatest')); return; }
+      return Promise.all(files.map(function (f) {
+        return fetch('https://raw.githubusercontent.com/' + REPO + '/' + BRANCH + '/' + encodeURIComponent(f.name) + '?t=' + Date.now(), { signal: ctl.signal, cache: 'no-store' })
+          .then(function (r) { if (!r.ok) throw new Error('get'); return r.text(); })
+          .then(function (txt) {
+            var j; try { j = JSON.parse(txt); } catch (e) { var er = new Error('badjson'); er.file = f.name; throw er; }
+            if (!j || typeof j !== 'object') { var er2 = new Error('badjson'); er2.file = f.name; throw er2; }
+            return { name: f.name, json: j };
+          });
+      })).then(function (srcs) {
+        clearTimeout(to);
+        put('dataOverride', { base: BUNDLE.build, sig: sig, srcs: srcs }); CURSIG = sig; setData(srcs);
+        toast(t('updOk')); render(); setTimeout(checkAppVersion, 600);
+      });
     })
-    .catch(function () { clearTimeout(to); toast(t('updOffline')); });
+    .catch(function (e) {
+      clearTimeout(to);
+      if (e && e.message === 'badjson') modal(t('badFile') + ': ' + e.file, null, null);
+      else if (e && e.message === 'list') toast(t('updFail'));
+      else toast(t('updOffline'));
+    });
 }
 
 /* ---------- router ---------- */

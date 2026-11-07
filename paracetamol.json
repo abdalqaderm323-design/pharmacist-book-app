@@ -1,0 +1,690 @@
+{
+  "drugs": [
+    {
+      "id": "paracetamol",
+      "rank": 1,
+      "category": "analgesic",
+      "title": {
+        "en": "Paracetamol (Acetaminophen)",
+        "ar": "باراسيتامول (Paracetamol)"
+      },
+      "sections": [
+        {
+          "h": {
+            "en": "Names",
+            "ar": "الأسماء"
+          },
+          "t": {
+            "en": "Generic name: Paracetamol\nOther name: Acetaminophen",
+            "ar": "الاسم العلمي: باراسيتامول (Paracetamol)\nاسم آخر: أسيتامينوفين (Acetaminophen)"
+          }
+        },
+        {
+          "h": {
+            "en": "Classification",
+            "ar": "التصنيف الدوائي"
+          },
+          "t": {
+            "en": "Analgesic.\nAntipyretic.\nNon-opioid analgesic.\nATC: N02BE01.",
+            "ar": "مسكن للألم (Analgesic).\nخافض للحرارة (Antipyretic).\nمن المسكنات غير الأفيونية (Non-opioid analgesic).\nتصنيف ATC: N02BE01."
+          }
+        },
+        {
+          "h": {
+            "en": "Mechanism of action",
+            "ar": "آلية العمل"
+          },
+          "t": {
+            "en": "Inhibits prostaglandin synthesis centrally, which reduces the sensation of pain.\nActs on the heat-regulating center in the hypothalamus.\nHelps lower fever by increasing skin vasodilation, sweating and heat loss.\nHas a weak anti-inflammatory effect compared with NSAIDs.",
+            "ar": "تثبيط تصنيع البروستاغلاندينات (Prostaglandins) بشكل مركزي، مما يقلل الإحساس بالألم.\nيؤثر على مركز تنظيم الحرارة في منطقة تحت المهاد (Hypothalamus).\nيساعد على خفض الحرارة من خلال زيادة توسع الأوعية الدموية الجلدية والتعرق وفقدان الحرارة.\nيمتلك تأثيراً مضاداً للالتهاب ضعيفاً مقارنةً بمضادات الالتهاب غير الستيرويدية NSAIDs."
+          }
+        },
+        {
+          "h": {
+            "en": "Indications",
+            "ar": "الاستخدامات"
+          },
+          "t": {
+            "en": "Headache.\nToothache.\nFever.\nMuscle pain.\nJoint pain.\nBack pain.\nDysmenorrhea.\nRelief of pain and fever accompanying colds and influenza.\nMild to moderate pain after some medical procedures.",
+            "ar": "الصداع (Headache).\nألم الأسنان (Toothache).\nالحمى (Fever).\nآلام العضلات (Muscle pain).\nآلام المفاصل (Joint pain).\nآلام الظهر (Back pain).\nعسر الطمث (Dysmenorrhea).\nتخفيف الألم والحمى المصاحبة لنزلات البرد والإنفلونزا.\nالألم الخفيف إلى المتوسط بعد بعض الإجراءات الطبية."
+          }
+        },
+        {
+          "h": {
+            "en": "Pharmacological effects",
+            "ar": "الفعالية الدوائية"
+          },
+          "t": {
+            "en": "Relief of mild to moderate pain (analgesic effect).\nLowering of raised body temperature (antipyretic effect).\nWeak anti-inflammatory effect; it does not have the same anti-inflammatory effect as Ibuprofen or Diclofenac.\nThe oral effect usually starts within 30 to 60 minutes and lasts several hours.",
+            "ar": "تسكين الألم الخفيف إلى المتوسط (Analgesic effect).\nخفض درجة حرارة الجسم المرتفعة (Antipyretic effect).\nتأثير ضعيف مضاد للالتهاب (Weak anti-inflammatory effect).\nلا يمتلك التأثير المضاد للالتهاب نفسه الموجود في Ibuprofen أو Diclofenac.\nيبدأ مفعوله الفموي عادةً خلال 30–60 دقيقة، ويستمر عدة ساعات."
+          }
+        },
+        {
+          "h": {
+            "en": "Common side effects",
+            "ar": "الآثار الجانبية الشائعة"
+          },
+          "t": {
+            "en": "Nausea.\nVomiting.\nSkin rash.\nPruritus (itching).",
+            "ar": "الغثيان (Nausea).\nالقيء (Vomiting).\nطفح جلدي (Skin rash).\nالحكة (Pruritus)."
+          }
+        },
+        {
+          "h": {
+            "en": "Serious and rare side effects",
+            "ar": "آثار جانبية خطيرة ونادرة"
+          },
+          "t": {
+            "en": "Hepatotoxicity (liver damage).\nLiver failure.\nSevere allergic reactions (anaphylaxis).\nSerious skin reactions such as Stevens-Johnson syndrome.\nRare blood disorders.",
+            "ar": "تلف الكبد (Hepatotoxicity).\nالفشل الكبدي (Liver failure).\nتفاعلات تحسسية شديدة (Anaphylaxis).\nتفاعلات جلدية خطيرة مثل Stevens–Johnson syndrome.\nاضطرابات دموية نادرة."
+          }
+        },
+        {
+          "h": {
+            "en": "Important warning: overdose",
+            "ar": "تحذير مهم: الجرعة الزائدة"
+          },
+          "t": {
+            "en": "An overdose can cause severe liver damage, even if no clear symptoms appear at first. If an overdose is suspected, seek medical care immediately and do not wait for symptoms to appear.",
+            "ar": "الجرعة الزائدة قد تسبب تلفاً شديداً في الكبد، حتى لو لم تظهر أعراض واضحة في البداية. عند الاشتباه بجرعة زائدة يجب طلب الرعاية الطبية فوراً، وعدم انتظار ظهور الأعراض."
+          }
+        },
+        {
+          "h": {
+            "en": "Dosage forms and strengths",
+            "ar": "الأشكال والتراكيز"
+          },
+          "t": {
+            "en": "Capsules: 500 mg\nSoluble tablets: 500 mg\nOral suspension: 120 mg/5 mL, 125 mg/5 mL, 250 mg/5 mL\nSyrup: 120 mg/5 mL, 250 mg/5 mL\nSuppositories: 125 mg, 250 mg, 500 mg, 1000 mg\nIV infusion: 10 mg/mL\nNote: these are common strengths, not an exclusive list, and the products available in Iraq may differ.",
+            "ar": "كبسولات (Capsules): 500 ملغم\nأقراص قابلة للذوبان (Soluble tablets): 500 ملغم\nمعلق فموي (Oral suspension): 120 ملغم/5 مل، 125 ملغم/5 مل، 250 ملغم/5 مل\nشراب (Syrup): 120 ملغم/5 مل، 250 ملغم/5 مل\nتحاميل (Suppositories): 125 ملغم، 250 ملغم، 500 ملغم، 1000 ملغم\nمحلول للحقن الوريدي (IV infusion): 10 ملغم/مل\nملاحظة: هذه تراكيز شائعة وليست قائمة حصرية، وقد تختلف المنتجات المتوفرة في العراق."
+          }
+        },
+        {
+          "h": {
+            "en": "Dose summary",
+            "ar": "ملخص الجرعات"
+          },
+          "t": {
+            "en": "Children: 10 to 15 mg/kg per dose, every 4 to 6 hours when needed, usually no more than 4 doses in 24 hours (about 60 mg/kg/day).\nAdults: 500 to 1000 mg per dose, every 4 to 6 hours. Maximum in some leaflets is 4000 mg/day; it is preferable not to exceed 3000 mg/day without medical supervision.\nThe dose may need to be reduced with low body weight, liver disease or other risk factors.\nFollow the product leaflet or the approved medical protocol.",
+            "ar": "الأطفال: 10 إلى 15 ملغم/كغم للجرعة الواحدة، كل 4 إلى 6 ساعات عند الحاجة، وعادةً لا تتجاوز 4 جرعات خلال 24 ساعة (حوالي 60 ملغم/كغم/يوم).\nالبالغون: 500 إلى 1000 ملغم للجرعة الواحدة، كل 4 إلى 6 ساعات. الحد الأقصى المعتاد في بعض النشرات 4000 ملغم/يوم، ويفضّل عدم تجاوز 3000 ملغم/يوم دون إشراف طبي.\nقد يلزم تقليل الجرعة عند انخفاض الوزن أو وجود مرض كبدي أو عوامل خطورة أخرى.\nيجب اتباع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد."
+          }
+        }
+      ]
+    }
+  ],
+  "doses": [
+    {
+      "drug": "paracetamol",
+      "options": [
+        {
+          "form": "syrup",
+          "strengths": [
+            {
+              "mg": 120,
+              "per": 5
+            },
+            {
+              "mg": 250,
+              "per": 5
+            }
+          ],
+          "regimens": [
+            {
+              "minAge": 0.25,
+              "maxAge": 12,
+              "method": "perKg",
+              "perKgMin": 10,
+              "perKgMax": 15,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDailyPerKg": 60
+            },
+            {
+              "minAge": 12,
+              "maxAge": 16,
+              "method": "perKg",
+              "perKgMin": 10,
+              "perKgMax": 15,
+              "maxSingle": 750,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDailyPerKg": 60,
+              "maxDaily": 3000,
+              "note": {
+                "en": "For ages 12 to 15 the single dose is weight-based and does not exceed 750 mg.",
+                "ar": "للأعمار من 12 إلى 15 سنة تُحسب الجرعة حسب الوزن ولا تتجاوز 750 ملغم للمرة الواحدة."
+              }
+            },
+            {
+              "minAge": 16,
+              "maxAge": 121,
+              "minWeight": 50,
+              "method": "fixed",
+              "fixedMin": 500,
+              "fixedMax": 1000,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDaily": 4000,
+              "note": {
+                "en": "It is preferable not to exceed 3000 mg/day without medical supervision. Use a maximum of 3000 mg/day with liver insufficiency, chronic alcoholism, chronic malnutrition or dehydration.",
+                "ar": "يفضّل عدم تجاوز 3000 ملغم/يوم دون إشراف طبي. والحد الأقصى 3000 ملغم/يوم عند وجود قصور كبدي أو إدمان كحول أو سوء تغذية مزمن أو جفاف."
+              }
+            },
+            {
+              "minAge": 16,
+              "maxAge": 121,
+              "weightBelow": 50,
+              "method": "fixed",
+              "fixed": 500,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDailyPerKg": 60,
+              "maxDaily": 2000,
+              "note": {
+                "en": "Weight under 50 kg: a single dose of 500 mg, and the daily maximum is 60 mg/kg without exceeding 2000 mg.",
+                "ar": "الوزن أقل من 50 كغم: جرعة واحدة 500 ملغم، والحد اليومي 60 ملغم/كغم بدون تجاوز 2000 ملغم."
+              }
+            }
+          ],
+          "recs": {
+            "en": [
+              "Follow the product leaflet or the approved medical protocol.",
+              "Check the actual concentration printed on the package.",
+              "Do not exceed the maximum daily dose. Overdose can damage the liver."
+            ],
+            "ar": [
+              "اتبع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد.",
+              "تأكد من التركيز الفعلي المكتوب على العبوة.",
+              "لا تتجاوز الجرعة القصوى اليومية. الجرعة الزائدة قد تضر الكبد."
+            ]
+          }
+        },
+        {
+          "form": "oral_suspension",
+          "strengths": [
+            {
+              "mg": 120,
+              "per": 5
+            },
+            {
+              "mg": 125,
+              "per": 5
+            },
+            {
+              "mg": 250,
+              "per": 5
+            }
+          ],
+          "regimens": [
+            {
+              "minAge": 0.25,
+              "maxAge": 12,
+              "method": "perKg",
+              "perKgMin": 10,
+              "perKgMax": 15,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDailyPerKg": 60
+            },
+            {
+              "minAge": 12,
+              "maxAge": 16,
+              "method": "perKg",
+              "perKgMin": 10,
+              "perKgMax": 15,
+              "maxSingle": 750,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDailyPerKg": 60,
+              "maxDaily": 3000,
+              "note": {
+                "en": "For ages 12 to 15 the single dose is weight-based and does not exceed 750 mg.",
+                "ar": "للأعمار من 12 إلى 15 سنة تُحسب الجرعة حسب الوزن ولا تتجاوز 750 ملغم للمرة الواحدة."
+              }
+            },
+            {
+              "minAge": 16,
+              "maxAge": 121,
+              "minWeight": 50,
+              "method": "fixed",
+              "fixedMin": 500,
+              "fixedMax": 1000,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDaily": 4000,
+              "note": {
+                "en": "It is preferable not to exceed 3000 mg/day without medical supervision. Use a maximum of 3000 mg/day with liver insufficiency, chronic alcoholism, chronic malnutrition or dehydration.",
+                "ar": "يفضّل عدم تجاوز 3000 ملغم/يوم دون إشراف طبي. والحد الأقصى 3000 ملغم/يوم عند وجود قصور كبدي أو إدمان كحول أو سوء تغذية مزمن أو جفاف."
+              }
+            },
+            {
+              "minAge": 16,
+              "maxAge": 121,
+              "weightBelow": 50,
+              "method": "fixed",
+              "fixed": 500,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDailyPerKg": 60,
+              "maxDaily": 2000,
+              "note": {
+                "en": "Weight under 50 kg: a single dose of 500 mg, and the daily maximum is 60 mg/kg without exceeding 2000 mg.",
+                "ar": "الوزن أقل من 50 كغم: جرعة واحدة 500 ملغم، والحد اليومي 60 ملغم/كغم بدون تجاوز 2000 ملغم."
+              }
+            }
+          ],
+          "recs": {
+            "en": [
+              "Follow the product leaflet or the approved medical protocol.",
+              "Check the actual concentration printed on the package.",
+              "Do not exceed the maximum daily dose. Overdose can damage the liver."
+            ],
+            "ar": [
+              "اتبع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد.",
+              "تأكد من التركيز الفعلي المكتوب على العبوة.",
+              "لا تتجاوز الجرعة القصوى اليومية. الجرعة الزائدة قد تضر الكبد."
+            ]
+          }
+        },
+        {
+          "form": "capsule",
+          "strengths": [
+            {
+              "mg": 500,
+              "per": 1
+            }
+          ],
+          "regimens": [
+            {
+              "minAge": 12,
+              "maxAge": 16,
+              "method": "fixed",
+              "fixed": 500,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDaily": 2000
+            },
+            {
+              "minAge": 16,
+              "maxAge": 121,
+              "minWeight": 50,
+              "method": "fixed",
+              "fixedMin": 500,
+              "fixedMax": 1000,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDaily": 4000,
+              "note": {
+                "en": "It is preferable not to exceed 3000 mg/day without medical supervision. Use a maximum of 3000 mg/day with liver insufficiency, chronic alcoholism, chronic malnutrition or dehydration.",
+                "ar": "يفضّل عدم تجاوز 3000 ملغم/يوم دون إشراف طبي. والحد الأقصى 3000 ملغم/يوم عند وجود قصور كبدي أو إدمان كحول أو سوء تغذية مزمن أو جفاف."
+              }
+            },
+            {
+              "minAge": 16,
+              "maxAge": 121,
+              "weightBelow": 50,
+              "method": "fixed",
+              "fixed": 500,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDailyPerKg": 60,
+              "maxDaily": 2000,
+              "note": {
+                "en": "Weight under 50 kg: a single dose of 500 mg, and the daily maximum is 60 mg/kg without exceeding 2000 mg.",
+                "ar": "الوزن أقل من 50 كغم: جرعة واحدة 500 ملغم، والحد اليومي 60 ملغم/كغم بدون تجاوز 2000 ملغم."
+              }
+            }
+          ],
+          "recs": {
+            "en": [
+              "Follow the product leaflet or the approved medical protocol.",
+              "Check the actual concentration printed on the package.",
+              "Do not exceed the maximum daily dose. Overdose can damage the liver."
+            ],
+            "ar": [
+              "اتبع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد.",
+              "تأكد من التركيز الفعلي المكتوب على العبوة.",
+              "لا تتجاوز الجرعة القصوى اليومية. الجرعة الزائدة قد تضر الكبد."
+            ]
+          }
+        },
+        {
+          "form": "soluble_tablet",
+          "strengths": [
+            {
+              "mg": 500,
+              "per": 1
+            }
+          ],
+          "regimens": [
+            {
+              "minAge": 12,
+              "maxAge": 16,
+              "method": "fixed",
+              "fixed": 500,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDaily": 2000
+            },
+            {
+              "minAge": 16,
+              "maxAge": 121,
+              "minWeight": 50,
+              "method": "fixed",
+              "fixedMin": 500,
+              "fixedMax": 1000,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDaily": 4000,
+              "note": {
+                "en": "It is preferable not to exceed 3000 mg/day without medical supervision. Use a maximum of 3000 mg/day with liver insufficiency, chronic alcoholism, chronic malnutrition or dehydration.",
+                "ar": "يفضّل عدم تجاوز 3000 ملغم/يوم دون إشراف طبي. والحد الأقصى 3000 ملغم/يوم عند وجود قصور كبدي أو إدمان كحول أو سوء تغذية مزمن أو جفاف."
+              }
+            },
+            {
+              "minAge": 16,
+              "maxAge": 121,
+              "weightBelow": 50,
+              "method": "fixed",
+              "fixed": 500,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDailyPerKg": 60,
+              "maxDaily": 2000,
+              "note": {
+                "en": "Weight under 50 kg: a single dose of 500 mg, and the daily maximum is 60 mg/kg without exceeding 2000 mg.",
+                "ar": "الوزن أقل من 50 كغم: جرعة واحدة 500 ملغم، والحد اليومي 60 ملغم/كغم بدون تجاوز 2000 ملغم."
+              }
+            }
+          ],
+          "recs": {
+            "en": [
+              "Follow the product leaflet or the approved medical protocol.",
+              "Check the actual concentration printed on the package.",
+              "Do not exceed the maximum daily dose. Overdose can damage the liver."
+            ],
+            "ar": [
+              "اتبع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد.",
+              "تأكد من التركيز الفعلي المكتوب على العبوة.",
+              "لا تتجاوز الجرعة القصوى اليومية. الجرعة الزائدة قد تضر الكبد."
+            ]
+          }
+        },
+        {
+          "form": "suppository",
+          "recs": {
+            "en": [
+              "Follow the product leaflet or the approved medical protocol.",
+              "Check the actual concentration printed on the package.",
+              "Do not exceed the maximum daily dose. Overdose can damage the liver."
+            ],
+            "ar": [
+              "اتبع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد.",
+              "تأكد من التركيز الفعلي المكتوب على العبوة.",
+              "لا تتجاوز الجرعة القصوى اليومية. الجرعة الزائدة قد تضر الكبد."
+            ]
+          },
+          "strengths": [
+            {
+              "mg": 125,
+              "per": 1,
+              "regimens": [
+                {
+                  "minAge": 1,
+                  "maxAge": 6,
+                  "method": "fixed",
+                  "fixedMin": 125,
+                  "fixedMax": 250,
+                  "maxDaily": 1000,
+                  "timesPerDay": 4,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "at least 4 hours apart",
+                    "ar": "بفاصل لا يقل عن 4 ساعات"
+                  },
+                  "note": {
+                    "en": "Suppositories should not be broken; give whole suppositories only. Weight guide: about 10 to 20 kg.",
+                    "ar": "لا تُقسّم التحميلة، تُعطى كاملة فقط. الوزن التقريبي المرافق: 10 إلى 20 كغم."
+                  }
+                }
+              ]
+            },
+            {
+              "mg": 250,
+              "per": 1,
+              "regimens": [
+                {
+                  "minAge": 6,
+                  "maxAge": 12,
+                  "method": "fixed",
+                  "fixedMin": 250,
+                  "fixedMax": 500,
+                  "maxDaily": 2000,
+                  "timesPerDay": 4,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "at least 4 hours apart",
+                    "ar": "بفاصل لا يقل عن 4 ساعات"
+                  },
+                  "note": {
+                    "en": "Suppositories should not be broken; give whole suppositories only. Weight guide: about 20 to 40 kg.",
+                    "ar": "لا تُقسّم التحميلة، تُعطى كاملة فقط. الوزن التقريبي المرافق: 20 إلى 40 كغم."
+                  }
+                }
+              ]
+            },
+            {
+              "mg": 500,
+              "per": 1,
+              "regimens": [
+                {
+                  "minAge": 10,
+                  "maxAge": 16,
+                  "method": "fixed",
+                  "fixed": 500,
+                  "maxDaily": 2000,
+                  "timesPerDay": 4,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "at least 4 hours apart",
+                    "ar": "بفاصل لا يقل عن 4 ساعات"
+                  },
+                  "note": {
+                    "en": "Weight guide for ages 10 to 12: about 30 to 40 kg.",
+                    "ar": "الوزن التقريبي المرافق للأعمار من 10 إلى 12 سنة: 30 إلى 40 كغم."
+                  }
+                },
+                {
+                  "minAge": 16,
+                  "maxAge": 121,
+                  "method": "fixed",
+                  "fixedMin": 500,
+                  "fixedMax": 1000,
+                  "timesPerDay": 4,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "every 4 to 6 hours when needed",
+                    "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+                  },
+                  "maxDaily": 4000,
+                  "note": {
+                    "en": "It is preferable not to exceed 3000 mg/day without medical supervision. Use a maximum of 3000 mg/day with liver insufficiency, chronic alcoholism, chronic malnutrition or dehydration.",
+                    "ar": "يفضّل عدم تجاوز 3000 ملغم/يوم دون إشراف طبي. والحد الأقصى 3000 ملغم/يوم عند وجود قصور كبدي أو إدمان كحول أو سوء تغذية مزمن أو جفاف."
+                  }
+                }
+              ]
+            },
+            {
+              "mg": 1000,
+              "per": 1,
+              "regimens": [
+                {
+                  "minAge": 0,
+                  "maxAge": 121,
+                  "method": "note",
+                  "note": {
+                    "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
+                    "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "form": "infusion",
+          "strengths": [
+            {
+              "mg": 10,
+              "per": 1
+            }
+          ],
+          "regimens": [
+            {
+              "minAge": 0.25,
+              "maxAge": 121,
+              "method": "perKg",
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "at least 4 hours apart",
+                "ar": "بفاصل لا يقل عن 4 ساعات"
+              },
+              "perKg": 7.5,
+              "weightUpTo": 10,
+              "maxDailyPerKg": 30,
+              "note": {
+                "en": "Give as a 15-minute intravenous infusion. Take care not to confuse mg with mL. With severe renal impairment the interval between doses must be at least 6 hours.",
+                "ar": "تُعطى بتسريب وريدي مدته 15 دقيقة. انتبه من الخلط بين الملغم والمل. وعند القصور الكلوي الشديد يكون الفاصل 6 ساعات على الأقل."
+              }
+            },
+            {
+              "minAge": 0.25,
+              "maxAge": 121,
+              "method": "perKg",
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "at least 4 hours apart",
+                "ar": "بفاصل لا يقل عن 4 ساعات"
+              },
+              "perKg": 15,
+              "weightAbove": 10,
+              "weightUpTo": 33,
+              "maxDailyPerKg": 60,
+              "maxDaily": 2000,
+              "note": {
+                "en": "Give as a 15-minute intravenous infusion. Take care not to confuse mg with mL. With severe renal impairment the interval between doses must be at least 6 hours.",
+                "ar": "تُعطى بتسريب وريدي مدته 15 دقيقة. انتبه من الخلط بين الملغم والمل. وعند القصور الكلوي الشديد يكون الفاصل 6 ساعات على الأقل."
+              }
+            },
+            {
+              "minAge": 0.25,
+              "maxAge": 121,
+              "method": "perKg",
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "at least 4 hours apart",
+                "ar": "بفاصل لا يقل عن 4 ساعات"
+              },
+              "perKg": 15,
+              "weightAbove": 33,
+              "weightUpTo": 50,
+              "maxDailyPerKg": 60,
+              "maxDaily": 3000,
+              "note": {
+                "en": "Give as a 15-minute intravenous infusion. Take care not to confuse mg with mL. With severe renal impairment the interval between doses must be at least 6 hours.",
+                "ar": "تُعطى بتسريب وريدي مدته 15 دقيقة. انتبه من الخلط بين الملغم والمل. وعند القصور الكلوي الشديد يكون الفاصل 6 ساعات على الأقل."
+              }
+            },
+            {
+              "minAge": 0.25,
+              "maxAge": 121,
+              "weightAbove": 50,
+              "method": "fixed",
+              "fixed": 1000,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "at least 4 hours apart",
+                "ar": "بفاصل لا يقل عن 4 ساعات"
+              },
+              "maxDaily": 4000,
+              "note": {
+                "en": "Give as a 15-minute infusion (100 mL bag). The maximum is 3000 mg/day with liver insufficiency, chronic alcoholism, chronic malnutrition or dehydration. Take care not to confuse mg with mL.",
+                "ar": "تُعطى بتسريب مدته 15 دقيقة (كيس 100 مل). والحد الأقصى 3000 ملغم/يوم عند وجود قصور كبدي أو إدمان كحول أو سوء تغذية مزمن أو جفاف. انتبه من الخلط بين الملغم والمل."
+              }
+            }
+          ],
+          "recs": {
+            "en": [
+              "Use only when the oral route is not suitable.",
+              "Do not exceed the maximum daily dose, and count all paracetamol-containing products."
+            ],
+            "ar": [
+              "تُستخدم عندما لا يكون الفم مناسباً.",
+              "لا تتجاوز الجرعة القصوى اليومية، واحسب كل المنتجات التي تحتوي على باراسيتامول."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

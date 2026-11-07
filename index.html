@@ -82,7 +82,7 @@ textarea.input{height:auto;min-height:200px;padding:12px;resize:vertical;line-he
 'use strict';
 
 /* ======= Settings you may change ======= */
-var APP_VERSION = '1.1.0';
+var APP_VERSION = '1.2.0';
 var REPO = 'abdalqaderm323-design/pharmacist-book-app';
 var BRANCH = 'main';
 /* ======================================== */
@@ -106,7 +106,7 @@ var STR = {
     noDoseData: 'لا توجد بيانات جرعات بعد', disclaimer: 'للتعليم فقط ولا يغني عن استشارة الصيدلي أو الطبيب.',
     updChecking: 'جاري التحقق من التحديثات...', updOk: 'تم تحديث المعلومات', updLatest: 'أنت على آخر نسخة', updOffline: 'تحتاج اتصال بالإنترنت للتحديث',
     updNewApp: 'يوجد تحديث جديد للتطبيق', updDownload: 'تنزيل التحديث', updCfg: 'رابط التحديث غير مضبوط بعد', close: 'إغلاق',
-    all: 'الكل', formLabel: 'الشكل الصيدلاني', strengthLabel: 'التركيز (الجرعة المتوفرة)', pickFormFirst: 'اختار الشكل الصيدلاني أولاً', pickForm: 'اختار الشكل الصيدلاني', pickStrength: 'اختار التركيز',
+    to: 'إلى', upTo: 'حتى', all: 'الكل', formLabel: 'الشكل الصيدلاني', strengthLabel: 'التركيز (الجرعة المتوفرة)', pickFormFirst: 'اختار الشكل الصيدلاني أولاً', pickForm: 'اختار الشكل الصيدلاني', pickStrength: 'اختار التركيز',
     amountGive: 'الكمية المعطاة', totalDaily: 'المجموع اليومي', exceeds: 'تنبيه: المجموع اليومي يتجاوز الحد الأقصى.', maxSingle: 'أقصى جرعة للمرة الواحدة', maxDailyL: 'أقصى جرعة باليوم',
     mgU: 'ملغم', u_ml: 'مل', u_tablet: 'قرص', u_capsule: 'كبسولة', u_suppository: 'تحميلة', u_g: 'غم', u_unit: 'وحدة', updFail: 'تعذر التحقق من التحديث. حاول لاحقاً.', badFile: 'يوجد خطأ في الملف', filesWord: 'ملفات', searchList: 'ابحث بالاسم أو التصنيف',
     noData: 'تعذر تحميل بيانات التطبيق', backLbl: 'رجوع', menuLbl: 'القائمة', removeSaved: 'إزالة من المحفوظات', addSaved: 'حفظ الموضوع', version: 'النسخة', dataV: 'المعلومات'
@@ -129,7 +129,7 @@ var STR = {
     noDoseData: 'No dose data yet', disclaimer: 'For education only. It does not replace advice from a pharmacist or doctor.',
     updChecking: 'Checking for updates...', updOk: 'Information updated', updLatest: 'You are on the latest version', updOffline: 'You need an internet connection to update',
     updNewApp: 'A new app update is available', updDownload: 'Download update', updCfg: 'The update link is not set yet', close: 'Close',
-    all: 'All', formLabel: 'Pharmaceutical form', strengthLabel: 'Strength (available concentration)', pickFormFirst: 'Pick the pharmaceutical form first', pickForm: 'Pick the pharmaceutical form', pickStrength: 'Pick the strength',
+    to: 'to', upTo: 'up to', all: 'All', formLabel: 'Pharmaceutical form', strengthLabel: 'Strength (available concentration)', pickFormFirst: 'Pick the pharmaceutical form first', pickForm: 'Pick the pharmaceutical form', pickStrength: 'Pick the strength',
     amountGive: 'Amount to give', totalDaily: 'Total per day', exceeds: 'Warning: the daily total exceeds the maximum.', maxSingle: 'Maximum single dose', maxDailyL: 'Maximum per day',
     mgU: 'mg', u_ml: 'mL', u_tablet: 'tablet(s)', u_capsule: 'capsule(s)', u_suppository: 'suppository', u_g: 'g', u_unit: 'unit(s)', updFail: 'Could not check for updates. Try again later.', badFile: 'There is an error in the file', filesWord: 'Files', searchList: 'Search by name or category',
     noData: 'Could not load app data', backLbl: 'Back', menuLbl: 'Menu', removeSaved: 'Remove from saved', addSaved: 'Save topic', version: 'Version', dataV: 'Data'
@@ -203,9 +203,9 @@ function toast(msg) {
 var BUNDLE = { build: 0, sig: '' };
 var CURSIG = '';
 var FORMS = {
-  tablet: ['أقراص', 'Tablet', 'tablet'], capsule: ['كبسولات', 'Capsule', 'capsule'], syrup: ['شراب', 'Syrup', 'ml'], suspension: ['معلق', 'Suspension', 'ml'],
+  tablet: ['أقراص', 'Tablet', 'tablet'], capsule: ['كبسولات', 'Capsule', 'capsule'], syrup: ['شراب', 'Syrup', 'ml'], suspension: ['معلق فموي', 'Oral suspension', 'ml'], oral_suspension: ['معلق فموي', 'Oral suspension', 'ml'], soluble_tablet: ['أقراص قابلة للذوبان', 'Soluble tablets', 'tablet'], infusion: ['محلول للحقن الوريدي', 'IV infusion', 'ml'],
   solution: ['محلول', 'Solution', 'ml'], drops: ['قطرة', 'Drops', 'ml'], im: ['حقنة عضلية', 'IM injection', 'ml'], iv: ['حقنة وريدية', 'IV injection', 'ml'],
-  sc: ['حقنة تحت الجلد', 'SC injection', 'ml'], suppository: ['تحميلة', 'Suppository', 'suppository'], ointment: ['مرهم', 'Ointment', 'g'], cream: ['كريم', 'Cream', 'g'],
+  sc: ['حقنة تحت الجلد', 'SC injection', 'ml'], suppository: ['تحاميل', 'Suppositories', 'suppository'], ointment: ['مرهم', 'Ointment', 'g'], cream: ['كريم', 'Cream', 'g'],
   inhaler: ['بخاخ', 'Inhaler', 'unit'], powder: ['أكياس / بودرة', 'Powder / sachet', 'unit']
 };
 function formName(k) { return FORMS[k] ? FORMS[k][lang === 'ar' ? 0 : 1] : k; }
@@ -515,6 +515,9 @@ function pickRegimen(opt, age, wt, sex) {
     if (age < (r.minAge || 0) || age >= (r.maxAge === undefined ? 121 : r.maxAge)) continue;
     if (r.minWeight !== undefined && wt < r.minWeight) continue;
     if (r.maxWeight !== undefined && wt > r.maxWeight) continue;
+    if (r.weightAbove !== undefined && wt <= r.weightAbove) continue;
+    if (r.weightUpTo !== undefined && wt > r.weightUpTo) continue;
+    if (r.weightBelow !== undefined && wt >= r.weightBelow) continue;
     if (r.sex && r.sex !== sex) continue;
     return r;
   }
@@ -562,28 +565,37 @@ function pageCalc() {
     if (!(wt >= 1 && wt <= 300)) { err.textContent = t('badWt'); return; }
     drugF.hideSug();
     var box = h('div', { class: 'box' });
-    var r = pickRegimen(opt, age, wt, sex);
+    var r = pickRegimen((st && st.regimens) ? st : opt, age, wt, sex);
     if (!r) { box.appendChild(h('p', { style: 'margin:0;color:var(--amber)', text: t('ageWarn') })); out.appendChild(box); return; }
     function kv(a, b) { box.appendChild(h('div', { class: 'kv' }, [h('span', { text: a }), h('span', { text: b })])); }
     if (r.method === 'note') {
       if (r.note) box.appendChild(h('p', { style: 'margin:0', text: L(r.note) }));
     } else {
-      var dose = r.method === 'perKg' ? wt * r.perKg : r.fixed;
-      if (r.maxSingle && dose > r.maxSingle) dose = r.maxSingle;
-      dose = Math.round(dose * 10) / 10;
-      kv(t('recDose'), fmt(dose) + ' ' + t('mgU'));
-      if (st && st.mg) {
-        var amt = dose / st.mg * (st.per || 1), u = formUnit(opt.form);
-        amt = (u === 'ml' || u === 'g') ? Math.round(amt * 10) / 10 : Math.round(amt * 4) / 4;
-        kv(t('amountGive'), fmt(amt) + ' ' + unitLabel(opt.form) + '  (' + strengthText(opt.form, st) + ')');
+      var lo, hi;
+      if (r.method === 'perKg') {
+        var k1 = r.perKgMin !== undefined ? r.perKgMin : r.perKg;
+        var k2 = r.perKgMax !== undefined ? r.perKgMax : (r.perKg !== undefined ? r.perKg : k1);
+        lo = wt * k1; hi = wt * k2;
+      } else {
+        lo = r.fixedMin !== undefined ? r.fixedMin : r.fixed;
+        hi = r.fixedMax !== undefined ? r.fixedMax : (r.fixed !== undefined ? r.fixed : lo);
       }
-      if (r.timesPerDay) kv(t('timesDay'), r.timesPerDay + ' ' + t('times'));
-      var total = r.timesPerDay ? dose * r.timesPerDay : null;
-      if (total) kv(t('totalDaily'), fmt(total) + ' ' + t('mgU'));
+      if (r.maxSingle) { lo = Math.min(lo, r.maxSingle); hi = Math.min(hi, r.maxSingle); }
+      lo = Math.round(lo * 10) / 10; hi = Math.round(hi * 10) / 10;
+      var rng = function (a, b) { return a === b ? fmt(a) : fmt(a) + ' ' + t('to') + ' ' + fmt(b); };
+      kv(t('recDose'), rng(lo, hi) + ' ' + t('mgU'));
+      if (st && st.mg) {
+        var u = formUnit(opt.form);
+        var conv = function (d) { var a = d / st.mg * (st.per || 1); return (u === 'ml' || u === 'g') ? Math.round(a * 10) / 10 : Math.round(a * 4) / 4; };
+        kv(t('amountGive'), rng(conv(lo), conv(hi)) + ' ' + unitLabel(opt.form) + '  (' + strengthText(opt.form, st) + ')');
+      }
+      if (r.timesPerDay) kv(t('timesDay'), (r.timesUpTo ? t('upTo') + ' ' : '') + r.timesPerDay + ' ' + t('times') + (r.interval ? ' (' + L(r.interval) + ')' : ''));
+      var total = r.timesPerDay ? hi * r.timesPerDay : null;
+      if (total) kv(t('totalDaily'), ((lo !== hi || r.timesUpTo) ? t('upTo') + ' ' : '') + fmt(total) + ' ' + t('mgU'));
       if (r.maxSingle) kv(t('maxSingle'), fmt(r.maxSingle) + ' ' + t('mgU'));
       var md = r.maxDaily; if (r.maxDailyPerKg) { md = r.maxDailyPerKg * wt; if (r.maxDaily) md = Math.min(md, r.maxDaily); }
       if (md) kv(t('maxDailyL'), fmt(md) + ' ' + t('mgU'));
-      if (total && md && total > md) box.appendChild(h('p', { style: 'margin:10px 0 0;color:var(--red)', text: t('exceeds') }));
+      if (total && md && total > md + 0.001) box.appendChild(h('p', { style: 'margin:10px 0 0;color:var(--red)', text: t('exceeds') }));
       if (r.note) box.appendChild(h('p', { style: 'margin:10px 0 0', text: L(r.note) }));
     }
     var rl = opt.recs && (opt.recs[lang] || opt.recs.en || opt.recs.ar);

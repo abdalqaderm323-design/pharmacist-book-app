@@ -1,0 +1,255 @@
+{
+  "drug": {
+    "brand_name": "Brufen",
+    "generic_name": {
+      "ar": "إيبوبروفين",
+      "en": "Ibuprofen"
+    },
+    "active_ingredient": {
+      "ar": "إيبوبروفين",
+      "en": "Ibuprofen"
+    },
+    "classification": {
+      "ar": "مضادات الالتهاب غير الستيرويدية",
+      "en": "Non-Steroidal Anti-Inflammatory Drugs (NSAIDs)"
+    },
+    "therapeutic_actions": [
+      "مسكن للألم",
+      "مضاد للالتهاب",
+      "خافض للحرارة"
+    ],
+    "chemical_formula": "C13H18O2",
+    "molecular_weight_g_mol": 206.28
+  },
+  "pharmaceutical_forms_and_strengths": [
+    {
+      "form": "Tablets",
+      "ar": "أقراص",
+      "strengths": [
+        "200 mg",
+        "400 mg",
+        "600 mg",
+        "800 mg"
+      ]
+    },
+    {
+      "form": "Capsules",
+      "ar": "كبسولات",
+      "strengths": [
+        "200 mg",
+        "400 mg"
+      ]
+    },
+    {
+      "form": "Oral suspension",
+      "ar": "معلق فموي / شراب",
+      "strengths": [
+        "100 mg/5 mL",
+        "200 mg/5 mL"
+      ]
+    },
+    {
+      "form": "Oral drops",
+      "ar": "قطرات فموية",
+      "strengths": [
+        "تختلف حسب الشركة المصنعة"
+      ]
+    },
+    {
+      "form": "Chewable tablets",
+      "ar": "أقراص مضغ",
+      "strengths": [
+        "50 mg",
+        "100 mg"
+      ]
+    },
+    {
+      "form": "Suppositories",
+      "ar": "تحاميل",
+      "strengths": [
+        "60 mg",
+        "125 mg",
+        "200 mg في بعض الأسواق"
+      ]
+    },
+    {
+      "form": "Topical gel",
+      "ar": "جل موضعي",
+      "strengths": [
+        "5%",
+        "10% حسب المستحضر"
+      ]
+    },
+    {
+      "form": "Intravenous solution",
+      "ar": "محلول للحقن الوريدي",
+      "strengths": [
+        "تراكيز خاصة بالمستحضرات المستشفوية"
+      ]
+    }
+  ],
+  "dosage": {
+    "adults": {
+      "pain_or_fever": "200–400 mg عند الحاجة",
+      "interval": "كل 4–6 ساعات حسب الحاجة، وفق النشرة/التوجيه الطبي",
+      "maximum_nonprescription_daily_dose": "1200 mg/day",
+      "arthritis_under_medical_supervision": "1200–3200 mg/day حسب الحالة وتحت إشراف طبي",
+      "note": "استخدم أقل جرعة فعالة لأقصر مدة. الجرعات الأعلى من 1200 mg/day تتطلب إشرافًا طبيًا."
+    },
+    "children": {
+      "usual_dose": "5–10 mg/kg لكل جرعة",
+      "interval": "كل 6–8 ساعات عند الحاجة",
+      "maximum_single_dose": "10 mg/kg",
+      "usual_maximum_daily_dose": "40 mg/kg/day",
+      "maximum_doses_per_24_hours": 4,
+      "age_note": "عادةً لا يُستخدم للأطفال دون عمر 6 أشهر إلا بتوجيه طبي."
+    },
+    "calculation": {
+      "dose_formula": "الجرعة (mg) = وزن الطفل (kg) × الجرعة المطلوبة (mg/kg)",
+      "example": {
+        "weight_kg": 20,
+        "dose_mg_per_kg": 10,
+        "calculated_dose_mg": 200,
+        "suspension_concentration": "100 mg/5 mL",
+        "calculated_volume_ml": 10,
+        "note": "مثال تعليمي فقط وليس وصفة لطفل بعينه. تحقق من تركيز العبوة والجرعة القصوى."
+      }
+    }
+  },
+  "mechanism_of_action": {
+    "ar": "يثبط الإيبوبروفين إنزيمي COX-1 وCOX-2 بصورة عكوسة، مما يقلل تصنيع البروستاغلاندينات. يؤدي ذلك إلى تقليل الألم والالتهاب والحمى. ويساهم تثبيط COX-1 في بعض التأثيرات الجانبية المعدية وتأثيره على وظيفة الصفائح الدموية.",
+    "en": "Ibuprofen reversibly inhibits COX-1 and COX-2, reducing prostaglandin synthesis and producing analgesic, anti-inflammatory, and antipyretic effects."
+  },
+  "indications": [
+    "الصداع",
+    "ألم الأسنان",
+    "آلام العضلات",
+    "ألم الظهر",
+    "آلام المفاصل",
+    "آلام الدورة الشهرية",
+    "الألم بعد بعض الإجراءات الجراحية",
+    "التهاب المفاصل الروماتويدي",
+    "الفصال العظمي",
+    "خفض الحرارة",
+    "تخفيف الألم المصاحب لنزلات البرد والإنفلونزا"
+  ],
+  "contraindications_and_precautions": {
+    "contraindications_or_avoid": [
+      "الحساسية للإيبوبروفين",
+      "تاريخ تفاعل تحسسي شديد مع الأسبرين أو مضادات الالتهاب غير الستيرويدية",
+      "قرحة المعدة النشطة أو نزيف الجهاز الهضمي",
+      "قصور الكلى الشديد",
+      "قصور القلب الشديد",
+      "بعد جراحة CABG",
+      "الثلث الأخير من الحمل"
+    ],
+    "use_with_caution": [
+      "ارتفاع ضغط الدم",
+      "أمراض القلب والشرايين",
+      "كبار السن",
+      "أمراض الكبد",
+      "الربو المرتبط بالأسبرين أو NSAIDs",
+      "الجفاف، خاصة عند الأطفال",
+      "تاريخ قرحة المعدة",
+      "الحمل ابتداءً من الأسبوع 20 يحتاج إلى تقييم طبي"
+    ],
+    "important_warning": "قد يزيد الإيبوبروفين خطر قرحة ونزيف الجهاز الهضمي، والجلطات القلبية والسكتة الدماغية، خاصة مع الجرعات العالية أو الاستخدام الطويل."
+  },
+  "drug_interactions": [
+    {
+      "drug_or_class": "Aspirin",
+      "interaction_type": "Pharmacodynamic",
+      "effect": "زيادة خطر النزيف، وقد يقلل الإيبوبروفين التأثير المضاد للصفيحات للأسبرين منخفض الجرعة."
+    },
+    {
+      "drug_or_class": "Warfarin",
+      "interaction_type": "Pharmacodynamic",
+      "effect": "زيادة خطر النزيف."
+    },
+    {
+      "drug_or_class": "Apixaban / Rivaroxaban",
+      "interaction_type": "Pharmacodynamic",
+      "effect": "زيادة خطر النزيف."
+    },
+    {
+      "drug_or_class": "Clopidogrel",
+      "interaction_type": "Pharmacodynamic",
+      "effect": "زيادة خطر النزيف."
+    },
+    {
+      "drug_or_class": "Diclofenac / Naproxen / other NSAIDs",
+      "interaction_type": "Pharmacodynamic",
+      "effect": "زيادة سمية الجهاز الهضمي والكلى، وغالبًا لا توجد فائدة إضافية من الجمع."
+    },
+    {
+      "drug_or_class": "Prednisone / Dexamethasone",
+      "interaction_type": "Pharmacodynamic",
+      "effect": "زيادة خطر قرحة ونزيف المعدة."
+    },
+    {
+      "drug_or_class": "SSRIs such as Sertraline and Fluoxetine",
+      "interaction_type": "Pharmacodynamic",
+      "effect": "زيادة خطر النزيف المعدي."
+    },
+    {
+      "drug_or_class": "ACE inhibitors such as Enalapril",
+      "interaction_type": "Pharmacodynamic",
+      "effect": "تقليل التأثير الخافض للضغط واحتمال تدهور وظائف الكلى."
+    },
+    {
+      "drug_or_class": "ARBs such as Losartan",
+      "interaction_type": "Pharmacodynamic",
+      "effect": "احتمال تدهور وظائف الكلى وتقليل السيطرة على ضغط الدم."
+    },
+    {
+      "drug_or_class": "Diuretics such as Furosemide",
+      "interaction_type": "Pharmacodynamic",
+      "effect": "تقليل تأثير المدرات وزيادة خطر القصور الكلوي."
+    },
+    {
+      "drug_or_class": "Lithium",
+      "interaction_type": "Pharmacokinetic",
+      "effect": "زيادة تركيز الليثيوم واحتمال سميته."
+    },
+    {
+      "drug_or_class": "Methotrexate",
+      "interaction_type": "Pharmacokinetic",
+      "effect": "تقليل طرح الميثوتريكسات وزيادة احتمال السمية."
+    },
+    {
+      "drug_or_class": "Cyclosporine",
+      "interaction_type": "Pharmacodynamic",
+      "effect": "زيادة خطر السمية الكلوية."
+    },
+    {
+      "drug_or_class": "Tacrolimus",
+      "interaction_type": "Pharmacodynamic",
+      "effect": "زيادة خطر السمية الكلوية."
+    }
+  ],
+  "pharmacy_summary": {
+    "generic_name": "Ibuprofen",
+    "class": "NSAIDs",
+    "mechanism": "COX-1/COX-2 inhibition",
+    "adult_nonprescription_dose": "200–400 mg",
+    "adult_nonprescription_maximum": "1200 mg/day",
+    "children_dose": "5–10 mg/kg/dose",
+    "children_usual_maximum": "40 mg/kg/day",
+    "major_risks": [
+      "نزيف معدي",
+      "قرحة",
+      "سمية كلوية",
+      "مخاطر قلبية وعائية"
+    ],
+    "major_interactions": [
+      "Warfarin",
+      "Aspirin",
+      "NSAIDs",
+      "ACE inhibitors",
+      "Diuretics",
+      "Lithium",
+      "Methotrexate"
+    ]
+  },
+  "disclaimer": "معلومات تعليمية عامة وليست وصفة طبية. تختلف التراكيز والجرعات حسب البلد والمستحضر والعمر والحالة الصحية. يجب مراجعة النشرة الرسمية ومختص صحي قبل الاستخدام."
+}

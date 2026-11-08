@@ -1,0 +1,563 @@
+{
+  "drugs": [
+    {
+      "id": "aspirin",
+      "rank": 1,
+      "categories": [
+        "analgesics",
+        "antipyretics"
+      ],
+      "aliases": [
+        "ASA",
+        "Acetylsalicylic acid",
+        "Bayer Aspirin",
+        "Ecotrin",
+        "Bufferin",
+        "Disprin",
+        "أسبرين",
+        "حمض أسيتيل الساليسيليك"
+      ],
+      "title": {
+        "en": "Aspirin (Acetylsalicylic acid)",
+        "ar": "الأسبرين (حمض أسيتيل الساليسيليك)"
+      },
+      "sections": [
+        {
+          "h": {
+            "en": "Drug identity and classification",
+            "ar": "الهوية الدوائية والتصنيف"
+          },
+          "t": {
+            "en": "Generic name: Acetylsalicylic acid (ASA); common name: Aspirin. Formula: C9H8O4; molecular weight: 180.16 g/mol. Classes: salicylate, NSAID, analgesic, antipyretic, anti-inflammatory, and antiplatelet. Brand names vary by country and may include Bayer Aspirin, Ecotrin, Bufferin, and Disprin.",
+            "ar": "الاسم العلمي: حمض أسيتيل الساليسيليك (ASA)، والاسم الشائع Aspirin. الصيغة C9H8O4 والوزن الجزيئي 180.16 غم/مول. التصنيفات: ساليسيلات، ومضاد التهاب غير ستيرويدي، ومسكن، وخافض للحرارة، ومضاد للالتهاب، ومضاد لتجمع الصفائح. تختلف الأسماء التجارية حسب البلد، ومنها Bayer Aspirin وEcotrin وBufferin وDisprin."
+          }
+        },
+        {
+          "h": {
+            "en": "Mechanism of action",
+            "ar": "آلية العمل"
+          },
+          "t": {
+            "en": "Aspirin irreversibly acetylates COX-1 and COX-2, reducing prostaglandin synthesis and thereby pain, fever, and inflammation. In platelets, irreversible COX-1 inhibition reduces thromboxane A2 and platelet aggregation. Since platelets cannot effectively synthesize new COX, the effect lasts for their lifespan (about 7–10 days), with gradual recovery as new platelets form. Low doses mainly provide antiplatelet activity, not analgesia.",
+            "ar": "يثبط الأسبرين إنزيمي COX-1 وCOX-2 بصورة غير عكوسة عن طريق الأستلة، فيقل تصنيع البروستاغلاندينات وبالتالي الألم والحمى والالتهاب. وفي الصفائح يؤدي تثبيط COX-1 إلى تقليل Thromboxane A2 وتجمع الصفائح. ولأن الصفائح لا تستطيع تصنيع COX جديد بكفاءة، يستمر التأثير طوال عمرها (نحو 7–10 أيام)، مع تعافي الوظيفة تدريجيًا بتكون صفائح جديدة. الجرعات المنخفضة مضادة للصفائح أساسًا وليست مسكنة."
+          }
+        },
+        {
+          "h": {
+            "en": "Clinical indications",
+            "ar": "الاستخدامات الطبية"
+          },
+          "t": {
+            "en": "Analgesic/antipyretic: short-term relief of mild-to-moderate pain (e.g., headache, dental, musculoskeletal pain, dysmenorrhea) and fever in appropriate adults. Antiplatelet: secondary prevention after myocardial infarction, in established coronary artery disease, after selected ischemic strokes/TIAs, and after selected coronary interventions/stenting when prescribed. Aspirin does not dissolve an existing clot and is not a substitute for anticoagulants when indicated. Low-dose aspirin may be prescribed by an obstetric clinician to prevent pre-eclampsia in selected high-risk pregnancies. Do not self-start for primary cardiovascular prevention or pregnancy.",
+            "ar": "للتسكين وخفض الحرارة: التخفيف قصير الأمد من الألم الخفيف إلى المتوسط مثل الصداع وألم الأسنان وآلام العضلات وعسر الطمث، وخفض الحمى لدى البالغين المناسبين. كمضاد صفائح: للوقاية الثانوية بعد احتشاء القلب، وفي مرض الشريان التاجي المثبت، وبعد بعض السكتات الإقفارية أو النوبات الإقفارية العابرة، وبعد بعض إجراءات القسطرة والدعامات عند وصفه. لا يذيب الأسبرين الخثرة الموجودة ولا يحل محل مضادات التخثر عند الحاجة إليها. قد يصف اختصاصي التوليد جرعة منخفضة للوقاية من تسمم الحمل لدى بعض الحوامل ذوات الخطورة المرتفعة. لا تبدأه ذاتيًا للوقاية القلبية الأولية أو أثناء الحمل."
+          }
+        },
+        {
+          "h": {
+            "en": "Dosage forms and administration",
+            "ar": "الأشكال الصيدلانية وطريقة الإعطاء"
+          },
+          "t": {
+            "en": "Forms include immediate-release tablets, enteric-coated tablets, soluble/dispersible tablets, and chewable tablets. Common strengths vary by market: 75, 81, 100, 300, 325, and 500 mg. Swallow enteric-coated tablets whole; do not crush or chew. Enteric coating delays release but does not reliably prevent ulcers or gastrointestinal bleeding. Follow the specific product leaflet.",
+            "ar": "تشمل الأشكال الأقراص العادية والمغلفة معويًا والفوارة أو القابلة للتبعثر والقابلة للمضغ. تختلف التراكيز حسب السوق، ومن الشائع 75 و81 و100 و300 و325 و500 ملغم. تُبتلع الأقراص المغلفة معويًا كاملة ولا تُسحق أو تُمضغ. يؤخر التغليف المعوي تحرر الدواء لكنه لا يمنع بصورة موثوقة القرحة أو النزيف الهضمي. اتبع نشرة المستحضر المحدد."
+          }
+        },
+        {
+          "h": {
+            "en": "Adult dosage",
+            "ar": "جرعات البالغين"
+          },
+          "t": {
+            "en": "Analgesic/antipyretic: commonly 300–1,000 mg per dose every 4–6 hours as needed. Maximum varies by product and country; some references allow up to 4,000 mg/day, while many OTC labels set a lower limit. Antiplatelet: commonly 75–100 mg once daily for selected indications. Suspected acute MI: emergency protocols may use a 162–325 mg loading dose, usually chewed or rapidly absorbed, when directed; never delay emergency services. Pre-eclampsia prevention: selected protocols use 75–150 mg once daily, often from after week 12; obstetric clinician determines suitability, dose, and duration.",
+            "ar": "للتسكين وخفض الحرارة: عادة 300–1000 ملغم للجرعة بفاصل 4–6 ساعات عند الحاجة. يختلف الحد الأعلى حسب المستحضر والبلد؛ تسمح بعض المراجع بحد يصل إلى 4000 ملغم يوميًا، بينما تحدد نشرات كثيرة حدًا أقل. مضاد الصفائح: غالبًا 75–100 ملغم مرة يوميًا لاستطبابات محددة. عند الاشتباه باحتشاء القلب الحاد قد تستخدم بروتوكولات الطوارئ جرعة تحميل 162–325 ملغم، غالبًا بالمضغ أو بمستحضر سريع الامتصاص، وفق توجيه طبي؛ لا تؤخر طلب الإسعاف. للوقاية من تسمم الحمل تستخدم بروتوكولات معينة 75–150 ملغم مرة يوميًا لبعض الحوامل، غالبًا بعد الأسبوع 12؛ ويحدد اختصاصي التوليد الملاءمة والجرعة والمدة."
+          }
+        },
+        {
+          "h": {
+            "en": "Contraindications",
+            "ar": "موانع الاستعمال"
+          },
+          "t": {
+            "en": "Avoid or seek specialist direction with aspirin/salicylate allergy, previous serious hypersensitivity to aspirin/NSAIDs, active significant bleeding, active peptic ulcer or prior aspirin-related GI bleeding, or significant bleeding disorders. Generally avoid in children/adolescents with viral illness due to Reye syndrome; specialist exceptions (e.g., selected Kawasaki disease regimens) require supervision. Severe renal/hepatic impairment needs individualized assessment. Contraindications depend on dose and indication.",
+            "ar": "يُتجنب الأسبرين أو يلزم توجيه اختصاصي عند وجود حساسية للأسبرين أو الساليسيلات، أو تفاعل تحسسي شديد سابق للأسبرين أو NSAIDs، أو نزيف نشط مهم، أو قرحة نشطة أو نزيف هضمي سابق مرتبط به، أو اضطراب نزفي مهم. يُتجنب عادة لدى الأطفال والمراهقين المصابين بعدوى فيروسية بسبب متلازمة راي؛ والاستثناءات مثل بعض أنظمة علاج كاواساكي تتطلب إشرافًا اختصاصيًا. يحتاج القصور الكلوي أو الكبدي الشديد إلى تقييم فردي. تختلف الموانع حسب الجرعة والاستطباب."
+          }
+        },
+        {
+          "h": {
+            "en": "Precautions",
+            "ar": "الاحتياطات"
+          },
+          "t": {
+            "en": "Use cautiously in asthma, especially aspirin/NSAID-exacerbated respiratory disease; older adults; uncontrolled hypertension; renal/hepatic disease; dehydration; history of ulcer/GI bleeding; gout; G6PD deficiency; pregnancy/breastfeeding; and before surgery or dental procedures. Assess bleeding risk in patients taking anticoagulants or other antiplatelets. Do not stop prescribed aspirin after stenting or for established cardiovascular disease without the prescriber.",
+            "ar": "يُستخدم بحذر لدى مرضى الربو، خصوصًا المرض التنفسي المتفاقم بالأسبرين أو NSAIDs، وكبار السن، وارتفاع الضغط غير المسيطر عليه، وأمراض الكلى أو الكبد، والجفاف، وتاريخ القرحة أو النزيف الهضمي، والنقرس، ونقص G6PD، والحمل والرضاعة، وقبل العمليات أو إجراءات الأسنان. قيّم خطر النزيف لدى مستخدمي مضادات التخثر أو مضادات الصفائح الأخرى. لا توقف الأسبرين الموصوف بعد الدعامة أو لمرض قلبي مثبت دون الرجوع للطبيب."
+          }
+        },
+        {
+          "h": {
+            "en": "Adverse effects",
+            "ar": "الآثار الجانبية"
+          },
+          "t": {
+            "en": "Common: dyspepsia, heartburn, nausea, vomiting, bruising, and increased bleeding. Serious: gastrointestinal ulceration/bleeding (black stools or hematemesis), intracranial bleeding (sudden severe headache or neurological deficit), anaphylaxis, bronchospasm, kidney injury, and salicylate toxicity. Urgent assessment is required for major bleeding, severe allergy, or overdose.",
+            "ar": "الشائعة: عسر الهضم وحرقة المعدة والغثيان والقيء والكدمات وزيادة النزيف. الخطيرة: القرحة أو النزيف الهضمي (براز أسود أو قيء دموي)، والنزيف داخل الجمجمة (صداع شديد مفاجئ أو عجز عصبي)، والتأق، والتشنج القصبي، وأذية الكلى، وسمية الساليسيلات. يلزم تقييم عاجل عند النزيف الشديد أو الحساسية الشديدة أو الجرعة الزائدة."
+          }
+        },
+        {
+          "h": {
+            "en": "Drug interactions",
+            "ar": "التداخلات الدوائية"
+          },
+          "t": {
+            "en": "Anticoagulants (warfarin, heparin, apixaban, rivaroxaban, dabigatran) and other antiplatelets (e.g., clopidogrel) increase bleeding risk. Other NSAIDs (ibuprofen, naproxen, diclofenac) increase GI/bleeding risk; ibuprofen may also reduce aspirin's antiplatelet effect depending on timing. Methotrexate toxicity may increase. Systemic corticosteroids and SSRIs/SNRIs may increase GI bleeding risk. Alcohol may increase gastric irritation/bleeding. Acetazolamide may increase salicylate toxicity. Aspirin may enhance insulin/sulfonylurea glucose-lowering effects at some doses. Review the complete medication list.",
+            "ar": "تزيد مضادات التخثر (Warfarin وHeparin وApixaban وRivaroxaban وDabigatran) ومضادات الصفائح الأخرى مثل Clopidogrel خطر النزيف. تزيد NSAIDs الأخرى مثل Ibuprofen وNaproxen وDiclofenac خطر الأضرار الهضمية والنزيف؛ وقد يقلل Ibuprofen أيضًا التأثير المضاد للصفائح للأسبرين بحسب التوقيت. قد تزداد سمية Methotrexate. قد تزيد الكورتيكوستيرويدات الجهازية وSSRIs/SNRIs خطر النزيف الهضمي. قد يزيد الكحول تهيج المعدة والنزيف. قد يزيد Acetazolamide سمية الساليسيلات. وقد يعزز الأسبرين تأثير الإنسولين أو السلفونيل يوريا الخافض للسكر عند بعض الجرعات. راجع قائمة أدوية المريض كاملة."
+          }
+        },
+        {
+          "h": {
+            "en": "Pregnancy and breastfeeding",
+            "ar": "الحمل والرضاعة"
+          },
+          "t": {
+            "en": "Low-dose aspirin may be prescribed for pre-eclampsia prevention in selected high-risk pregnancies; this differs from analgesic/high-dose use. Do not self-treat with analgesic doses during pregnancy. Use after 20 weeks and especially in the third trimester requires medical direction due to fetal risks. During breastfeeding, low-dose use may be considered when indicated, but repeated/high analgesic doses are generally not preferred; assess alternatives with a clinician.",
+            "ar": "قد توصف جرعة منخفضة للوقاية من تسمم الحمل لدى بعض الحوامل ذوات الخطورة المرتفعة، وهذا يختلف عن الجرعات المسكنة العالية. لا تستخدمي الجرعات المسكنة ذاتيًا أثناء الحمل. يتطلب الاستخدام بعد الأسبوع 20، وخصوصًا في الثلث الأخير، توجيهًا طبيًا بسبب المخاطر على الجنين. أثناء الرضاعة قد يُنظر في الجرعة المنخفضة عند وجود داعٍ، لكن الجرعات المسكنة العالية أو المتكررة ليست مفضلة عمومًا؛ ناقشي البدائل مع الطبيب."
+          }
+        },
+        {
+          "h": {
+            "en": "Children and Reye syndrome",
+            "ar": "الأطفال ومتلازمة راي"
+          },
+          "t": {
+            "en": "Do not routinely use aspirin for pain or fever in children/adolescents, particularly during or after influenza, chickenpox, or other viral illness, because of Reye syndrome, a rare but potentially life-threatening brain/liver disorder. Specialist-directed exceptions include selected Kawasaki disease treatment. No routine pediatric analgesic regimen is provided here.",
+            "ar": "لا يُستخدم الأسبرين روتينيًا للألم أو الحمى لدى الأطفال والمراهقين، خصوصًا أثناء الإنفلونزا أو جدري الماء أو أي عدوى فيروسية أو بعدها، بسبب متلازمة راي، وهي اضطراب نادر قد يهدد الحياة ويصيب الدماغ والكبد. توجد استثناءات اختصاصية مثل بعض حالات كاواساكي. لا تُدرج هنا جرعة مسكنة روتينية للأطفال."
+          }
+        },
+        {
+          "h": {
+            "en": "Pharmacokinetics",
+            "ar": "الحرائك الدوائية"
+          },
+          "t": {
+            "en": "Aspirin is absorbed from the GI tract and rapidly hydrolyzed to salicylic acid. Aspirin's plasma half-life is about 15–20 minutes. Salicylate is metabolized mainly in the liver and eliminated by the kidneys; its half-life depends on dose and may be prolonged at high doses/toxicity. Prolonged antiplatelet action results from irreversible platelet COX inhibition, not a long plasma half-life.",
+            "ar": "يُمتص الأسبرين من الجهاز الهضمي ويتحلل سريعًا إلى Salicylic acid. يبلغ نصف عمر الأسبرين في البلازما نحو 15–20 دقيقة. يُستقلب الساليسيلات أساسًا في الكبد ويُطرح عن طريق الكلى؛ ويعتمد نصف عمره على الجرعة وقد يطول مع الجرعات العالية أو السمية. يعود استمرار التأثير المضاد للصفائح إلى تثبيط COX في الصفائح بصورة غير عكوسة، وليس إلى طول نصف عمر البلازما."
+          }
+        },
+        {
+          "h": {
+            "en": "Overdose and salicylate toxicity",
+            "ar": "الجرعة الزائدة وسمية الساليسيلات"
+          },
+          "t": {
+            "en": "Early features: tinnitus, nausea, vomiting, sweating, dizziness, and rapid breathing. Severe toxicity may cause acid–base disturbance, altered mental status, seizures, hyperthermia, pulmonary edema, renal impairment, coma, or death. Suspected overdose is an emergency: do not induce vomiting or treat at home. Hospital care may include serial salicylate levels, blood gases/electrolytes, fluids and potassium correction, urinary alkalinization with sodium bicarbonate, activated charcoal in selected cases, and hemodialysis for severe poisoning.",
+            "ar": "الأعراض المبكرة: طنين الأذن والغثيان والقيء والتعرق والدوخة والتنفس السريع. قد تسبب السمية الشديدة اضطراب الحمض والقاعدة وتغير الوعي والتشنجات وارتفاع الحرارة والوذمة الرئوية والقصور الكلوي والغيبوبة أو الوفاة. الجرعة الزائدة حالة طارئة؛ لا تحاول إحداث القيء أو العلاج في المنزل. قد يشمل العلاج قياس مستويات الساليسيلات المتكرر وغازات الدم والشوارد، وإعطاء السوائل وتصحيح البوتاسيوم، وقلونة البول ببيكربونات الصوديوم، والفحم المنشط في حالات مختارة، وغسيل الكلى في التسمم الشديد."
+          }
+        },
+        {
+          "h": {
+            "en": "Counselling and storage",
+            "ar": "إرشادات المريض والتخزين"
+          },
+          "t": {
+            "en": "Take analgesic doses with/after food if they upset the stomach. Swallow enteric-coated tablets whole. Do not combine with other NSAIDs unless advised. Do not double a missed dose. Do not stop long-term prescribed antiplatelet aspirin without consulting the prescriber. Store in the original tightly closed container, protected from moisture and excessive heat, away from children. Vinegar-like odor or visible deterioration may indicate decomposition; do not use damaged product.",
+            "ar": "يمكن تناول الجرعات المسكنة مع الطعام أو بعده إذا سببت اضطراب المعدة. ابتلع الأقراص المغلفة معويًا كاملة. لا تجمعه مع NSAIDs أخرى دون توجيه. لا تضاعف الجرعة المنسية. لا توقف الأسبرين المضاد للصفائح الموصوف طويل الأمد دون استشارة الطبيب. يُحفظ في عبوته الأصلية محكمة الإغلاق بعيدًا عن الرطوبة والحرارة المفرطة ومتناول الأطفال. قد تشير رائحة تشبه الخل أو علامات التلف إلى التحلل؛ لا تستخدم المستحضر التالف."
+          }
+        },
+        {
+          "h": {
+            "en": "Additional pharmaceutical facts",
+            "ar": "معلومات صيدلانية إضافية"
+          },
+          "t": {
+            "en": "ATC code: N02BA01. Aspirin is an antiplatelet, not a direct anticoagulant and not a thrombolytic. It reduces platelet aggregation but does not dissolve clots. It is not a substitute for anticoagulation in atrial fibrillation when anticoagulants are indicated.",
+            "ar": "رمز ATC: N02BA01. الأسبرين مضاد لتجمع الصفائح، وليس مضاد تخثر مباشرًا ولا حالًا للخثرات. يقلل تجمع الصفائح لكنه لا يذيب الخثرات. ولا يحل محل مضادات التخثر في الرجفان الأذيني عندما تكون مضادات التخثر مطلوبة."
+          }
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "a": "aspirin",
+      "b": "warfarin",
+      "level": "severe",
+      "desc": {
+        "en": "Concurrent use increases major bleeding risk, including gastrointestinal bleeding.",
+        "ar": "يزيد الاستخدام المتزامن خطر النزيف الشديد، بما في ذلك النزيف الهضمي."
+      },
+      "rec": {
+        "en": "Avoid unless specifically prescribed; assess bleeding risk and monitor closely.",
+        "ar": "يُتجنب إلا إذا كان موصوفًا لسبب محدد؛ قيّم خطر النزيف وراقب المريض بدقة."
+      }
+    },
+    {
+      "a": "aspirin",
+      "b": "heparin",
+      "level": "severe",
+      "desc": {
+        "en": "Additive antithrombotic effects increase bleeding risk.",
+        "ar": "تتضافر التأثيرات المضادة للتخثر والصفائح، مما يزيد خطر النزيف."
+      },
+      "rec": {
+        "en": "Use only within a defined clinical plan and monitor for bleeding.",
+        "ar": "يُستخدم ضمن خطة علاجية واضحة مع مراقبة النزيف."
+      }
+    },
+    {
+      "a": "aspirin",
+      "b": "apixaban",
+      "level": "severe",
+      "desc": {
+        "en": "Concurrent use increases major bleeding risk.",
+        "ar": "يزيد الاستخدام المتزامن خطر النزيف الشديد."
+      },
+      "rec": {
+        "en": "Combine only for a clear indication under prescriber supervision; monitor for bleeding.",
+        "ar": "لا يُجمعان إلا لاستطباب واضح وتحت إشراف الطبيب؛ راقب النزيف."
+      }
+    },
+    {
+      "a": "aspirin",
+      "b": "rivaroxaban",
+      "level": "severe",
+      "desc": {
+        "en": "Concurrent use increases major bleeding risk.",
+        "ar": "يزيد الاستخدام المتزامن خطر النزيف الشديد."
+      },
+      "rec": {
+        "en": "Combine only for a clear indication under prescriber supervision; monitor for bleeding.",
+        "ar": "لا يُجمعان إلا لاستطباب واضح وتحت إشراف الطبيب؛ راقب النزيف."
+      }
+    },
+    {
+      "a": "aspirin",
+      "b": "dabigatran",
+      "level": "severe",
+      "desc": {
+        "en": "Concurrent use increases bleeding risk.",
+        "ar": "يزيد الاستخدام المتزامن خطر النزيف."
+      },
+      "rec": {
+        "en": "Use together only when specifically indicated and monitor for bleeding.",
+        "ar": "لا يُستخدمان معًا إلا عند وجود استطباب محدد مع مراقبة النزيف."
+      }
+    },
+    {
+      "a": "aspirin",
+      "b": "clopidogrel",
+      "level": "severe",
+      "desc": {
+        "en": "Dual antiplatelet therapy increases bleeding risk, although it is intentionally used in selected coronary conditions and after stenting.",
+        "ar": "يزيد الجمع بين مضادي الصفائح خطر النزيف، رغم استخدامه عمدًا في حالات قلبية محددة وبعد الدعامات."
+      },
+      "rec": {
+        "en": "Do not start or stop either drug independently; follow the prescribed plan and monitor for bleeding.",
+        "ar": "لا تبدأ أو توقف أيًا منهما بصورة مستقلة؛ اتبع الخطة الموصوفة وراقب النزيف."
+      }
+    },
+    {
+      "a": "aspirin",
+      "b": "ibuprofen",
+      "level": "moderate",
+      "desc": {
+        "en": "May increase gastrointestinal bleeding risk and may interfere with aspirin's antiplatelet effect depending on administration timing.",
+        "ar": "قد يزيد خطر النزيف الهضمي وقد يتداخل مع التأثير المضاد للصفائح للأسبرين بحسب توقيت تناولهما."
+      },
+      "rec": {
+        "en": "Prefer an appropriate alternative where possible. If both are needed, obtain pharmacist/prescriber advice on timing.",
+        "ar": "يفضل بديل مناسب عند الإمكان. وإذا لزم الدواءان فاستشر الصيدلي أو الطبيب بشأن التوقيت."
+      }
+    },
+    {
+      "a": "aspirin",
+      "b": "naproxen",
+      "level": "moderate",
+      "desc": {
+        "en": "Concurrent NSAID use increases gastrointestinal ulceration and bleeding risk.",
+        "ar": "يزيد الاستخدام المتزامن لمضادات الالتهاب غير الستيرويدية خطر القرحة والنزيف الهضمي."
+      },
+      "rec": {
+        "en": "Avoid routine combination; consider alternatives and assess GI/cardiovascular risk.",
+        "ar": "تجنب الجمع الروتيني؛ وابحث عن بدائل وقيّم المخاطر الهضمية والقلبية الوعائية."
+      }
+    },
+    {
+      "a": "aspirin",
+      "b": "diclofenac",
+      "level": "moderate",
+      "desc": {
+        "en": "Concurrent NSAID use increases gastrointestinal and bleeding risk.",
+        "ar": "يزيد الجمع مع Diclofenac خطر الأضرار الهضمية والنزيف."
+      },
+      "rec": {
+        "en": "Avoid routine combination; use together only after clinical review.",
+        "ar": "تجنب الجمع الروتيني؛ ولا يُستخدمان معًا إلا بعد مراجعة سريرية."
+      }
+    },
+    {
+      "a": "aspirin",
+      "b": "methotrexate",
+      "level": "severe",
+      "desc": {
+        "en": "Aspirin may reduce methotrexate renal clearance and increase toxicity, particularly with high-dose methotrexate or renal impairment.",
+        "ar": "قد يقلل الأسبرين طرح Methotrexate كلويًا ويزيد سميته، خصوصًا مع الجرعات العالية أو القصور الكلوي."
+      },
+      "rec": {
+        "en": "Avoid or use only under specialist direction with blood count, renal function, and toxicity monitoring.",
+        "ar": "يُتجنب أو يُستخدم فقط بتوجيه اختصاصي مع مراقبة تعداد الدم ووظائف الكلى وعلامات السمية."
+      }
+    },
+    {
+      "a": "aspirin",
+      "b": "prednisolone",
+      "level": "moderate",
+      "desc": {
+        "en": "Systemic corticosteroids may increase gastrointestinal ulceration and bleeding risk with aspirin.",
+        "ar": "قد تزيد الكورتيكوستيرويدات الجهازية خطر القرحة والنزيف الهضمي مع الأسبرين."
+      },
+      "rec": {
+        "en": "Assess GI risk and monitor; consider gastroprotection when clinically indicated.",
+        "ar": "قيّم المخاطر الهضمية وراقب المريض؛ وفكر بالوقاية المعدية عند وجود داعٍ سريري."
+      }
+    },
+    {
+      "a": "aspirin",
+      "b": "sertraline",
+      "level": "moderate",
+      "desc": {
+        "en": "SSRIs may impair platelet function and increase bleeding risk with aspirin.",
+        "ar": "قد تؤثر SSRIs في وظيفة الصفائح وتزيد خطر النزيف مع الأسبرين."
+      },
+      "rec": {
+        "en": "Assess bleeding risk and monitor, especially with prior GI bleeding.",
+        "ar": "قيّم خطر النزيف وراقب المريض، خصوصًا عند وجود تاريخ لنزيف هضمي."
+      }
+    },
+    {
+      "a": "aspirin",
+      "b": "acetazolamide",
+      "level": "moderate",
+      "desc": {
+        "en": "May increase salicylate toxicity, particularly with high aspirin doses.",
+        "ar": "قد يزيد سمية الساليسيلات، خصوصًا مع جرعات الأسبرين العالية."
+      },
+      "rec": {
+        "en": "Avoid unsupervised combination; monitor for salicylate toxicity if required.",
+        "ar": "تجنب الجمع دون إشراف؛ وراقب علامات سمية الساليسيلات إذا كان الجمع ضروريًا."
+      }
+    }
+  ],
+  "doses": [
+    {
+      "drug": "aspirin",
+      "options": [
+        {
+          "form": "tablet",
+          "strengths": [
+            {
+              "mg": 75,
+              "per": 1
+            },
+            {
+              "mg": 81,
+              "per": 1
+            },
+            {
+              "mg": 100,
+              "per": 1
+            },
+            {
+              "mg": 300,
+              "per": 1
+            },
+            {
+              "mg": 325,
+              "per": 1
+            },
+            {
+              "mg": 500,
+              "per": 1
+            }
+          ],
+          "regimens": [
+            {
+              "minAge": 18,
+              "maxAge": 121,
+              "method": "fixed",
+              "fixedMin": 300,
+              "fixedMax": 1000,
+              "maxSingle": 1000,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "Every 4–6 hours as needed",
+                "ar": "كل 4–6 ساعات عند الحاجة"
+              },
+              "maxDaily": 4000,
+              "use": {
+                "en": "Pain and fever (adult)",
+                "ar": "للألم والحمى لدى البالغين"
+              },
+              "note": {
+                "en": "Educational upper ceiling only. Some product labels specify a lower daily maximum. Follow the exact product leaflet and clinician advice; not for routine pediatric use.",
+                "ar": "سقف تعليمي أعلى فقط؛ تحدد بعض نشرات المنتجات حدًا يوميًا أقل. اتبع نشرة المستحضر وتعليمات الطبيب، ولا يُستخدم روتينيًا للأطفال."
+              }
+            },
+            {
+              "minAge": 18,
+              "maxAge": 121,
+              "method": "fixed",
+              "fixedMin": 75,
+              "fixedMax": 100,
+              "maxSingle": 100,
+              "timesPerDay": 1,
+              "timesUpTo": false,
+              "interval": {
+                "en": "Once daily",
+                "ar": "مرة واحدة يوميًا"
+              },
+              "maxDaily": 100,
+              "use": {
+                "en": "Antiplatelet therapy (selected indications)",
+                "ar": "مضاد لتجمع الصفائح (لاستطبابات محددة)"
+              },
+              "note": {
+                "en": "Use only when prescribed for a defined indication. This is not an analgesic dose. Do not start primary cardiovascular prevention without clinical assessment.",
+                "ar": "يُستخدم فقط بوصفة لاستطباب محدد. هذه ليست جرعة مسكنة. لا تبدأ الوقاية القلبية الأولية دون تقييم طبي."
+              }
+            },
+            {
+              "minAge": 18,
+              "maxAge": 121,
+              "method": "fixed",
+              "fixedMin": 162,
+              "fixedMax": 325,
+              "maxSingle": 325,
+              "timesPerDay": 1,
+              "timesUpTo": false,
+              "interval": {
+                "en": "Single loading dose in an emergency protocol",
+                "ar": "جرعة تحميل مفردة ضمن بروتوكول طوارئ"
+              },
+              "maxDaily": 325,
+              "use": {
+                "en": "Suspected acute myocardial infarction (loading dose)",
+                "ar": "اشتباه احتشاء القلب الحاد (جرعة تحميل)"
+              },
+              "note": {
+                "en": "Emergency protocol only. Call emergency services immediately and do not delay care to take aspirin. Check allergy and bleeding contraindications.",
+                "ar": "ضمن بروتوكول الطوارئ فقط. اتصل بالإسعاف فورًا ولا تؤخر الرعاية لتناول الأسبرين. تحقق من الحساسية وموانع النزيف."
+              }
+            },
+            {
+              "minAge": 18,
+              "maxAge": 121,
+              "method": "fixed",
+              "fixedMin": 75,
+              "fixedMax": 150,
+              "maxSingle": 150,
+              "timesPerDay": 1,
+              "timesUpTo": false,
+              "interval": {
+                "en": "Once daily; timing set by obstetric clinician",
+                "ar": "مرة يوميًا؛ يحدد اختصاصي التوليد التوقيت"
+              },
+              "maxDaily": 150,
+              "use": {
+                "en": "Pre-eclampsia prevention in selected high-risk pregnancy",
+                "ar": "الوقاية من تسمم الحمل لدى بعض الحوامل ذوات الخطورة المرتفعة"
+              },
+              "note": {
+                "en": "Specialist-directed only, commonly initiated after 12 weeks in selected high-risk pregnancies. The obstetric clinician determines dose and duration; do not self-start.",
+                "ar": "بإشراف اختصاصي فقط، وغالبًا يبدأ بعد الأسبوع 12 لدى بعض الحوامل ذوات الخطورة المرتفعة. يحدد اختصاصي التوليد الجرعة والمدة؛ لا تبدأيه ذاتيًا."
+              }
+            }
+          ]
+        },
+        {
+          "form": "soluble_tablet",
+          "strengths": [
+            {
+              "mg": 300,
+              "per": 1
+            },
+            {
+              "mg": 500,
+              "per": 1
+            }
+          ],
+          "regimens": [
+            {
+              "minAge": 18,
+              "maxAge": 121,
+              "method": "fixed",
+              "fixedMin": 300,
+              "fixedMax": 1000,
+              "maxSingle": 1000,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "Every 4–6 hours as needed",
+                "ar": "كل 4–6 ساعات عند الحاجة"
+              },
+              "maxDaily": 4000,
+              "use": {
+                "en": "Pain and fever (adult)",
+                "ar": "للألم والحمى لدى البالغين"
+              },
+              "note": {
+                "en": "Follow the exact product label; some soluble products have a lower daily maximum. Educational reference only.",
+                "ar": "اتبع نشرة المنتج المحدد؛ فبعض المستحضرات القابلة للذوبان لها حد يومي أقصى أقل. مرجع تعليمي فقط."
+              }
+            }
+          ]
+        },
+        {
+          "form": "chewable_tablet",
+          "strengths": [
+            {
+              "mg": 81,
+              "per": 1
+            },
+            {
+              "mg": 100,
+              "per": 1
+            },
+            {
+              "mg": 300,
+              "per": 1
+            },
+            {
+              "mg": 325,
+              "per": 1
+            }
+          ],
+          "regimens": [
+            {
+              "minAge": 18,
+              "maxAge": 121,
+              "method": "fixed",
+              "fixedMin": 162,
+              "fixedMax": 325,
+              "maxSingle": 325,
+              "timesPerDay": 1,
+              "timesUpTo": false,
+              "interval": {
+                "en": "Single loading dose in an emergency protocol",
+                "ar": "جرعة تحميل مفردة ضمن بروتوكول طوارئ"
+              },
+              "maxDaily": 325,
+              "use": {
+                "en": "Suspected acute myocardial infarction (loading dose)",
+                "ar": "اشتباه احتشاء القلب الحاد (جرعة تحميل)"
+              },
+              "note": {
+                "en": "Emergency protocol only. Call emergency services immediately and do not delay care to take aspirin. Check allergy and bleeding contraindications.",
+                "ar": "ضمن بروتوكول الطوارئ فقط. اتصل بالإسعاف فورًا ولا تؤخر الرعاية لتناول الأسبرين. تحقق من الحساسية وموانع النزيف."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

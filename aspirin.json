@@ -2,12 +2,12 @@
   "drugs": [
     {
       "id": "aspirin",
-      "rank": 1,
+      "rank": 3,
       "categories": [
         "analgesics",
-        "antipyretics"
-        "antiplatelet"
-        "nsaids"
+        "antipyretics",
+        "antiplatelets",
+        "nsaids",
       ],
       "aliases": [
         "ASA",

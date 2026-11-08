@@ -1,0 +1,908 @@
+{
+  "drugs": [
+    {
+      "id": "ibuprofen",
+      "rank": 2,
+      "categories": [
+        "nsaids",
+        "analgesics",
+        "antipyretics"
+      ],
+      "aliases": [
+        "Brufen",
+        "بروفين",
+        "البروفين"
+      ],
+      "title": {
+        "en": "Ibuprofen (Brufen)",
+        "ar": "إيبوبروفين (البروفين Brufen)"
+      },
+      "sections": [
+        {
+          "h": {
+            "en": "Names",
+            "ar": "الأسماء"
+          },
+          "t": {
+            "en": "Brand name: Brufen\nGeneric name: Ibuprofen",
+            "ar": "الاسم التجاري: البروفين (Brufen)\nالاسم العلمي: إيبوبروفين (Ibuprofen)"
+          }
+        },
+        {
+          "h": {
+            "en": "Classification",
+            "ar": "التصنيف الدوائي"
+          },
+          "t": {
+            "en": "Non-steroidal anti-inflammatory drugs (NSAIDs).\nTherapeutic class: analgesic, anti-inflammatory, antipyretic.",
+            "ar": "مضادات الالتهاب غير الستيرويدية (NSAIDs).\nالفئة العلاجية: مسكن للألم، مضاد للالتهاب، خافض للحرارة."
+          }
+        },
+        {
+          "h": {
+            "en": "Active ingredient",
+            "ar": "المادة الفعالة"
+          },
+          "t": {
+            "en": "Active ingredient: Ibuprofen.\nChemical formula: C13H18O2.\nMolecular mass: 206.28 g/mol.",
+            "ar": "المادة الفعالة: إيبوبروفين (Ibuprofen).\nالصيغة الكيميائية: C₁₃H₁₈O₂.\nالكتلة الجزيئية: 206.28 g/mol."
+          }
+        },
+        {
+          "h": {
+            "en": "Dosage forms and strengths",
+            "ar": "الأشكال الصيدلانية والتراكيز"
+          },
+          "t": {
+            "en": "Strengths differ between manufacturers and markets. Common examples:\nTablets: 200, 400, 600, 800 mg\nCapsules: 200, 400 mg\nOral suspension: 100 mg/5 mL, and a concentrated 200 mg/5 mL\nOral drops for children: vary by manufacturer\nChewable tablets: 50, 100 mg\nSuppositories: 60, 125, 200 mg in some markets\nTopical gel: 5% or 10%\nIV solution: hospital-specific strengths",
+            "ar": "تختلف التراكيز حسب الشركة المصنعة والسوق، وهذه أمثلة شائعة:\nأقراص (Tablets): 200، 400، 600، 800 ملغم\nكبسولات (Capsules): 200، 400 ملغم\nمعلق فموي (Oral suspension): 100 ملغم/5 مل، ومركز 200 ملغم/5 مل\nقطرات للأطفال (Oral drops): تختلف حسب الشركة\nأقراص مضغ (Chewable tablets): 50، 100 ملغم\nتحاميل (Suppositories): 60، 125، 200 ملغم في بعض الأسواق\nجل موضعي (Topical gel): 5% أو 10%\nمحلول للحقن الوريدي (IV): تراكيز خاصة بالمستحضرات المستشفوية"
+          }
+        },
+        {
+          "h": {
+            "en": "Dose summary (European Brufen label)",
+            "ar": "ملخص الجرعات (حسب النشرة الأوروبية لـ Brufen)"
+          },
+          "t": {
+            "en": "Children (6 months to 12 years and over 7 kg): 20 to 30 mg/kg/day divided into 3 to 4 doses (5 to 10 mg/kg per dose). Maximum 10 mg/kg per dose and 30 mg/kg/day. Every 6 to 8 hours when needed.\nTablets for children: 6 to 12 years and over 20 kg.\nAdults and adolescents (12 years and over, 40 kg or more): for pain and fever 200 to 400 mg every 4 to 6 hours when needed; maximum single dose 800 mg; maximum without medical supervision 1200 mg/day.\nRheumatic conditions (under medical supervision): 400 to 600 mg three times daily; maximum 2400 mg/day.\nUse the lowest effective dose for the shortest possible time. The dose depends on age, weight, condition, dosage form and kidney function.",
+            "ar": "الأطفال (من 6 أشهر إلى 12 سنة وبوزن أكثر من 7 كغم): 20 إلى 30 ملغم/كغم باليوم مقسمة على 3 إلى 4 جرعات (أي 5 إلى 10 ملغم/كغم للجرعة الواحدة)، وبحد أقصى 10 ملغم/كغم للجرعة و30 ملغم/كغم باليوم. كل 6 إلى 8 ساعات عند الحاجة.\nأقراص الأطفال: من 6 إلى 12 سنة وبوزن أكثر من 20 كغم.\nالبالغون والمراهقون (12 سنة فما فوق وبوزن 40 كغم فأكثر): للألم والحمى 200 إلى 400 ملغم كل 4 إلى 6 ساعات عند الحاجة، وأقصى جرعة واحدة 800 ملغم، والحد الأقصى بدون إشراف طبي 1200 ملغم/يوم.\nالأمراض الروماتيزمية (بإشراف طبي): 400 إلى 600 ملغم ثلاث مرات يومياً، والحد الأقصى 2400 ملغم/يوم.\nيجب استخدام أقل جرعة فعالة لأقصر مدة ممكنة. وتعتمد الجرعة على العمر والوزن والحالة المرضية والشكل الصيدلاني ووظائف الكلى."
+          }
+        },
+        {
+          "h": {
+            "en": "Dose calculation example",
+            "ar": "مثال حسابي"
+          },
+          "t": {
+            "en": "A child weighing 20 kg, required dose 10 mg/kg:\n20 x 10 = 200 mg per dose.\nWith a suspension of 100 mg/5 mL: 200 / 100 x 5 = 10 mL.",
+            "ar": "طفل وزنه 20 كغم، والجرعة المطلوبة 10 ملغم/كغم:\n20 × 10 = 200 ملغم للجرعة الواحدة.\nإذا كان الشراب بتركيز 100 ملغم/5 مل:\n200 ÷ 100 × 5 = 10 مل."
+          }
+        },
+        {
+          "h": {
+            "en": "Mechanism of action",
+            "ar": "آلية العمل"
+          },
+          "t": {
+            "en": "Ibuprofen belongs to the NSAID group.\nIt reversibly inhibits the cyclooxygenase enzymes (COX-1 and COX-2).\nThis reduces the synthesis of prostaglandins, which contribute to pain, inflammation and fever.\nThe result is less pain (analgesic effect), less inflammation (anti-inflammatory effect) and lower temperature (antipyretic effect).\nCOX-1 inhibition also contributes to the gastric side effects and reduced platelet function.",
+            "ar": "الإيبوبروفين ينتمي إلى مجموعة مضادات الالتهاب غير الستيرويدية (NSAIDs).\nيثبط إنزيمي Cyclooxygenase (COX-1 وCOX-2) بصورة عكوسة.\nيقلل تصنيع البروستاغلاندينات (Prostaglandins)، وهي مواد تساهم في حدوث الألم والالتهاب والحمى.\nيؤدي انخفاضها إلى: تقليل الألم (Analgesic effect)، تقليل الالتهاب (Anti-inflammatory effect)، وخفض الحرارة (Antipyretic effect).\nكما أن تثبيط COX-1 يساهم في التأثيرات الجانبية المعدية وتقليل وظيفة الصفائح الدموية."
+          }
+        },
+        {
+          "h": {
+            "en": "Indications",
+            "ar": "الاستخدامات"
+          },
+          "t": {
+            "en": "Pain: headache, toothache, muscle pain, back pain, joint pain, pain after some surgical procedures, dysmenorrhea.\nInflammation: rheumatoid arthritis, osteoarthritis, muscle and joint inflammation accompanied by pain.\nFever: lowering fever, and relieving pain accompanying colds and influenza.\nImportant: ibuprofen treats symptoms such as pain, fever and inflammation, but it does not treat the underlying cause of a viral or bacterial infection.",
+            "ar": "الألم: الصداع، ألم الأسنان، ألم العضلات، ألم الظهر، آلام المفاصل، الألم بعد بعض الإجراءات الجراحية، آلام الدورة الشهرية (Dysmenorrhea).\nالالتهابات: التهاب المفاصل الروماتويدي (Rheumatoid arthritis)، الفصال العظمي (Osteoarthritis)، الالتهابات العضلية والمفصلية المصحوبة بالألم.\nالحمى: خفض الحرارة الناتجة عن الحمى، وتخفيف الألم المصاحب لنزلات البرد والإنفلونزا.\nمهم: البروفين يعالج الأعراض مثل الألم والحمى والالتهاب، لكنه لا يعالج السبب الأساسي للعدوى الفيروسية أو البكتيرية."
+          }
+        },
+        {
+          "h": {
+            "en": "Contraindications",
+            "ar": "موانع الاستخدام"
+          },
+          "t": {
+            "en": "Hypersensitivity to ibuprofen: possible severe allergic reaction.\nHypersensitivity to aspirin or NSAIDs: possible bronchospasm or allergic reaction.\nActive stomach ulcer: increased risk of bleeding.\nGastrointestinal bleeding: may worsen the bleeding.\nCerebrovascular or other active bleeding, and unexplained blood-formation disorders.\nSevere renal failure: possible deterioration of kidney function.\nSevere heart failure: possible fluid retention.\nAfter CABG surgery: increased risk of cardiac complications.\nLast trimester of pregnancy: risks to the fetus and the fetal circulation.",
+            "ar": "الحساسية للإيبوبروفين: احتمال حدوث تفاعل تحسسي شديد.\nالحساسية للأسبرين أو NSAIDs: احتمال حدوث تشنج قصبي أو تفاعل تحسسي.\nقرحة المعدة النشطة: زيادة خطر النزيف.\nنزيف الجهاز الهضمي: قد يؤدي إلى تفاقم النزيف.\nالنزيف الدماغي الوعائي أو أي نزيف نشط، واضطرابات تكوّن الدم غير المفسّرة.\nقصور الكلى الشديد: احتمال تدهور وظائف الكلى.\nقصور القلب الشديد: احتمال احتباس السوائل.\nبعد جراحة CABG: زيادة خطر المضاعفات القلبية.\nالثلث الأخير من الحمل: مخاطر على الجنين والدورة الدموية الجنينية."
+          }
+        },
+        {
+          "h": {
+            "en": "Conditions that need great caution",
+            "ar": "حالات تحتاج إلى الحذر الشديد"
+          },
+          "t": {
+            "en": "High blood pressure.\nHeart and vascular disease.\nElderly patients.\nLiver disease.\nAsthma linked to aspirin or NSAIDs.\nDehydration, especially in children.\nHistory of stomach ulcer.\nPregnancy before the last trimester, as there are special risks starting from week 20.",
+            "ar": "ارتفاع ضغط الدم.\nأمراض القلب والشرايين.\nكبار السن.\nأمراض الكبد.\nالربو المرتبط بالأسبرين أو NSAIDs.\nالجفاف، خاصة عند الأطفال.\nتاريخ الإصابة بقرحة المعدة.\nالحمل قبل الثلث الأخير، إذ توجد مخاطر خاصة ابتداءً من الأسبوع 20."
+          }
+        },
+        {
+          "h": {
+            "en": "Drug interactions",
+            "ar": "التداخلات الدوائية"
+          },
+          "t": {
+            "en": "Aspirin [Moderate]: Combining them is generally not recommended: it increases bleeding and adverse effects, and ibuprofen may reduce the antiplatelet effect of low-dose aspirin.\nWarfarin [Severe]: Increased risk of bleeding. NSAIDs may enhance the effect of warfarin.\nApixaban / Rivaroxaban (anticoagulants) [Severe]: Increased risk of bleeding.\nClopidogrel (antiplatelet) [Moderate]: Increased risk of gastrointestinal bleeding.\nOther NSAIDs (e.g. Diclofenac, Naproxen) [Moderate]: Increased gastrointestinal and kidney toxicity and more side effects, usually without added benefit.\nCorticosteroids (e.g. Prednisone, Dexamethasone) [Moderate]: Increased risk of stomach ulcer and bleeding.\nSSRIs (e.g. Sertraline, Fluoxetine) [Moderate]: Increased risk of stomach bleeding.\nACE inhibitors (e.g. Enalapril) [Moderate]: Reduced blood-pressure lowering effect and possible worsening of kidney function. Combined with a diuretic it is known as the Triple Whammy.\nARBs (e.g. Losartan) [Moderate]: Possible worsening of kidney function and reduced blood-pressure control.\nDiuretics (e.g. Furosemide) [Moderate]: Reduced diuretic effect and increased risk of kidney toxicity.\nLithium [Severe]: Increased lithium level in the blood and possible toxicity.\nMethotrexate [Severe]: Reduced elimination, a higher level and increased toxicity.\nCyclosporine [Severe]: Increased risk of kidney toxicity.\nTacrolimus [Severe]: Increased risk of kidney toxicity.\nDigoxin (cardiac glycosides) [Moderate]: NSAIDs may worsen heart failure, reduce kidney filtration and raise the glycoside level in the blood.\nQuinolone antibiotics (e.g. Ciprofloxacin) [Moderate]: Increased risk of convulsions.\nMifepristone [Moderate]: NSAIDs should not be used for 8 to 12 days after mifepristone because they can reduce its effect.\nZidovudine [Moderate]: Increased risk of bleeding into joints and hematomas in HIV-positive patients with hemophilia.",
+            "ar": "الأسبرين [متوسط]: الجمع غير موصى به عموماً: يزيد النزيف والآثار الجانبية، وقد يقلل الإيبوبروفين التأثير المضاد للصفيحات للأسبرين منخفض الجرعة.\nالوارفارين [شديد]: زيادة خطر النزيف. قد تعزز مضادات الالتهاب تأثير الوارفارين.\nأبيكسابان / ريفاروكسابان (مضادات التخثر) [شديد]: زيادة خطر النزيف.\nكلوبيدوغريل (مضاد صفيحات) [متوسط]: زيادة خطر النزيف الهضمي.\nمضادات التهاب أخرى (مثل ديكلوفيناك ونابروكسين) [متوسط]: زيادة سمية الجهاز الهضمي والكلى والآثار الجانبية، غالباً دون فائدة إضافية.\nالكورتيكوستيرويدات (مثل بريدنيزون وديكساميثازون) [متوسط]: زيادة خطر قرحة ونزيف المعدة.\nمثبطات استرداد السيروتونين الانتقائية SSRIs (مثل سيرترالين وفلوكسيتين) [متوسط]: زيادة خطر النزيف المعدي.\nمثبطات الإنزيم المحول للأنجيوتنسين ACEi (مثل إنالابريل) [متوسط]: تقليل التأثير الخافض للضغط واحتمال تدهور الكلى. وعند إضافة مدر للبول يُعرف الجمع باسم Triple Whammy.\nحاصرات مستقبلات الأنجيوتنسين ARBs (مثل لوسارتان) [متوسط]: احتمال تدهور وظائف الكلى وتقليل السيطرة على الضغط.\nمدرات البول (مثل فيوروسيمايد) [متوسط]: تقليل تأثير المدرات وزيادة خطر السمية الكلوية.\nالليثيوم [شديد]: زيادة تركيز الليثيوم بالدم واحتمال سميته.\nميثوتريكسات [شديد]: تقليل طرحه وزيادة تركيزه وسميته.\nسايكلوسبورين [شديد]: زيادة خطر السمية الكلوية.\nتاكروليمس [شديد]: زيادة خطر السمية الكلوية.\nديجوكسين (الجلايكوسيدات القلبية) [متوسط]: قد تفاقم مضادات الالتهاب قصور القلب وتقلل الترشيح الكلوي وترفع مستوى الجلايكوسيد بالدم.\nالمضادات الحيوية من الكينولونات (مثل سيبروفلوكساسين) [متوسط]: زيادة خطر التشنجات.\nميفيبريستون [متوسط]: لا تُستخدم مضادات الالتهاب خلال 8 إلى 12 يوماً بعد الميفيبريستون لأنها قد تقلل تأثيره.\nزيدوفودين [متوسط]: زيادة خطر النزف المفصلي والأورام الدموية عند مرضى الهيموفيليا المصابين بـ HIV."
+          }
+        },
+        {
+          "h": {
+            "en": "Interaction mechanisms to remember",
+            "ar": "ملاحظات على التداخلات"
+          },
+          "t": {
+            "en": "Most of the bleeding interactions come from the effect of ibuprofen on platelet function and from the extra irritation of the digestive tract.\nIbuprofen + ACE inhibitor/ARB + diuretic (Triple Whammy) may lead to deterioration of kidney function.",
+            "ar": "معظم تداخلات النزيف سببها تأثير الإيبوبروفين على وظيفة الصفائح الدموية وزيادة تهيج الجهاز الهضمي.\nالجمع بين الإيبوبروفين ومثبط ACE أو ARB ومدر للبول (Triple Whammy) قد يؤدي إلى تدهور وظائف الكلى."
+          }
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "a": "ibuprofen",
+      "b": "aspirin",
+      "level": "moderate",
+      "desc": {
+        "en": "Combining them is generally not recommended: it increases bleeding and adverse effects, and ibuprofen may reduce the antiplatelet effect of low-dose aspirin.",
+        "ar": "الجمع غير موصى به عموماً: يزيد النزيف والآثار الجانبية، وقد يقلل الإيبوبروفين التأثير المضاد للصفيحات للأسبرين منخفض الجرعة."
+      },
+      "rec": {
+        "en": "Low-dose aspirin (up to 75 mg daily) prescribed by a doctor is the exception. Ask a doctor or pharmacist.",
+        "ar": "يُستثنى الأسبرين بجرعة لا تزيد على 75 ملغم يومياً إذا وصفه الطبيب. راجع الطبيب أو الصيدلي."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": "warfarin",
+      "level": "severe",
+      "desc": {
+        "en": "Increased risk of bleeding. NSAIDs may enhance the effect of warfarin.",
+        "ar": "زيادة خطر النزيف. قد تعزز مضادات الالتهاب تأثير الوارفارين."
+      },
+      "rec": {
+        "en": "Use only with caution and medical supervision.",
+        "ar": "يُستخدم بحذر وتحت إشراف طبي فقط."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": [
+        "apixaban",
+        "rivaroxaban",
+        "dabigatran",
+        "edoxaban"
+      ],
+      "level": "severe",
+      "desc": {
+        "en": "Increased risk of bleeding.",
+        "ar": "زيادة خطر النزيف."
+      },
+      "rec": {
+        "en": "Use only with caution and medical supervision.",
+        "ar": "يُستخدم بحذر وتحت إشراف طبي فقط."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": "clopidogrel",
+      "level": "moderate",
+      "desc": {
+        "en": "Increased risk of gastrointestinal bleeding.",
+        "ar": "زيادة خطر النزيف الهضمي."
+      },
+      "rec": {
+        "en": "Use with caution.",
+        "ar": "يُستخدم بحذر."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": [
+        "diclofenac",
+        "naproxen",
+        "ketoprofen",
+        "piroxicam",
+        "meloxicam",
+        "indomethacin",
+        "celecoxib",
+        "etoricoxib",
+        "mefenamic-acid",
+        "ketorolac",
+        "aceclofenac"
+      ],
+      "level": "moderate",
+      "desc": {
+        "en": "Increased gastrointestinal and kidney toxicity and more side effects, usually without added benefit.",
+        "ar": "زيادة سمية الجهاز الهضمي والكلى والآثار الجانبية، غالباً دون فائدة إضافية."
+      },
+      "rec": {
+        "en": "Avoid using two or more NSAIDs together.",
+        "ar": "يُتجنب الجمع بين مضادي التهاب أو أكثر."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": [
+        "prednisone",
+        "prednisolone",
+        "dexamethasone",
+        "methylprednisolone",
+        "hydrocortisone",
+        "betamethasone"
+      ],
+      "level": "moderate",
+      "desc": {
+        "en": "Increased risk of stomach ulcer and bleeding.",
+        "ar": "زيادة خطر قرحة ونزيف المعدة."
+      },
+      "rec": {
+        "en": "Use with caution.",
+        "ar": "يُستخدم بحذر."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": [
+        "sertraline",
+        "fluoxetine",
+        "paroxetine",
+        "citalopram",
+        "escitalopram",
+        "fluvoxamine"
+      ],
+      "level": "moderate",
+      "desc": {
+        "en": "Increased risk of stomach bleeding.",
+        "ar": "زيادة خطر النزيف المعدي."
+      },
+      "rec": {
+        "en": "Use with caution.",
+        "ar": "يُستخدم بحذر."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": [
+        "enalapril",
+        "captopril",
+        "lisinopril",
+        "ramipril",
+        "perindopril"
+      ],
+      "level": "moderate",
+      "desc": {
+        "en": "Reduced blood-pressure lowering effect and possible worsening of kidney function. Combined with a diuretic it is known as the Triple Whammy.",
+        "ar": "تقليل التأثير الخافض للضغط واحتمال تدهور الكلى. وعند إضافة مدر للبول يُعرف الجمع باسم Triple Whammy."
+      },
+      "rec": {
+        "en": "Monitor kidney function and blood pressure.",
+        "ar": "تُراقب وظائف الكلى وضغط الدم."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": [
+        "losartan",
+        "valsartan",
+        "candesartan",
+        "irbesartan",
+        "telmisartan"
+      ],
+      "level": "moderate",
+      "desc": {
+        "en": "Possible worsening of kidney function and reduced blood-pressure control.",
+        "ar": "احتمال تدهور وظائف الكلى وتقليل السيطرة على الضغط."
+      },
+      "rec": {
+        "en": "Monitor kidney function and blood pressure.",
+        "ar": "تُراقب وظائف الكلى وضغط الدم."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": [
+        "furosemide",
+        "hydrochlorothiazide",
+        "spironolactone",
+        "indapamide",
+        "chlorthalidone"
+      ],
+      "level": "moderate",
+      "desc": {
+        "en": "Reduced diuretic effect and increased risk of kidney toxicity.",
+        "ar": "تقليل تأثير المدرات وزيادة خطر السمية الكلوية."
+      },
+      "rec": {
+        "en": "Monitor kidney function.",
+        "ar": "تُراقب وظائف الكلى."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": "lithium",
+      "level": "severe",
+      "desc": {
+        "en": "Increased lithium level in the blood and possible toxicity.",
+        "ar": "زيادة تركيز الليثيوم بالدم واحتمال سميته."
+      },
+      "rec": {
+        "en": "Watch for signs of lithium toxicity.",
+        "ar": "تُراقب علامات سمية الليثيوم."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": "methotrexate",
+      "level": "severe",
+      "desc": {
+        "en": "Reduced elimination, a higher level and increased toxicity.",
+        "ar": "تقليل طرحه وزيادة تركيزه وسميته."
+      },
+      "rec": {
+        "en": "Use only with medical supervision.",
+        "ar": "يُستخدم بإشراف طبي فقط."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": "cyclosporine",
+      "level": "severe",
+      "desc": {
+        "en": "Increased risk of kidney toxicity.",
+        "ar": "زيادة خطر السمية الكلوية."
+      },
+      "rec": {
+        "en": "Monitor kidney function.",
+        "ar": "تُراقب وظائف الكلى."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": "tacrolimus",
+      "level": "severe",
+      "desc": {
+        "en": "Increased risk of kidney toxicity.",
+        "ar": "زيادة خطر السمية الكلوية."
+      },
+      "rec": {
+        "en": "Monitor kidney function.",
+        "ar": "تُراقب وظائف الكلى."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": "digoxin",
+      "level": "moderate",
+      "desc": {
+        "en": "NSAIDs may worsen heart failure, reduce kidney filtration and raise the glycoside level in the blood.",
+        "ar": "قد تفاقم مضادات الالتهاب قصور القلب وتقلل الترشيح الكلوي وترفع مستوى الجلايكوسيد بالدم."
+      },
+      "rec": {
+        "en": "Monitor kidney function and the digoxin level.",
+        "ar": "تُراقب وظائف الكلى ومستوى الديجوكسين."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": [
+        "ciprofloxacin",
+        "levofloxacin",
+        "ofloxacin",
+        "norfloxacin",
+        "moxifloxacin"
+      ],
+      "level": "moderate",
+      "desc": {
+        "en": "Increased risk of convulsions.",
+        "ar": "زيادة خطر التشنجات."
+      },
+      "rec": {
+        "en": "Use with caution.",
+        "ar": "يُستخدم بحذر."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": "mifepristone",
+      "level": "moderate",
+      "desc": {
+        "en": "NSAIDs should not be used for 8 to 12 days after mifepristone because they can reduce its effect.",
+        "ar": "لا تُستخدم مضادات الالتهاب خلال 8 إلى 12 يوماً بعد الميفيبريستون لأنها قد تقلل تأثيره."
+      },
+      "rec": {
+        "en": "Wait 8 to 12 days after mifepristone.",
+        "ar": "انتظر 8 إلى 12 يوماً بعد الميفيبريستون."
+      }
+    },
+    {
+      "a": "ibuprofen",
+      "b": "zidovudine",
+      "level": "moderate",
+      "desc": {
+        "en": "Increased risk of bleeding into joints and hematomas in HIV-positive patients with hemophilia.",
+        "ar": "زيادة خطر النزف المفصلي والأورام الدموية عند مرضى الهيموفيليا المصابين بـ HIV."
+      },
+      "rec": {
+        "en": "Use with caution.",
+        "ar": "يُستخدم بحذر."
+      }
+    }
+  ],
+  "doses": [
+    {
+      "drug": "ibuprofen",
+      "options": [
+        {
+          "form": "oral_suspension",
+          "strengths": [
+            {
+              "mg": 100,
+              "per": 5
+            },
+            {
+              "mg": 200,
+              "per": 5
+            }
+          ],
+          "regimens": [
+            {
+              "minAge": 0.5,
+              "maxAge": 12,
+              "weightAbove": 7,
+              "method": "perKg",
+              "perKgMin": 5,
+              "perKgMax": 10,
+              "timesPerDay": 3,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 6 to 8 hours",
+                "ar": "كل 6 إلى 8 ساعات"
+              },
+              "maxDailyPerKg": 30,
+              "note": {
+                "en": "The daily dose is 20 to 30 mg/kg divided into 3 to 4 doses. Do not exceed 10 mg/kg per dose.",
+                "ar": "الجرعة اليومية 20 إلى 30 ملغم/كغم تُقسم على 3 إلى 4 جرعات. ولا تتجاوز 10 ملغم/كغم للجرعة الواحدة."
+              }
+            },
+            {
+              "use": {
+                "en": "For pain and fever",
+                "ar": "للألم والحمى"
+              },
+              "minAge": 12,
+              "maxAge": 121,
+              "minWeight": 40,
+              "method": "fixed",
+              "maxSingle": 800,
+              "interval": {
+                "en": "every 4 to 6 hours when needed",
+                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+              },
+              "maxDaily": 1200,
+              "note": {
+                "en": "The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
+                "ar": "الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
+              },
+              "fixedMin": 200,
+              "fixedMax": 400
+            }
+          ],
+          "recs": {
+            "en": [
+              "Follow the product leaflet or the approved medical protocol.",
+              "Use the lowest effective dose for the shortest possible time.",
+              "Check the actual concentration printed on the package."
+            ],
+            "ar": [
+              "اتبع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد.",
+              "استخدم أقل جرعة فعالة لأقصر مدة ممكنة.",
+              "تأكد من التركيز الفعلي المكتوب على العبوة."
+            ]
+          }
+        },
+        {
+          "form": "tablet",
+          "strengths": [
+            {
+              "mg": 200,
+              "per": 1,
+              "regimens": [
+                {
+                  "minAge": 6,
+                  "maxAge": 12,
+                  "weightAbove": 20,
+                  "method": "fixed",
+                  "fixed": 200,
+                  "timesPerDay": 3,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "every 6 to 8 hours",
+                    "ar": "كل 6 إلى 8 ساعات"
+                  },
+                  "maxDailyPerKg": 20,
+                  "maxDaily": 600,
+                  "note": {
+                    "en": "Children aged 6 to 12 years who weigh more than 20 kg. The daily maximum is 20 mg/kg without exceeding 600 mg.",
+                    "ar": "للأطفال من 6 إلى 12 سنة وبوزن أكثر من 20 كغم. الحد اليومي 20 ملغم/كغم بدون تجاوز 600 ملغم."
+                  }
+                },
+                {
+                  "use": {
+                    "en": "For pain and fever",
+                    "ar": "للألم والحمى"
+                  },
+                  "minAge": 12,
+                  "maxAge": 121,
+                  "minWeight": 40,
+                  "method": "fixed",
+                  "maxSingle": 800,
+                  "interval": {
+                    "en": "every 4 to 6 hours when needed",
+                    "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+                  },
+                  "maxDaily": 1200,
+                  "note": {
+                    "en": "The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
+                    "ar": "الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
+                  },
+                  "fixedMin": 200,
+                  "fixedMax": 400
+                },
+                {
+                  "use": {
+                    "en": "Rheumatic conditions (under medical supervision)",
+                    "ar": "الأمراض الروماتيزمية (بإشراف طبي)"
+                  },
+                  "minAge": 12,
+                  "maxAge": 121,
+                  "minWeight": 40,
+                  "method": "fixed",
+                  "timesPerDay": 3,
+                  "maxDaily": 2400,
+                  "note": {
+                    "en": "Under medical supervision. The maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
+                    "ar": "بإشراف طبي. الحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
+                  },
+                  "fixedMin": 400,
+                  "fixedMax": 600
+                }
+              ]
+            },
+            {
+              "mg": 400,
+              "per": 1,
+              "regimens": [
+                {
+                  "use": {
+                    "en": "For pain and fever",
+                    "ar": "للألم والحمى"
+                  },
+                  "minAge": 12,
+                  "maxAge": 121,
+                  "minWeight": 40,
+                  "method": "fixed",
+                  "maxSingle": 800,
+                  "interval": {
+                    "en": "every 4 to 6 hours when needed",
+                    "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+                  },
+                  "maxDaily": 1200,
+                  "note": {
+                    "en": "The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
+                    "ar": "الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
+                  },
+                  "fixed": 400
+                },
+                {
+                  "use": {
+                    "en": "Rheumatic conditions (under medical supervision)",
+                    "ar": "الأمراض الروماتيزمية (بإشراف طبي)"
+                  },
+                  "minAge": 12,
+                  "maxAge": 121,
+                  "minWeight": 40,
+                  "method": "fixed",
+                  "timesPerDay": 3,
+                  "maxDaily": 2400,
+                  "note": {
+                    "en": "Under medical supervision. The maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
+                    "ar": "بإشراف طبي. الحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
+                  },
+                  "fixed": 400
+                }
+              ]
+            },
+            {
+              "mg": 600,
+              "per": 1,
+              "regimens": [
+                {
+                  "use": {
+                    "en": "Rheumatic conditions (under medical supervision)",
+                    "ar": "الأمراض الروماتيزمية (بإشراف طبي)"
+                  },
+                  "minAge": 15,
+                  "maxAge": 121,
+                  "minWeight": 50,
+                  "method": "fixed",
+                  "timesPerDay": 3,
+                  "maxDaily": 2400,
+                  "note": {
+                    "en": "Under medical supervision. The maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
+                    "ar": "بإشراف طبي. الحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
+                  },
+                  "fixed": 600
+                }
+              ]
+            },
+            {
+              "mg": 800,
+              "per": 1,
+              "regimens": [
+                {
+                  "minAge": 0,
+                  "maxAge": 121,
+                  "method": "note",
+                  "note": {
+                    "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
+                    "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
+                  }
+                }
+              ]
+            }
+          ],
+          "recs": {
+            "en": [
+              "Follow the product leaflet or the approved medical protocol.",
+              "Use the lowest effective dose for the shortest possible time.",
+              "Check the actual concentration printed on the package."
+            ],
+            "ar": [
+              "اتبع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد.",
+              "استخدم أقل جرعة فعالة لأقصر مدة ممكنة.",
+              "تأكد من التركيز الفعلي المكتوب على العبوة."
+            ]
+          }
+        },
+        {
+          "form": "capsule",
+          "strengths": [
+            {
+              "mg": 200,
+              "per": 1,
+              "regimens": [
+                {
+                  "minAge": 6,
+                  "maxAge": 12,
+                  "weightAbove": 20,
+                  "method": "fixed",
+                  "fixed": 200,
+                  "timesPerDay": 3,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "every 6 to 8 hours",
+                    "ar": "كل 6 إلى 8 ساعات"
+                  },
+                  "maxDailyPerKg": 20,
+                  "maxDaily": 600,
+                  "note": {
+                    "en": "Children aged 6 to 12 years who weigh more than 20 kg. The daily maximum is 20 mg/kg without exceeding 600 mg.",
+                    "ar": "للأطفال من 6 إلى 12 سنة وبوزن أكثر من 20 كغم. الحد اليومي 20 ملغم/كغم بدون تجاوز 600 ملغم."
+                  }
+                },
+                {
+                  "use": {
+                    "en": "For pain and fever",
+                    "ar": "للألم والحمى"
+                  },
+                  "minAge": 12,
+                  "maxAge": 121,
+                  "minWeight": 40,
+                  "method": "fixed",
+                  "maxSingle": 800,
+                  "interval": {
+                    "en": "every 4 to 6 hours when needed",
+                    "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+                  },
+                  "maxDaily": 1200,
+                  "note": {
+                    "en": "The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
+                    "ar": "الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
+                  },
+                  "fixedMin": 200,
+                  "fixedMax": 400
+                },
+                {
+                  "use": {
+                    "en": "Rheumatic conditions (under medical supervision)",
+                    "ar": "الأمراض الروماتيزمية (بإشراف طبي)"
+                  },
+                  "minAge": 12,
+                  "maxAge": 121,
+                  "minWeight": 40,
+                  "method": "fixed",
+                  "timesPerDay": 3,
+                  "maxDaily": 2400,
+                  "note": {
+                    "en": "Under medical supervision. The maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
+                    "ar": "بإشراف طبي. الحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
+                  },
+                  "fixedMin": 400,
+                  "fixedMax": 600
+                }
+              ]
+            },
+            {
+              "mg": 400,
+              "per": 1,
+              "regimens": [
+                {
+                  "use": {
+                    "en": "For pain and fever",
+                    "ar": "للألم والحمى"
+                  },
+                  "minAge": 12,
+                  "maxAge": 121,
+                  "minWeight": 40,
+                  "method": "fixed",
+                  "maxSingle": 800,
+                  "interval": {
+                    "en": "every 4 to 6 hours when needed",
+                    "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+                  },
+                  "maxDaily": 1200,
+                  "note": {
+                    "en": "The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
+                    "ar": "الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
+                  },
+                  "fixed": 400
+                },
+                {
+                  "use": {
+                    "en": "Rheumatic conditions (under medical supervision)",
+                    "ar": "الأمراض الروماتيزمية (بإشراف طبي)"
+                  },
+                  "minAge": 12,
+                  "maxAge": 121,
+                  "minWeight": 40,
+                  "method": "fixed",
+                  "timesPerDay": 3,
+                  "maxDaily": 2400,
+                  "note": {
+                    "en": "Under medical supervision. The maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
+                    "ar": "بإشراف طبي. الحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
+                  },
+                  "fixed": 400
+                }
+              ]
+            }
+          ],
+          "recs": {
+            "en": [
+              "Follow the product leaflet or the approved medical protocol.",
+              "Use the lowest effective dose for the shortest possible time.",
+              "Check the actual concentration printed on the package."
+            ],
+            "ar": [
+              "اتبع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد.",
+              "استخدم أقل جرعة فعالة لأقصر مدة ممكنة.",
+              "تأكد من التركيز الفعلي المكتوب على العبوة."
+            ]
+          }
+        },
+        {
+          "form": "oral_drops",
+          "regimens": [
+            {
+              "minAge": 0,
+              "maxAge": 121,
+              "method": "note",
+              "note": {
+                "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
+                "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
+              }
+            }
+          ]
+        },
+        {
+          "form": "chewable_tablet",
+          "strengths": [
+            {
+              "mg": 50,
+              "per": 1
+            },
+            {
+              "mg": 100,
+              "per": 1
+            }
+          ],
+          "regimens": [
+            {
+              "minAge": 0,
+              "maxAge": 121,
+              "method": "note",
+              "note": {
+                "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
+                "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
+              }
+            }
+          ]
+        },
+        {
+          "form": "suppository",
+          "strengths": [
+            {
+              "mg": 60,
+              "per": 1
+            },
+            {
+              "mg": 125,
+              "per": 1
+            },
+            {
+              "mg": 200,
+              "per": 1
+            }
+          ],
+          "regimens": [
+            {
+              "minAge": 0,
+              "maxAge": 121,
+              "method": "note",
+              "note": {
+                "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
+                "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
+              }
+            }
+          ]
+        },
+        {
+          "form": "gel",
+          "strengths": [
+            {
+              "label": {
+                "en": "5%",
+                "ar": "5%"
+              }
+            },
+            {
+              "label": {
+                "en": "10%",
+                "ar": "10%"
+              }
+            }
+          ],
+          "regimens": [
+            {
+              "minAge": 0,
+              "maxAge": 121,
+              "method": "note",
+              "note": {
+                "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
+                "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
+              }
+            }
+          ]
+        },
+        {
+          "form": "infusion",
+          "regimens": [
+            {
+              "minAge": 0,
+              "maxAge": 121,
+              "method": "note",
+              "note": {
+                "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
+                "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

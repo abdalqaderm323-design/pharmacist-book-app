@@ -82,7 +82,7 @@ textarea.input{height:auto;min-height:200px;padding:12px;resize:vertical;line-he
 'use strict';
 
 /* ======= Settings you may change ======= */
-var APP_VERSION = '1.3.0';
+var APP_VERSION = '1.4.0';
 var REPO = 'abdalqaderm323-design/pharmacist-book-app';
 var BRANCH = 'main';
 /* ======================================== */
@@ -102,7 +102,7 @@ var STR = {
     drugName: 'اسم الدواء', pickDrugFirst: 'اختار الدواء أولاً', doseForm: 'اختيار الجرعة (الشكل والتركيز)', age: 'العمر (سنة)', sex: 'الجنس',
     male: 'ذكر', female: 'أنثى', weight: 'الوزن (كغم)', calc: 'احسب', pickDrugForm: 'اختار الدواء والجرعة أولاً', badAge: 'اكتب عمراً صحيحاً',
     pickSex: 'اختار الجنس', badWt: 'اكتب وزناً صحيحاً', recDose: 'الجرعة الموصى بها (للمرة الواحدة)', perDose: '', timesDay: 'عدد المرات باليوم',
-    times: 'مرات', maxDaily: 'الحد الأقصى اليومي', mgDay: 'ملغم', recs: 'التوصيات', ageWarn: 'هذا الشكل غير مسجل للفئة العمرية المدخلة. استشر الصيدلي أو الطبيب.',
+    times: 'مرات', maxDaily: 'الحد الأقصى اليومي', mgDay: 'ملغم', recs: 'التوصيات', ageWarn: 'هذا الشكل غير مسجل للعمر أو الوزن المدخل. استشر الصيدلي أو الطبيب.', intervalL: 'الفاصل بين الجرعات',
     noDoseData: 'لا توجد بيانات جرعات بعد', disclaimer: 'للتعليم فقط ولا يغني عن استشارة الصيدلي أو الطبيب.',
     updChecking: 'جاري التحقق من التحديثات...', updOk: 'تم تحديث المعلومات', updLatest: 'أنت على آخر نسخة', updOffline: 'تحتاج اتصال بالإنترنت للتحديث',
     updNewApp: 'يوجد تحديث جديد للتطبيق', updDownload: 'تنزيل التحديث', updCfg: 'رابط التحديث غير مضبوط بعد', close: 'إغلاق',
@@ -125,7 +125,7 @@ var STR = {
     drugName: 'Drug name', pickDrugFirst: 'Pick a drug first', doseForm: 'Dose option (form and strength)', age: 'Age (years)', sex: 'Sex',
     male: 'Male', female: 'Female', weight: 'Weight (kg)', calc: 'Calculate', pickDrugForm: 'Pick the drug and its form first', badAge: 'Enter a valid age',
     pickSex: 'Pick the sex', badWt: 'Enter a valid weight', recDose: 'Recommended dose (per intake)', perDose: '', timesDay: 'Times per day',
-    times: 'times', maxDaily: 'Maximum per day', mgDay: 'mg', recs: 'Recommendations', ageWarn: 'This form is not listed for the entered age group. Ask a pharmacist or doctor.',
+    times: 'times', maxDaily: 'Maximum per day', mgDay: 'mg', recs: 'Recommendations', ageWarn: 'This form is not listed for the entered age or weight. Ask a pharmacist or doctor.', intervalL: 'Interval between doses',
     noDoseData: 'No dose data yet', disclaimer: 'For education only. It does not replace advice from a pharmacist or doctor.',
     updChecking: 'Checking for updates...', updOk: 'Information updated', updLatest: 'You are on the latest version', updOffline: 'You need an internet connection to update',
     updNewApp: 'A new app update is available', updDownload: 'Download update', updCfg: 'The update link is not set yet', close: 'Close',
@@ -210,6 +210,7 @@ var FORMS = {
   tablet: ['أقراص', 'Tablet', 'tablet'], capsule: ['كبسولات', 'Capsule', 'capsule'], syrup: ['شراب', 'Syrup', 'ml'], suspension: ['معلق فموي', 'Oral suspension', 'ml'], oral_suspension: ['معلق فموي', 'Oral suspension', 'ml'], soluble_tablet: ['أقراص قابلة للذوبان', 'Soluble tablets', 'tablet'], infusion: ['محلول للحقن الوريدي', 'IV infusion', 'ml'],
   solution: ['محلول', 'Solution', 'ml'], drops: ['قطرة', 'Drops', 'ml'], im: ['حقنة عضلية', 'IM injection', 'ml'], iv: ['حقنة وريدية', 'IV injection', 'ml'],
   sc: ['حقنة تحت الجلد', 'SC injection', 'ml'], suppository: ['تحاميل', 'Suppositories', 'suppository'], ointment: ['مرهم', 'Ointment', 'g'], cream: ['كريم', 'Cream', 'g'],
+  oral_drops: ['قطرات فموية', 'Oral drops', 'ml'], chewable_tablet: ['أقراص مضغ', 'Chewable tablets', 'tablet'], gel: ['جل موضعي', 'Topical gel', 'g'],
   inhaler: ['بخاخ', 'Inhaler', 'unit'], powder: ['أكياس / بودرة', 'Powder / sachet', 'unit']
 };
 function formName(k) { return FORMS[k] ? FORMS[k][lang === 'ar' ? 0 : 1] : k; }
@@ -306,7 +307,7 @@ function findTopic(id) {
 function typeLabel(type) { return type === 'drugs' ? t('catDrugs') : t('catDiseases'); }
 function matches(topic, q) {
   q = norm(q.trim()); if (!q) return true;
-  return norm(topic.title && topic.title.en).indexOf(q) >= 0 || norm(topic.title && topic.title.ar).indexOf(q) >= 0 || norm(catLabelsOf(topic)).indexOf(q) >= 0;
+  return norm(topic.title && topic.title.en).indexOf(q) >= 0 || norm(topic.title && topic.title.ar).indexOf(q) >= 0 || norm(catLabelsOf(topic)).indexOf(q) >= 0 || (topic.aliases || []).some(function (x) { return norm(x).indexOf(q) >= 0; });
 }
 function fetchJson(u) { return fetch(u).then(function (r) { if (!r.ok) throw new Error(u); return r.json(); }); }
 function setData(srcs) { DATA = mergeSources(srcs); }
@@ -570,7 +571,8 @@ function pageInter() {
     clear(); var a = f1.get(), b = f2.get();
     if (!a || !b) { err.textContent = t('pickBoth'); return; }
     f1.hideSug(); f2.hideSug();
-    var hit = null; (DATA.interactions || []).forEach(function (it) { if ((it.a === a.id && it.b === b.id) || (it.a === b.id && it.b === a.id)) hit = it; });
+    var has = function (v, id) { return Array.isArray(v) ? v.indexOf(id) >= 0 : v === id; };
+    var hit = null; (DATA.interactions || []).forEach(function (it) { if ((has(it.a, a.id) && has(it.b, b.id)) || (has(it.a, b.id) && has(it.b, a.id))) hit = it; });
     if (!hit) { out.appendChild(h('div', { class: 'box' }, [h('b', { text: t('noInter') }), h('div', { class: 'muted', style: 'margin-top:6px', text: t('noInterNote') })])); return; }
     var col = hit.level === 'severe' ? 'var(--red)' : hit.level === 'moderate' ? 'var(--amber)' : 'var(--green)';
     var badge = h('span', { class: 'badge', text: t(hit.level) }); badge.style.color = col; badge.style.borderColor = col;
@@ -591,8 +593,8 @@ function strengthText(form, s) {
   return s.mg + ' ' + t('mgU') + ' / ' + (per !== 1 ? per + ' ' : '') + unitLabel(form);
 }
 function fmt(n) { return String(Math.round(n * 100) / 100); }
-function pickRegimen(opt, age, wt, sex) {
-  var rs = opt.regimens || [];
+function pickRegimens(opt, age, wt, sex) {
+  var rs = opt.regimens || [], out = [];
   for (var i = 0; i < rs.length; i++) {
     var r = rs[i];
     if (age < (r.minAge || 0) || age >= (r.maxAge === undefined ? 121 : r.maxAge)) continue;
@@ -602,9 +604,9 @@ function pickRegimen(opt, age, wt, sex) {
     if (r.weightUpTo !== undefined && wt > r.weightUpTo) continue;
     if (r.weightBelow !== undefined && wt >= r.weightBelow) continue;
     if (r.sex && r.sex !== sex) continue;
-    return r;
+    out.push(r);
   }
-  return null;
+  return out;
 }
 function pageCalc() {
   var app = document.getElementById('app'); app.innerHTML = ''; app.appendChild(topBar(t('catDose')));
@@ -647,9 +649,11 @@ function pageCalc() {
     if (!sex) { err.textContent = t('pickSex'); return; }
     if (!(wt >= 1 && wt <= 300)) { err.textContent = t('badWt'); return; }
     drugF.hideSug();
+    var matched = pickRegimens((st && st.regimens) ? st : opt, age, wt, sex);
+    if (!matched.length) { var b0 = h('div', { class: 'box' }); b0.appendChild(h('p', { style: 'margin:0;color:var(--amber)', text: t('ageWarn') })); out.appendChild(b0); return; }
+    matched.forEach(function (r) {
     var box = h('div', { class: 'box' });
-    var r = pickRegimen((st && st.regimens) ? st : opt, age, wt, sex);
-    if (!r) { box.appendChild(h('p', { style: 'margin:0;color:var(--amber)', text: t('ageWarn') })); out.appendChild(box); return; }
+    if (r.use) box.appendChild(h('div', { style: 'color:var(--gold);font-weight:600;margin-bottom:6px', text: L(r.use) }));
     function kv(a, b) { box.appendChild(h('div', { class: 'kv' }, [h('span', { text: a }), h('span', { text: b })])); }
     if (r.method === 'note') {
       if (r.note) box.appendChild(h('p', { style: 'margin:0', text: L(r.note) }));
@@ -672,6 +676,7 @@ function pageCalc() {
         var conv = function (d) { var a = d / st.mg * (st.per || 1); return (u === 'ml' || u === 'g') ? Math.round(a * 10) / 10 : Math.round(a * 4) / 4; };
         kv(t('amountGive'), rng(conv(lo), conv(hi)) + ' ' + unitLabel(opt.form) + '  (' + strengthText(opt.form, st) + ')');
       }
+      if (!r.timesPerDay && r.interval) kv(t('intervalL'), L(r.interval));
       if (r.timesPerDay) kv(t('timesDay'), (r.timesUpTo ? t('upTo') + ' ' : '') + r.timesPerDay + ' ' + t('times') + (r.interval ? ' (' + L(r.interval) + ')' : ''));
       var total = r.timesPerDay ? hi * r.timesPerDay : null;
       if (total) kv(t('totalDaily'), ((lo !== hi || r.timesUpTo) ? t('upTo') + ' ' : '') + fmt(total) + ' ' + t('mgU'));
@@ -684,6 +689,7 @@ function pageCalc() {
     var rl = opt.recs && (opt.recs[lang] || opt.recs.en || opt.recs.ar);
     if (rl && rl.length) { box.appendChild(h('div', { class: 'label', text: t('recs') })); rl.forEach(function (x) { box.appendChild(h('p', { style: 'margin:0 0 6px', text: '• ' + x })); }); }
     out.appendChild(box);
+    });
   } }));
   wrap.appendChild(err); wrap.appendChild(out); wrap.appendChild(h('div', { class: 'disc', text: t('disclaimer') }));
   if (!doses.length) wrap.insertBefore(h('div', { class: 'empty muted', text: t('noDoseData') }), wrap.firstChild);

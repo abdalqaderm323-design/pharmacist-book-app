@@ -60,12 +60,12 @@
         },
         {
           "h": {
-            "en": "Dose summary (European Brufen label)",
-            "ar": "ملخص الجرعات (حسب النشرة الأوروبية لـ Brufen)"
+            "en": "Dose summary (British leaflets, plus the European Brufen label)",
+            "ar": "ملخص الجرعات (حسب النشرات البريطانية، ومعها نشرة Brufen الأوروبية)"
           },
           "t": {
-            "en": "Children (6 months to 12 years and over 7 kg): 20 to 30 mg/kg/day divided into 3 to 4 doses (5 to 10 mg/kg per dose). Maximum 10 mg/kg per dose and 30 mg/kg/day. Every 6 to 8 hours when needed.\nTablets for children: 6 to 12 years and over 20 kg.\nAdults and adolescents (12 years and over, 40 kg or more): for pain and fever 200 to 400 mg every 4 to 6 hours when needed; maximum single dose 800 mg; maximum without medical supervision 1200 mg/day.\nRheumatic conditions (under medical supervision): 400 to 600 mg three times daily; maximum 2400 mg/day.\nUse the lowest effective dose for the shortest possible time. The dose depends on age, weight, condition, dosage form and kidney function.",
-            "ar": "الأطفال (من 6 أشهر إلى 12 سنة وبوزن أكثر من 7 كغم): 20 إلى 30 ملغم/كغم باليوم مقسمة على 3 إلى 4 جرعات (أي 5 إلى 10 ملغم/كغم للجرعة الواحدة)، وبحد أقصى 10 ملغم/كغم للجرعة و30 ملغم/كغم باليوم. كل 6 إلى 8 ساعات عند الحاجة.\nأقراص الأطفال: من 6 إلى 12 سنة وبوزن أكثر من 20 كغم.\nالبالغون والمراهقون (12 سنة فما فوق وبوزن 40 كغم فأكثر): للألم والحمى 200 إلى 400 ملغم كل 4 إلى 6 ساعات عند الحاجة، وأقصى جرعة واحدة 800 ملغم، والحد الأقصى بدون إشراف طبي 1200 ملغم/يوم.\nالأمراض الروماتيزمية (بإشراف طبي): 400 إلى 600 ملغم ثلاث مرات يومياً، والحد الأقصى 2400 ملغم/يوم.\nيجب استخدام أقل جرعة فعالة لأقصر مدة ممكنة. وتعتمد الجرعة على العمر والوزن والحالة المرضية والشكل الصيدلاني ووظائف الكلى."
+            "en": "Children (3 months to 12 years, over 5 kg) with oral liquids: 20 to 30 mg/kg/day divided into equal doses (3 to 4 doses), every 6 to 8 hours with at least 4 hours between doses.\nTablets for children: 6 to 9 years (20 to 29 kg) 200 mg up to 3 times a day, maximum 600 mg/day; 10 to 11 years (30 kg or more) 200 mg up to 4 times a day, maximum 800 mg/day.\nChewable capsules 100 mg: 7 to 9 years two capsules, 10 to 12 years three capsules, 3 times in 24 hours.\nSuppositories 60 mg: 3 to 9 months (6 to 8 kg) one suppository up to 3 times a day; 9 months to 2 years (8 to 12 kg) one suppository up to 4 times a day.\nAdults and adolescents (12 years and over, 40 kg or more): for pain and fever 200 to 400 mg up to 3 times a day, at least 4 hours apart, maximum 1200 mg/day without medical supervision.\nRheumatic conditions (under medical supervision): 1200 to 1800 mg/day in divided doses; maximum 2400 mg/day.\nUse the lowest effective dose for the shortest possible time.",
+            "ar": "الأطفال (من 3 أشهر إلى 12 سنة وبوزن أكثر من 5 كغم) مع السوائل الفموية: 20 إلى 30 ملغم/كغم باليوم مقسمة على جرعات متساوية (3 إلى 4 جرعات)، كل 6 إلى 8 ساعات وبفاصل 4 ساعات على الأقل.\nأقراص الأطفال: من 6 إلى 9 سنوات (20 إلى 29 كغم) 200 ملغم حتى 3 مرات والحد 600 ملغم/يوم؛ ومن 10 إلى 11 سنة (30 كغم فأكثر) 200 ملغم حتى 4 مرات والحد 800 ملغم/يوم.\nكبسولات المضغ 100 ملغم: من 7 إلى 9 سنوات كبسولتان، ومن 10 إلى 12 سنة ثلاث كبسولات، 3 مرات بـ 24 ساعة.\nتحاميل 60 ملغم: من 3 إلى 9 أشهر (6 إلى 8 كغم) تحميلة حتى 3 مرات يومياً؛ ومن 9 أشهر إلى سنتين (8 إلى 12 كغم) تحميلة حتى 4 مرات يومياً.\nالبالغون والمراهقون (12 سنة فما فوق وبوزن 40 كغم فأكثر): للألم والحمى 200 إلى 400 ملغم حتى 3 مرات يومياً بفاصل 4 ساعات على الأقل، والحد الأقصى بدون إشراف طبي 1200 ملغم/يوم.\nالأمراض الروماتيزمية (بإشراف طبي): 1200 إلى 1800 ملغم/يوم مقسمة على جرعات؛ والحد الأقصى 2400 ملغم/يوم.\nيجب استخدام أقل جرعة فعالة لأقصر مدة ممكنة."
           }
         },
         {
@@ -450,9 +450,9 @@
           ],
           "regimens": [
             {
-              "minAge": 0.5,
+              "minAge": 0.25,
               "maxAge": 12,
-              "weightAbove": 7,
+              "weightAbove": 5,
               "method": "perKg",
               "perKgMin": 5,
               "perKgMax": 10,
@@ -464,8 +464,8 @@
               },
               "maxDailyPerKg": 30,
               "note": {
-                "en": "The daily dose is 20 to 30 mg/kg divided into 3 to 4 doses. Do not exceed 10 mg/kg per dose.",
-                "ar": "الجرعة اليومية 20 إلى 30 ملغم/كغم تُقسم على 3 إلى 4 جرعات. ولا تتجاوز 10 ملغم/كغم للجرعة الواحدة."
+                "en": "The daily dose is 20 to 30 mg/kg divided into equal doses, with at least 4 hours between doses. For infants aged 3 to 6 months, seek medical advice if symptoms persist beyond 24 hours; from 6 months, if beyond 3 days.",
+                "ar": "الجرعة اليومية 20 إلى 30 ملغم/كغم مقسمة على جرعات متساوية، وبفاصل 4 ساعات على الأقل. للرضع من 3 إلى 6 أشهر راجع الطبيب إذا استمرت الأعراض أكثر من 24 ساعة، ومن 6 أشهر أكثر من 3 أيام."
               }
             },
             {
@@ -478,14 +478,16 @@
               "minWeight": 40,
               "method": "fixed",
               "maxSingle": 800,
+              "timesPerDay": 3,
+              "timesUpTo": true,
               "interval": {
-                "en": "every 4 to 6 hours when needed",
-                "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+                "en": "at least 4 hours apart",
+                "ar": "بفاصل 4 ساعات على الأقل"
               },
               "maxDaily": 1200,
               "note": {
-                "en": "The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
-                "ar": "الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
+                "en": "For short-term use. The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
+                "ar": "للاستخدام قصير المدة. الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
               },
               "fixedMin": 200,
               "fixedMax": 400
@@ -514,7 +516,8 @@
                 {
                   "minAge": 6,
                   "maxAge": 12,
-                  "weightAbove": 20,
+                  "minWeight": 20,
+                  "weightBelow": 30,
                   "method": "fixed",
                   "fixed": 200,
                   "timesPerDay": 3,
@@ -523,11 +526,28 @@
                     "en": "every 6 to 8 hours",
                     "ar": "كل 6 إلى 8 ساعات"
                   },
-                  "maxDailyPerKg": 20,
                   "maxDaily": 600,
                   "note": {
-                    "en": "Children aged 6 to 12 years who weigh more than 20 kg. The daily maximum is 20 mg/kg without exceeding 600 mg.",
-                    "ar": "للأطفال من 6 إلى 12 سنة وبوزن أكثر من 20 كغم. الحد اليومي 20 ملغم/كغم بدون تجاوز 600 ملغم."
+                    "en": "Children aged 6 to 9 years weighing 20 to 29 kg: 200 mg one to three times a day, at most 600 mg/day.",
+                    "ar": "للأطفال من 6 إلى 9 سنوات ووزنهم 20 إلى 29 كغم: 200 ملغم من مرة إلى ثلاث، وبحد أقصى 600 ملغم/يوم."
+                  }
+                },
+                {
+                  "minAge": 6,
+                  "maxAge": 12,
+                  "minWeight": 30,
+                  "method": "fixed",
+                  "fixed": 200,
+                  "timesPerDay": 4,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "at least 6 hours apart",
+                    "ar": "بفاصل 6 ساعات على الأقل"
+                  },
+                  "maxDaily": 800,
+                  "note": {
+                    "en": "Children aged 10 to 11 years weighing 30 kg or more: 200 mg one to four times a day, at most 800 mg/day.",
+                    "ar": "للأطفال من 10 إلى 11 سنة ووزنهم 30 كغم فأكثر: 200 ملغم من مرة إلى أربع، وبحد أقصى 800 ملغم/يوم."
                   }
                 },
                 {
@@ -540,14 +560,16 @@
                   "minWeight": 40,
                   "method": "fixed",
                   "maxSingle": 800,
+                  "timesPerDay": 3,
+                  "timesUpTo": true,
                   "interval": {
-                    "en": "every 4 to 6 hours when needed",
-                    "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+                    "en": "at least 4 hours apart",
+                    "ar": "بفاصل 4 ساعات على الأقل"
                   },
                   "maxDaily": 1200,
                   "note": {
-                    "en": "The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
-                    "ar": "الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
+                    "en": "For short-term use. The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
+                    "ar": "للاستخدام قصير المدة. الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
                   },
                   "fixedMin": 200,
                   "fixedMax": 400
@@ -564,8 +586,8 @@
                   "timesPerDay": 3,
                   "maxDaily": 2400,
                   "note": {
-                    "en": "Under medical supervision. The maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
-                    "ar": "بإشراف طبي. الحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
+                    "en": "Under medical supervision. The usual daily dose is 1200 to 1800 mg in divided doses; the maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
+                    "ar": "بإشراف طبي. الجرعة اليومية المعتادة 1200 إلى 1800 ملغم مقسمة على جرعات، والحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
                   },
                   "fixedMin": 400,
                   "fixedMax": 600
@@ -586,14 +608,16 @@
                   "minWeight": 40,
                   "method": "fixed",
                   "maxSingle": 800,
+                  "timesPerDay": 3,
+                  "timesUpTo": true,
                   "interval": {
-                    "en": "every 4 to 6 hours when needed",
-                    "ar": "كل 4 إلى 6 ساعات عند الحاجة"
+                    "en": "at least 4 hours apart",
+                    "ar": "بفاصل 4 ساعات على الأقل"
                   },
                   "maxDaily": 1200,
                   "note": {
-                    "en": "The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
-                    "ar": "الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
+                    "en": "For short-term use. The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
+                    "ar": "للاستخدام قصير المدة. الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
                   },
                   "fixed": 400
                 },
@@ -609,8 +633,8 @@
                   "timesPerDay": 3,
                   "maxDaily": 2400,
                   "note": {
-                    "en": "Under medical supervision. The maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
-                    "ar": "بإشراف طبي. الحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
+                    "en": "Under medical supervision. The usual daily dose is 1200 to 1800 mg in divided doses; the maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
+                    "ar": "بإشراف طبي. الجرعة اليومية المعتادة 1200 إلى 1800 ملغم مقسمة على جرعات، والحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
                   },
                   "fixed": 400
                 }
@@ -632,8 +656,8 @@
                   "timesPerDay": 3,
                   "maxDaily": 2400,
                   "note": {
-                    "en": "Under medical supervision. The maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
-                    "ar": "بإشراف طبي. الحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
+                    "en": "Under medical supervision. The usual daily dose is 1200 to 1800 mg in divided doses; the maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
+                    "ar": "بإشراف طبي. الجرعة اليومية المعتادة 1200 إلى 1800 ملغم مقسمة على جرعات، والحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
                   },
                   "fixed": 600
                 }
@@ -641,6 +665,370 @@
             },
             {
               "mg": 800,
+              "per": 1,
+              "regimens": [
+                {
+                  "use": {
+                    "en": "Rheumatic conditions (under medical supervision)",
+                    "ar": "الأمراض الروماتيزمية (بإشراف طبي)"
+                  },
+                  "minAge": 18,
+                  "maxAge": 121,
+                  "minWeight": 40,
+                  "method": "fixed",
+                  "timesPerDay": 3,
+                  "maxDaily": 2400,
+                  "note": {
+                    "en": "For adults only, under medical supervision. The maximum single dose is 800 mg and the maximum daily dose is 2400 mg.",
+                    "ar": "للبالغين فقط وبإشراف طبي. أقصى جرعة واحدة 800 ملغم والحد اليومي 2400 ملغم."
+                  },
+                  "fixed": 800
+                }
+              ]
+            }
+          ],
+          "recs": {
+            "en": [
+              "Follow the product leaflet or the approved medical protocol.",
+              "Use the lowest effective dose for the shortest possible time.",
+              "Check the actual concentration printed on the package."
+            ],
+            "ar": [
+              "اتبع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد.",
+              "استخدم أقل جرعة فعالة لأقصر مدة ممكنة.",
+              "تأكد من التركيز الفعلي المكتوب على العبوة."
+            ]
+          }
+        },
+        {
+          "form": "capsule",
+          "strengths": [
+            {
+              "mg": 200,
+              "per": 1,
+              "regimens": [
+                {
+                  "minAge": 6,
+                  "maxAge": 12,
+                  "minWeight": 20,
+                  "weightBelow": 30,
+                  "method": "fixed",
+                  "fixed": 200,
+                  "timesPerDay": 3,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "every 6 to 8 hours",
+                    "ar": "كل 6 إلى 8 ساعات"
+                  },
+                  "maxDaily": 600,
+                  "note": {
+                    "en": "Children aged 6 to 9 years weighing 20 to 29 kg: 200 mg one to three times a day, at most 600 mg/day.",
+                    "ar": "للأطفال من 6 إلى 9 سنوات ووزنهم 20 إلى 29 كغم: 200 ملغم من مرة إلى ثلاث، وبحد أقصى 600 ملغم/يوم."
+                  }
+                },
+                {
+                  "minAge": 6,
+                  "maxAge": 12,
+                  "minWeight": 30,
+                  "method": "fixed",
+                  "fixed": 200,
+                  "timesPerDay": 4,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "at least 6 hours apart",
+                    "ar": "بفاصل 6 ساعات على الأقل"
+                  },
+                  "maxDaily": 800,
+                  "note": {
+                    "en": "Children aged 10 to 11 years weighing 30 kg or more: 200 mg one to four times a day, at most 800 mg/day.",
+                    "ar": "للأطفال من 10 إلى 11 سنة ووزنهم 30 كغم فأكثر: 200 ملغم من مرة إلى أربع، وبحد أقصى 800 ملغم/يوم."
+                  }
+                },
+                {
+                  "use": {
+                    "en": "For pain and fever",
+                    "ar": "للألم والحمى"
+                  },
+                  "minAge": 12,
+                  "maxAge": 121,
+                  "minWeight": 40,
+                  "method": "fixed",
+                  "maxSingle": 800,
+                  "timesPerDay": 3,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "at least 4 hours apart",
+                    "ar": "بفاصل 4 ساعات على الأقل"
+                  },
+                  "maxDaily": 1200,
+                  "note": {
+                    "en": "For short-term use. The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
+                    "ar": "للاستخدام قصير المدة. الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
+                  },
+                  "fixedMin": 200,
+                  "fixedMax": 400
+                },
+                {
+                  "use": {
+                    "en": "Rheumatic conditions (under medical supervision)",
+                    "ar": "الأمراض الروماتيزمية (بإشراف طبي)"
+                  },
+                  "minAge": 12,
+                  "maxAge": 121,
+                  "minWeight": 40,
+                  "method": "fixed",
+                  "timesPerDay": 3,
+                  "maxDaily": 2400,
+                  "note": {
+                    "en": "Under medical supervision. The usual daily dose is 1200 to 1800 mg in divided doses; the maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
+                    "ar": "بإشراف طبي. الجرعة اليومية المعتادة 1200 إلى 1800 ملغم مقسمة على جرعات، والحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
+                  },
+                  "fixedMin": 400,
+                  "fixedMax": 600
+                }
+              ]
+            },
+            {
+              "mg": 400,
+              "per": 1,
+              "regimens": [
+                {
+                  "use": {
+                    "en": "For pain and fever",
+                    "ar": "للألم والحمى"
+                  },
+                  "minAge": 12,
+                  "maxAge": 121,
+                  "minWeight": 40,
+                  "method": "fixed",
+                  "maxSingle": 800,
+                  "timesPerDay": 3,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "at least 4 hours apart",
+                    "ar": "بفاصل 4 ساعات على الأقل"
+                  },
+                  "maxDaily": 1200,
+                  "note": {
+                    "en": "For short-term use. The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
+                    "ar": "للاستخدام قصير المدة. الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
+                  },
+                  "fixed": 400
+                },
+                {
+                  "use": {
+                    "en": "Rheumatic conditions (under medical supervision)",
+                    "ar": "الأمراض الروماتيزمية (بإشراف طبي)"
+                  },
+                  "minAge": 12,
+                  "maxAge": 121,
+                  "minWeight": 40,
+                  "method": "fixed",
+                  "timesPerDay": 3,
+                  "maxDaily": 2400,
+                  "note": {
+                    "en": "Under medical supervision. The usual daily dose is 1200 to 1800 mg in divided doses; the maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
+                    "ar": "بإشراف طبي. الجرعة اليومية المعتادة 1200 إلى 1800 ملغم مقسمة على جرعات، والحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
+                  },
+                  "fixed": 400
+                }
+              ]
+            }
+          ],
+          "recs": {
+            "en": [
+              "Follow the product leaflet or the approved medical protocol.",
+              "Use the lowest effective dose for the shortest possible time.",
+              "Check the actual concentration printed on the package."
+            ],
+            "ar": [
+              "اتبع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد.",
+              "استخدم أقل جرعة فعالة لأقصر مدة ممكنة.",
+              "تأكد من التركيز الفعلي المكتوب على العبوة."
+            ]
+          }
+        },
+        {
+          "form": "oral_drops",
+          "strengths": [
+            {
+              "mg": 40,
+              "per": 1
+            }
+          ],
+          "regimens": [
+            {
+              "minAge": 0.25,
+              "maxAge": 12,
+              "weightAbove": 5,
+              "method": "perKg",
+              "perKgMin": 5,
+              "perKgMax": 10,
+              "timesPerDay": 3,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 6 to 8 hours",
+                "ar": "كل 6 إلى 8 ساعات"
+              },
+              "maxDailyPerKg": 30,
+              "note": {
+                "en": "The daily dose is 20 to 30 mg/kg divided into equal doses, with at least 4 hours between doses. For infants aged 3 to 6 months, seek medical advice if symptoms persist beyond 24 hours; from 6 months, if beyond 3 days.",
+                "ar": "الجرعة اليومية 20 إلى 30 ملغم/كغم مقسمة على جرعات متساوية، وبفاصل 4 ساعات على الأقل. للرضع من 3 إلى 6 أشهر راجع الطبيب إذا استمرت الأعراض أكثر من 24 ساعة، ومن 6 أشهر أكثر من 3 أيام."
+              }
+            }
+          ],
+          "recs": {
+            "en": [
+              "Follow the product leaflet or the approved medical protocol.",
+              "Use the lowest effective dose for the shortest possible time.",
+              "Check the actual concentration printed on the package."
+            ],
+            "ar": [
+              "اتبع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد.",
+              "استخدم أقل جرعة فعالة لأقصر مدة ممكنة.",
+              "تأكد من التركيز الفعلي المكتوب على العبوة."
+            ]
+          }
+        },
+        {
+          "form": "chewable_tablet",
+          "strengths": [
+            {
+              "mg": 50,
+              "per": 1,
+              "regimens": [
+                {
+                  "minAge": 0,
+                  "maxAge": 121,
+                  "method": "note",
+                  "note": {
+                    "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
+                    "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
+                  }
+                }
+              ]
+            },
+            {
+              "mg": 100,
+              "per": 1,
+              "regimens": [
+                {
+                  "minAge": 7,
+                  "maxAge": 10,
+                  "minWeight": 20,
+                  "weightBelow": 30,
+                  "method": "fixed",
+                  "fixed": 200,
+                  "timesPerDay": 3,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "every 6 to 8 hours",
+                    "ar": "كل 6 إلى 8 ساعات"
+                  },
+                  "maxDaily": 600,
+                  "note": {
+                    "en": "Children aged 7 to 9 years (20 to 29 kg): two capsules three times in 24 hours. Not for children under 7 years.",
+                    "ar": "للأطفال من 7 إلى 9 سنوات (20 إلى 29 كغم): كبسولتان 3 مرات بـ 24 ساعة. لا تُعطى لمن هو أقل من 7 سنوات."
+                  }
+                },
+                {
+                  "minAge": 10,
+                  "maxAge": 13,
+                  "minWeight": 30,
+                  "method": "fixed",
+                  "fixed": 300,
+                  "timesPerDay": 3,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "every 6 to 8 hours",
+                    "ar": "كل 6 إلى 8 ساعات"
+                  },
+                  "maxDaily": 900,
+                  "note": {
+                    "en": "Children aged 10 to 12 years (30 to 40 kg): three capsules three times in 24 hours.",
+                    "ar": "للأطفال من 10 إلى 12 سنة (30 إلى 40 كغم): ثلاث كبسولات 3 مرات بـ 24 ساعة."
+                  }
+                }
+              ]
+            }
+          ],
+          "recs": {
+            "en": [
+              "Follow the product leaflet or the approved medical protocol.",
+              "Use the lowest effective dose for the shortest possible time.",
+              "Check the actual concentration printed on the package."
+            ],
+            "ar": [
+              "اتبع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد.",
+              "استخدم أقل جرعة فعالة لأقصر مدة ممكنة.",
+              "تأكد من التركيز الفعلي المكتوب على العبوة."
+            ]
+          }
+        },
+        {
+          "form": "suppository",
+          "strengths": [
+            {
+              "mg": 60,
+              "per": 1,
+              "regimens": [
+                {
+                  "minAge": 0.25,
+                  "maxAge": 1,
+                  "minWeight": 6,
+                  "weightUpTo": 8,
+                  "method": "fixed",
+                  "fixed": 60,
+                  "timesPerDay": 3,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "6 to 8 hours apart",
+                    "ar": "بفاصل 6 إلى 8 ساعات"
+                  },
+                  "maxDailyPerKg": 30,
+                  "note": {
+                    "en": "For short-term use. If symptoms do not improve within 24 hours (ages 3 to 5 months) or 3 days (from 6 months), see a doctor. Do not use under 3 months or under 6 kg without medical advice.",
+                    "ar": "للاستخدام قصير المدة. إذا لم تتحسن الأعراض خلال 24 ساعة (من 3 إلى 5 أشهر) أو 3 أيام (من 6 أشهر) راجع الطبيب. ولا يُستخدم تحت 3 أشهر أو 6 كغم بدون استشارة طبية."
+                  }
+                },
+                {
+                  "minAge": 0.25,
+                  "maxAge": 3,
+                  "weightAbove": 8,
+                  "weightUpTo": 12,
+                  "method": "fixed",
+                  "fixed": 60,
+                  "timesPerDay": 4,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "at least 6 hours apart",
+                    "ar": "بفاصل 6 ساعات على الأقل"
+                  },
+                  "maxDailyPerKg": 30,
+                  "note": {
+                    "en": "For short-term use. If symptoms do not improve within 24 hours (ages 3 to 5 months) or 3 days (from 6 months), see a doctor. Do not use under 3 months or under 6 kg without medical advice.",
+                    "ar": "للاستخدام قصير المدة. إذا لم تتحسن الأعراض خلال 24 ساعة (من 3 إلى 5 أشهر) أو 3 أيام (من 6 أشهر) راجع الطبيب. ولا يُستخدم تحت 3 أشهر أو 6 كغم بدون استشارة طبية."
+                  }
+                }
+              ]
+            },
+            {
+              "mg": 125,
+              "per": 1,
+              "regimens": [
+                {
+                  "minAge": 0,
+                  "maxAge": 121,
+                  "method": "note",
+                  "note": {
+                    "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
+                    "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
+                  }
+                }
+              ]
+            },
+            {
+              "mg": 200,
               "per": 1,
               "regimens": [
                 {
@@ -669,238 +1057,81 @@
           }
         },
         {
-          "form": "capsule",
-          "strengths": [
-            {
-              "mg": 200,
-              "per": 1,
-              "regimens": [
-                {
-                  "minAge": 6,
-                  "maxAge": 12,
-                  "weightAbove": 20,
-                  "method": "fixed",
-                  "fixed": 200,
-                  "timesPerDay": 3,
-                  "timesUpTo": true,
-                  "interval": {
-                    "en": "every 6 to 8 hours",
-                    "ar": "كل 6 إلى 8 ساعات"
-                  },
-                  "maxDailyPerKg": 20,
-                  "maxDaily": 600,
-                  "note": {
-                    "en": "Children aged 6 to 12 years who weigh more than 20 kg. The daily maximum is 20 mg/kg without exceeding 600 mg.",
-                    "ar": "للأطفال من 6 إلى 12 سنة وبوزن أكثر من 20 كغم. الحد اليومي 20 ملغم/كغم بدون تجاوز 600 ملغم."
-                  }
-                },
-                {
-                  "use": {
-                    "en": "For pain and fever",
-                    "ar": "للألم والحمى"
-                  },
-                  "minAge": 12,
-                  "maxAge": 121,
-                  "minWeight": 40,
-                  "method": "fixed",
-                  "maxSingle": 800,
-                  "interval": {
-                    "en": "every 4 to 6 hours when needed",
-                    "ar": "كل 4 إلى 6 ساعات عند الحاجة"
-                  },
-                  "maxDaily": 1200,
-                  "note": {
-                    "en": "The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
-                    "ar": "الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
-                  },
-                  "fixedMin": 200,
-                  "fixedMax": 400
-                },
-                {
-                  "use": {
-                    "en": "Rheumatic conditions (under medical supervision)",
-                    "ar": "الأمراض الروماتيزمية (بإشراف طبي)"
-                  },
-                  "minAge": 12,
-                  "maxAge": 121,
-                  "minWeight": 40,
-                  "method": "fixed",
-                  "timesPerDay": 3,
-                  "maxDaily": 2400,
-                  "note": {
-                    "en": "Under medical supervision. The maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
-                    "ar": "بإشراف طبي. الحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
-                  },
-                  "fixedMin": 400,
-                  "fixedMax": 600
-                }
-              ]
-            },
-            {
-              "mg": 400,
-              "per": 1,
-              "regimens": [
-                {
-                  "use": {
-                    "en": "For pain and fever",
-                    "ar": "للألم والحمى"
-                  },
-                  "minAge": 12,
-                  "maxAge": 121,
-                  "minWeight": 40,
-                  "method": "fixed",
-                  "maxSingle": 800,
-                  "interval": {
-                    "en": "every 4 to 6 hours when needed",
-                    "ar": "كل 4 إلى 6 ساعات عند الحاجة"
-                  },
-                  "maxDaily": 1200,
-                  "note": {
-                    "en": "The maximum without medical supervision is 1200 mg/day. Higher doses need medical supervision.",
-                    "ar": "الحد الأقصى بدون إشراف طبي 1200 ملغم/يوم. والجرعات الأعلى تحتاج إلى إشراف طبي."
-                  },
-                  "fixed": 400
-                },
-                {
-                  "use": {
-                    "en": "Rheumatic conditions (under medical supervision)",
-                    "ar": "الأمراض الروماتيزمية (بإشراف طبي)"
-                  },
-                  "minAge": 12,
-                  "maxAge": 121,
-                  "minWeight": 40,
-                  "method": "fixed",
-                  "timesPerDay": 3,
-                  "maxDaily": 2400,
-                  "note": {
-                    "en": "Under medical supervision. The maximum is 2400 mg/day. Use the lowest effective dose for the shortest possible time.",
-                    "ar": "بإشراف طبي. الحد الأقصى 2400 ملغم/يوم. استخدم أقل جرعة فعالة لأقصر مدة ممكنة."
-                  },
-                  "fixed": 400
-                }
-              ]
-            }
-          ],
-          "recs": {
-            "en": [
-              "Follow the product leaflet or the approved medical protocol.",
-              "Use the lowest effective dose for the shortest possible time.",
-              "Check the actual concentration printed on the package."
-            ],
-            "ar": [
-              "اتبع النشرة الخاصة بالمنتج أو البروتوكول الطبي المعتمد.",
-              "استخدم أقل جرعة فعالة لأقصر مدة ممكنة.",
-              "تأكد من التركيز الفعلي المكتوب على العبوة."
-            ]
-          }
-        },
-        {
-          "form": "oral_drops",
-          "regimens": [
-            {
-              "minAge": 0,
-              "maxAge": 121,
-              "method": "note",
-              "note": {
-                "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
-                "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
-              }
-            }
-          ]
-        },
-        {
-          "form": "chewable_tablet",
-          "strengths": [
-            {
-              "mg": 50,
-              "per": 1
-            },
-            {
-              "mg": 100,
-              "per": 1
-            }
-          ],
-          "regimens": [
-            {
-              "minAge": 0,
-              "maxAge": 121,
-              "method": "note",
-              "note": {
-                "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
-                "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
-              }
-            }
-          ]
-        },
-        {
-          "form": "suppository",
-          "strengths": [
-            {
-              "mg": 60,
-              "per": 1
-            },
-            {
-              "mg": 125,
-              "per": 1
-            },
-            {
-              "mg": 200,
-              "per": 1
-            }
-          ],
-          "regimens": [
-            {
-              "minAge": 0,
-              "maxAge": 121,
-              "method": "note",
-              "note": {
-                "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
-                "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
-              }
-            }
-          ]
-        },
-        {
           "form": "gel",
           "strengths": [
             {
               "label": {
                 "en": "5%",
                 "ar": "5%"
-              }
+              },
+              "regimens": [
+                {
+                  "minAge": 12,
+                  "maxAge": 121,
+                  "method": "note",
+                  "note": {
+                    "en": "For adults and children over 12 years: apply 1 to 2.5 g of gel (measured as the pack instructs) up to three times a day, at least 4 hours apart. The daily maximum is about 7.5 g of gel. Use on intact skin only. Some products set the minimum age at 14, so follow your product leaflet.",
+                    "ar": "للبالغين والأطفال فوق 12 سنة: ضع من 1 إلى 2.5 غم جل (بحسب طريقة القياس بالعبوة) حتى 3 مرات يومياً، بفاصل 4 ساعات على الأقل. والحد اليومي حوالي 7.5 غم جل. على الجلد السليم فقط. وبعض المنتجات تحدد 14 سنة كحد أدنى، فاتبع نشرة منتجك."
+                  }
+                }
+              ]
             },
             {
               "label": {
                 "en": "10%",
                 "ar": "10%"
-              }
-            }
-          ],
-          "regimens": [
-            {
-              "minAge": 0,
-              "maxAge": 121,
-              "method": "note",
-              "note": {
-                "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
-                "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
-              }
+              },
+              "regimens": [
+                {
+                  "minAge": 0,
+                  "maxAge": 121,
+                  "method": "note",
+                  "note": {
+                    "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
+                    "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "form": "infusion",
+          "strengths": [
+            {
+              "mg": 4,
+              "per": 1
+            }
+          ],
           "regimens": [
             {
-              "minAge": 0,
+              "minAge": 18,
               "maxAge": 121,
-              "method": "note",
+              "method": "fixed",
+              "fixed": 400,
+              "timesPerDay": 4,
+              "timesUpTo": true,
+              "interval": {
+                "en": "every 6 to 8 hours as necessary",
+                "ar": "كل 6 إلى 8 ساعات عند الحاجة"
+              },
+              "maxDaily": 2400,
               "note": {
-                "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
-                "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
+                "en": "Give as an intravenous infusion over 30 minutes by qualified healthcare staff, only when oral use is not suitable. For short-term use, no more than 3 days. Not for children and adolescents under the British label.",
+                "ar": "يُعطى بتسريب وريدي مدته 30 دقيقة من كوادر صحية مؤهلة، وعندما لا يكون الفم مناسباً فقط. للاستخدام قصير المدة وبدون تجاوز 3 أيام. ولا يُعطى للأطفال والمراهقين حسب النشرة البريطانية."
               }
             }
-          ]
+          ],
+          "recs": {
+            "en": [
+              "Keep the patient well hydrated.",
+              "Do not exceed the maximum daily dose."
+            ],
+            "ar": [
+              "حافظ على ترطيب المريض جيداً.",
+              "لا تتجاوز الجرعة القصوى اليومية."
+            ]
+          }
         }
       ]
     }

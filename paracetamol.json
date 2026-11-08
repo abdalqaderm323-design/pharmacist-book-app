@@ -578,12 +578,21 @@
               "per": 1,
               "regimens": [
                 {
-                  "minAge": 0,
+                  "minAge": 12,
                   "maxAge": 121,
-                  "method": "note",
+                  "minWeight": 43,
+                  "method": "fixed",
+                  "fixed": 1000,
+                  "timesPerDay": 4,
+                  "timesUpTo": true,
+                  "interval": {
+                    "en": "at least 6 hours apart",
+                    "ar": "بفاصل 6 ساعات على الأقل"
+                  },
+                  "maxDaily": 4000,
                   "note": {
-                    "en": "Doses for this form have not been added yet. Check the product leaflet or ask a doctor or pharmacist.",
-                    "ar": "لم تُضف جرعات هذا الشكل بعد. راجع نشرة المنتج أو اسأل الطبيب أو الصيدلي."
+                    "en": "Not suitable for children under 12 years or under 43 kg. If symptoms persist for more than 3 days seek medical advice. With liver or kidney impairment the dose should be reduced or the interval prolonged.",
+                    "ar": "لا يصلح لمن هو أقل من 12 سنة أو 43 كغم. وإذا استمرت الأعراض أكثر من 3 أيام راجع الطبيب. وعند القصور الكبدي أو الكلوي تُخفّض الجرعة أو يُطال الفاصل بين الجرعات."
                   }
                 }
               ]
